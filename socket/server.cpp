@@ -120,11 +120,3 @@ int ServerSocket::sendMessage (int RECEIVER_SOCKFD, const std::string MESSAGE) {
   return 0;
 }
 
-
-int main () {
-
-  ServerSocket * A = ServerSocket::tcpConnection();
-
-
-  return 0;
-}
