@@ -7,77 +7,123 @@ ServerSocket * ServerSocket::server = NULL;
 int ServerSocket::sock_domain = PF_INET;
 int ServerSocket::sock_type = SOCK_STREAM; // padrao tcp
 
-bool ServerSocket::created = false;
 bool ServerSocket::connected = false;
 
 
-void ServerSocket::tcpConnection () {
+ServerSocket * ServerSocket::tcpConnection () {
   if (!server) server = new ServerSocket();
 
   sock_type = SOCK_STREAM;
 
-  /*
-    * se for necessario mudar o tipo da conexao depois de criada
-    * eh preciso criar uma nova conexao
+  /**
+   * se for necessario mudar o tipo da conexao depois de criada
+   * eh preciso criar uma nova conexao
   */
-  if (created) server->createSocket();
+  server->createSocket();
+  connected = false;
+
+  return server;
 }
 
-void ServerSocket::udpConnection () {
+ServerSocket * ServerSocket::udpConnection () {
   if (!server) server = new ServerSocket();
 
   sock_type = SOCK_DGRAM;
 
-  if (created) server->createSocket();
+  server->createSocket();
+  connected = false;
+
+  return server;
 }
 
 int ServerSocket::createSocket () {
   if (!server) server = new ServerSocket();
 
+  close(server->sock_fd);
   server->sock_fd = socket(sock_domain, sock_type, 0); // cria o socket
   if (server->sock_fd == -1) {
     std::cerr << "Erro ao criar socket" << std::endl;
-    exit(1);
+    throw "ERROR: Erro ao criar socket";
   }
   
-  created = true;
   return 0;
 }
 
-int ServerSocket::connectSocket (const int PORT) {
-
-  if (!server) {
-    server = new ServerSocket();
-    server->createSocket();
-  }
+int ServerSocket::connectSocket (const int PORT, const int BACKLOG_QUEUE_SIZE = 5) {
 
   if (!connected) {
+    close(this->sock_fd);
 
-    bzero((char *) &server->server_addr, sizeof(server->server_addr));
+    bzero((char *) &this->server_addr, sizeof(server->server_addr));
 
-    server->server_addr.sin_family = sock_domain;
-    server->server_addr.sin_port = htons(PORT);
+    this->server_addr.sin_family = sock_domain;
+    this->server_addr.sin_port = this->port_number =  htons(PORT);
     // ip da maquina que o servidor está rodando
-    server->server_addr.sin_addr.s_addr = INADDR_ANY;
+    this->server_addr.sin_addr.s_addr = INADDR_ANY;
 
 
-    if (bind(server->sock_fd, 
-            (struct sockaddr*) &server->server_addr, 
-            sizeof (server->server_addr)) < 0) {
+    if (bind(this->sock_fd, 
+            (struct sockaddr*) &this->server_addr, 
+            sizeof (this->server_addr)) < 0) {
 
               std::cerr << "Erro no binding" << std::endl;
-              exit(1);
+              throw "ERROR: Erro no binding";
+              return -1;
     }
+
+    listen(this->sock_fd, BACKLOG_QUEUE_SIZE);
 
     connected = true;
   }
+
+  return 0;
 }
 
+int ServerSocket::waitConnection () {
+  struct sockaddr_in source_addr;
+  socklen_t source_sock_len = sizeof(source_addr);
+
+  int source_sockfd = accept(this->sock_fd,
+                            (struct sockaddr *) &source_addr, 
+                            &source_sock_len);
+
+  if (source_sockfd < 0) {
+    std::cerr << "Erro ao aceitar conexao" << std::endl;
+    throw "ERROR: Erro ao aceitar conexao"; 
+  }
+
+  return source_sockfd;
+}
+
+std::string ServerSocket::readMessage (int SOURCE_SOCKFD, size_t SIZE = 1024) {
+  char buffer[SIZE];
+
+  bzero(buffer, SIZE);
+  int readed_bytes = read(SOURCE_SOCKFD, buffer, SIZE - 1);
+
+  if (readed_bytes < 0) {
+    std::cerr << "Erro ao fazer a leitura do socket" << std::endl;
+    throw "ERROR: Erro ao fazer a leitura do socket";
+  }
+
+  return std::string(buffer);
+}
+
+int ServerSocket::sendMessage (int RECEIVER_SOCKFD, const std::string MESSAGE) {
+  int sended_bytes = write(RECEIVER_SOCKFD, MESSAGE.c_str(), MESSAGE.length);
+
+  if (sended_bytes < 0) {
+    std::cerr << "Erro ao fazer a escrita no socket" << std::endl;
+    throw "ERROR: Erro ao fazer a escrita no socket";
+  }
+
+  return 0;
+}
 
 
 int main () {
 
-  
+  ServerSocket * A = ServerSocket::tcpConnection();
 
 
   return 0;
