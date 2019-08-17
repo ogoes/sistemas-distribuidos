@@ -42,7 +42,7 @@ class ServerSocket {
 		 * Retorne 0 se tudo ocorrer bem, lance uma excecao caso contrario
 		 *
 		 * @params
-		 * 	!PORT: porta onde o servidor estara disponivel
+		 *	!PORT: porta onde o servidor estara disponivel
 		 *  [BACKLOG_QUEUE_SIZE=5]: quantidade de conexoes permitidas, padrao 5
 		 */
 		int connectSocket(const int, const int);
