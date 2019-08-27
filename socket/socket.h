@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <utility>
 #include <string>
 #include <boost/asio.hpp>
 
@@ -22,13 +24,22 @@ public: // statics
 
 public:
   tcp::socket acceptConnetion ();
-  std::string readMessage (tcp::socket /* source_socket */, const int /* SIZE */);
-  void sendMessage (tcp::socket /* destonation_socket */, const std::string /* message */);
-
-
+  std::string readMessage (tcp::socket &/* source_socket */);
+  void sendMessage (tcp::socket & /* destination_socket */, const std::string /* message */);
 };
 
 
 class ClientSocket {
 
+private:
+  tcp::socket connected_socket;
+  tcp::resolver resolver;
+
+
+public:
+  ClientSocket (io_context &);
+  tcp::socket & connect (const char *, const char *);
+  std::string readMessage ();
+  void sendMessage (std::string);
+  void finish();
 };
