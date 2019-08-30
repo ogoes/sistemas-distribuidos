@@ -1,19 +1,15 @@
 #include "socket.h"
 
-
-ServerSocket::ServerSocket (unsigned int PORT, io_context & context, tcp protocol): acceptor(context, tcp::endpoint(protocol, PORT)), socket(context) {
-  this->tcp_protocol = protocol;
-  this->PORT = PORT;
+TCPSocket::~TCPSocket() {
+  
 }
-
-
-tcp::socket ServerSocket::acceptConnetion () {
+TCPSocket::TCPSocket (io_context & context, tcp type, unsigned int PORT): acceptor(context, tcp::endpoint(type, PORT)), socket(context), resolver(context) {}
+tcp::socket TCPSocket::acceptConnetion () {
   return this->acceptor.accept();
 }
+std::string TCPSocket::receiveMessage (tcp::socket & source_socket) {
 
-std::string ServerSocket::readMessage (tcp::socket & source_socket) {
-
-  char buffer[1024];
+  char buffer[4096];
 
   boost::system::error_code error;
   size_t length = source_socket.read_some(boost::asio::buffer(buffer), error);
@@ -24,7 +20,42 @@ std::string ServerSocket::readMessage (tcp::socket & source_socket) {
 
   return std::string(buffer);
 }
-
-void ServerSocket::sendMessage (tcp::socket & destination_socket, const std::string message) {
+void TCPSocket::sendMessage (tcp::socket & destination_socket, const std::string message) {
   boost::asio::write(destination_socket, boost::asio::buffer(message.c_str(), message.size()));
+}
+
+tcp::socket ServerSocket::acceptConnetion () {
+  if (socket_p == protocols::UDP) throw "ERRO: UDP protocol doesn't need to accept connections";
+
+  return this->tcp_socket->acceptConnetion();
+}
+std::string ServerSocket::readMessage (tcp::socket & source_socket) {
+  return this->tcp_socket->receiveMessage(source_socket);
+}
+void ServerSocket::sendMessage (tcp::socket & destination_socket, const std::string message) {
+  this->tcp_socket->sendMessage(destination_socket, message);
+}
+ServerSocket::ServerSocket () {}
+ServerSocket::~ServerSocket () {
+  if (this->socket_p == protocols::TCP)
+    delete this->tcp_socket;
+  else
+    delete this->udp_socket;
+}
+
+ServerSocket * ServerSocket::TCP (unsigned int PORT) {
+  ServerSocket * instance = new ServerSocket();
+
+  instance->tcp_socket = new TCPSocket(instance->_iocontext, tcp::v4(), PORT);
+  instance->socket_p = protocols::TCP;
+  return instance;
+}
+
+ServerSocket * ServerSocket::UDP (unsigned int PORT, udp type = udp::v4()) {
+  // ServerSocket * instance = new ServerSocket();
+
+  // instance->TCPSocket = new UDPSocket(instance->_iocontext, type, PORT);
+  // instance->socket_p = protocols::UDP;
+  // return instance;
+  return NULL;
 }

@@ -8,18 +8,17 @@ int main (const int argc, const char * argv[]) {
     return 1;
   }
 
-  io_context context;
-  ClientSocket  * client = new ClientSocket(context);
-  client->connect(argv[1], argv[2]);
+  ClientSocket  * client = ClientSocket::TCP(argv[1], argv[2]);
 
   char message[1024];
 
   while (true) {
+    memset(message, 0, sizeof message);
     std::cout << "==> ";
     std::cin.getline(message, 1024);
     client->sendMessage(message);
 
-    std::string recv = client->readMessage();
+    std::string recv = client->receiveMessage();
     std::cout << recv << std::endl;
   }
 

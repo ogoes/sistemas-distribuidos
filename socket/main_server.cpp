@@ -10,9 +10,7 @@ int main (const int argc, const char * argv[]) {
     return 1;
   }
 
-
-  io_context io_context;
-  ServerSocket * server = new ServerSocket(std::atoi(argv[1]), io_context, tcp::v4());
+  ServerSocket * server = ServerSocket::TCP((unsigned int)std::atoi(argv[1]));
 
   std::cout << "Server running at " << argv[1] << std::endl;
 
