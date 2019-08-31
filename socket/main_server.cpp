@@ -20,7 +20,7 @@ int main (const int argc, const char * argv[]) {
 
   do {
 
-    memset(message, 0, sizeof message);1
+    memset(message, 0, sizeof message);
     std::string recv = server->receiveMessage(client);
     std::cout << recv << std::endl << "==> ";
     std::cin.getline(message, 1024);

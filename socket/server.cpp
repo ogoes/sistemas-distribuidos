@@ -4,7 +4,7 @@ TCPSocket::~TCPSocket() {
   
 }
 TCPSocket::TCPSocket (io_context & context, tcp type, unsigned int PORT): acceptor(context, tcp::endpoint(type, PORT)), socket(context), resolver(context) {}
-tcp::socket TCPSocket::acceptConnetion () {
+tcp::socket TCPSocket::acceptConnection () {
   return this->acceptor.accept();
 }
 std::string TCPSocket::receiveMessage (tcp::socket & source_socket) {
@@ -25,10 +25,10 @@ void TCPSocket::sendMessage (tcp::socket & destination_socket, const std::string
   boost::asio::write(destination_socket, boost::asio::buffer(message.c_str(), message.size()));
 }
 
-tcp::socket ServerSocket::acceptConnetion () {
+tcp::socket ServerSocket::acceptConnection () {
   if (socket_p == protocols::UDP) throw "ERRO: UDP protocol doesn't need to accept connections";
 
-  return this->tcp_socket->acceptConnetion();
+  return this->tcp_socket->acceptConnection();
 }
 std::string ServerSocket::receiveMessage (tcp::socket & source_socket) {
   return this->tcp_socket->receiveMessage(source_socket);
