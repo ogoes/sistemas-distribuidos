@@ -17,11 +17,16 @@ int main (const int argc, const char * argv[]) {
   tcp::socket client = server->acceptConnetion();
 
   char  message[1024];
-  std::string recv = server->readMessage(client);
-  std::cout << recv << std::endl << "==> ";
-  std::cin.getline(message, 1024);
-  server->sendMessage(client, message);
 
+  do {
+
+    memset(message, 0, sizeof message);1
+    std::string recv = server->receiveMessage(client);
+    std::cout << recv << std::endl << "==> ";
+    std::cin.getline(message, 1024);
+    server->sendMessage(client, message);
+
+  } while (strcmp(message, "SAIR") != 0);
   client.close();
   return 0;
 }

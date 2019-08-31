@@ -11,6 +11,7 @@ std::string TCPSocket::receiveMessage (tcp::socket & source_socket) {
 
   char buffer[4096];
 
+  memset(buffer, 0, sizeof buffer);
   boost::system::error_code error;
   size_t length = source_socket.read_some(boost::asio::buffer(buffer), error);
 
@@ -29,7 +30,7 @@ tcp::socket ServerSocket::acceptConnetion () {
 
   return this->tcp_socket->acceptConnetion();
 }
-std::string ServerSocket::readMessage (tcp::socket & source_socket) {
+std::string ServerSocket::receiveMessage (tcp::socket & source_socket) {
   return this->tcp_socket->receiveMessage(source_socket);
 }
 void ServerSocket::sendMessage (tcp::socket & destination_socket, const std::string message) {
