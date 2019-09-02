@@ -1,4 +1,3 @@
-std::cin::read (message, 1024);
 #include "../../../socket/socket.h"
 #include <cstdio>
 #include <functional>
