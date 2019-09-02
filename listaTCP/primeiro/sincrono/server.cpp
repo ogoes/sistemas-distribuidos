@@ -1,4 +1,20 @@
 #include "../../../socket/socket.h"
+#include <cstdio>
+#include <sys/ioctl.h>
+#include <unistd.h>
+
+void showReceivedMessage (std::string message) {
+  struct winsize size;
+  ioctl (STDOUT_FILENO, TIOCGWINSZ, &size);
+
+  int spacesCount = message.length () - size.ws_col;
+  spacesCount     = spacesCount > 0 ? spacesCount : -spacesCount;
+
+  std::cout << std::endl;
+  for (int i = 0; i < spacesCount; ++i)
+    std::cout << ' ';
+  std::cout << message << std::endl;
+}
 
 int main (int argc, char * argv[]) {
   if (argc != 2) {
@@ -12,26 +28,22 @@ int main (int argc, char * argv[]) {
 
   tcp::socket client = server->acceptConnection ();
 
-  char message[1024];
-  memset (message, 0, sizeof message);
+  std::string message;
 
   std::string recv = server->receiveMessage (client);
 
   while (recv != "SAIR") {
 
-    memset (message, 0, sizeof message);
+    // std::cout << recv << std::endl;
+    showReceivedMessage (recv);
 
-    std::cout << recv << std::endl;
-
-    std::cout << "~> ";
-    std::cin.getline (message, 1024);
+    std::getline (std::cin, message);
 
     server->sendMessage (client, message);
 
     try {
-      recv.erase (0, recv.length ());
       recv = server->receiveMessage (client);
-    } catch (std::exception & e) {
+    } catch (...) {
       std::cout << "Conexão Finalisada" << std::endl;
       break;
     }

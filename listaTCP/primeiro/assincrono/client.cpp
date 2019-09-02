@@ -1,6 +1,54 @@
+std::cin::read (message, 1024);
 #include "../../../socket/socket.h"
+#include <cstdio>
 #include <functional>
+#include <sys/ioctl.h>
 #include <thread>
+#include <unistd.h>
+
+void showReceivedMessage (std::string message) {
+  struct winsize size;
+  ioctl (STDOUT_FILENO, TIOCGWINSZ, &size);
+
+  int spacesCount = message.length () - size.ws_col;
+  spacesCount     = spacesCount > 0 ? spacesCount : -spacesCount;
+
+  std::cout << std::endl;
+  for (int i = 0; i < spacesCount; ++i)
+    std::cout << ' ';
+  std::cout << message << std::endl;
+}
+
+void receiveFunction (ClientSocket * client) {
+  std::string recv;
+
+  do {
+    try {
+      recv.clear ();
+      recv = client->receiveMessage ();
+    } catch (...) {
+      std::cout << "Conexão encerrada" << std::endl;
+      return;
+    }
+    showReceivedMessage (recv);
+    // std::cout << recv << std::endl;
+  } while (recv != "SAIR");
+  exit (0);
+}
+
+void sendFunction (ClientSocket * client) {
+  std::string message;
+
+  do {
+    std::getline (std::cin, message);
+    try {
+      client->sendMessage (message);
+    } catch (...) {
+      std::cout << "Conexão Finalizada" << std::endl;
+      return;
+    }
+  } while (message != "SAIR");
+}
 
 int main (int argc, char * argv[]) {
 
@@ -11,31 +59,14 @@ int main (int argc, char * argv[]) {
 
   ClientSocket * socket = ClientSocket::TCP (argv[1], argv[2]);
 
-  std::thread receive (
-      [](ClientSocket * client) {
-        std::string recv;
-        recv = client->receiveMessage ();
-        std::cout << recv << std::endl;
-      },
-      socket);
+  std::thread receive (receiveFunction, socket);
+  std::thread send (sendFunction, socket);
 
-  std::thread send (
-      [](ClientSocket * client) {
-        char message[1024];
-        while (true) {
-
-          memset (message, 0, sizeof message);
-          std::cin.getline (message, 1024);
-          client->sendMessage (message);
-        }
-      },
-      socket);
-
-  // send.detach ();
-  // receive.detach ();
-  //
   send.join ();
   receive.join ();
+
+  socket->finish ();
+  delete socket;
 
   return 0;
 }

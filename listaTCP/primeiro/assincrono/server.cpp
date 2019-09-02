@@ -1,6 +1,52 @@
 #include "../../../socket/socket.h"
+#include <cstdio>
 #include <functional>
+#include <sys/ioctl.h>
 #include <thread>
+#include <unistd.h>
+
+void showReceivedMessage (std::string message) {
+  struct winsize size;
+  ioctl (STDOUT_FILENO, TIOCGWINSZ, &size);
+
+  int spacesCount = message.length () - size.ws_col;
+  spacesCount     = spacesCount > 0 ? spacesCount : -spacesCount;
+
+  std::cout << std::endl;
+  for (int i = 0; i < spacesCount; ++i)
+    std::cout << ' ';
+  std::cout << message << std::endl;
+}
+
+void receiveFunction (ServerSocket * server, tcp::socket & socket) {
+  std::string recv;
+
+  do {
+    try {
+      recv.clear ();
+      recv = server->receiveMessage (socket);
+    } catch (...) {
+      std::cout << "Conexão finalisada" << std::endl;
+      return;
+    }
+    showReceivedMessage (recv);
+    // std::cout << "Recebido: " << recv << std::endl;
+  } while (recv != "SAIR");
+  exit (0);
+}
+
+void sendFunction (ServerSocket * server, tcp::socket & socket) {
+  std::string message;
+  do {
+    std::getline (std::cin, message);
+    try {
+      server->sendMessage (socket, message);
+    } catch (...) {
+      std::cout << "Conexão finalisada" << std::endl;
+      return;
+    }
+  } while (message != "SAIR");
+}
 
 int main (int argc, char * argv[]) {
 
@@ -14,44 +60,15 @@ int main (int argc, char * argv[]) {
   std::cout << "Servidor rodando na porta " << argv[1] << std::endl;
   tcp::socket client = server->acceptConnection ();
 
-  std::thread (
-      [](ServerSocket * server, tcp::socket & socket) {
-        std::string recv;
+  std::thread receive (receiveFunction, server, std::ref (client));
 
-        // do {
-        recv = server->receiveMessage (socket);
-        std::cout << "Recebido: " << recv << std::endl;
+  std::thread send (sendFunction, server, std::ref (client));
 
-        // std::terminate ();
-      },
-      server,
-      std::ref (client))
-      .detach ();
-
-  std::thread send (
-      [](ServerSocket * server, tcp::socket & socket) {
-        char message[1024];
-        memset (message, 0, sizeof message);
-
-        std::cout << "Enviar: " << std::endl;
-        std::cin.getline (message, sizeof message);
-
-        while (/*strcmp (message, "SAIR") != 0*/ true) {
-          server->sendMessage (socket, message);
-          memset (message, 0, sizeof message);
-          std::cout << "Enviar: " << std::endl;
-          std::cin.getline (message, sizeof message);
-        }
-
-        // std::terminate ();
-      },
-      server,
-      std::ref (client));
-
-  std::cout << "asdasd" << std::endl;
-
-  // receive.join();
+  receive.join ();
   send.join ();
+
+  client.close ();
+  server->finish ();
 
   client.close ();
 }
