@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+package sd;
 
 message Curso {
 	int32 codigo = 1;

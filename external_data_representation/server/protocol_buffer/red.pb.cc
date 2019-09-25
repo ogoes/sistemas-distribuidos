@@ -21,6 +21,7 @@ extern PROTOBUF_INTERNAL_EXPORT_red_2eproto ::google::protobuf::internal::SCCInf
 extern PROTOBUF_INTERNAL_EXPORT_red_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Aluno_red_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_red_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Disciplina_red_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_red_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_Matricula_red_2eproto;
+namespace sd {
 class CursoDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Curso> _instance;
@@ -73,15 +74,16 @@ class DisciplinaResponseDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<DisciplinaResponse> _instance;
 } _DisciplinaResponse_default_instance_;
+}  // namespace sd
 static void InitDefaultsCurso_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_Curso_default_instance_;
-    new (ptr) ::Curso();
+    void* ptr = &::sd::_Curso_default_instance_;
+    new (ptr) ::sd::Curso();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::Curso::InitAsDefaultInstance();
+  ::sd::Curso::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<0> scc_info_Curso_red_2eproto =
@@ -91,11 +93,11 @@ static void InitDefaultsDisciplina_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_Disciplina_default_instance_;
-    new (ptr) ::Disciplina();
+    void* ptr = &::sd::_Disciplina_default_instance_;
+    new (ptr) ::sd::Disciplina();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::Disciplina::InitAsDefaultInstance();
+  ::sd::Disciplina::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_Disciplina_red_2eproto =
@@ -106,11 +108,11 @@ static void InitDefaultsAluno_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_Aluno_default_instance_;
-    new (ptr) ::Aluno();
+    void* ptr = &::sd::_Aluno_default_instance_;
+    new (ptr) ::sd::Aluno();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::Aluno::InitAsDefaultInstance();
+  ::sd::Aluno::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_Aluno_red_2eproto =
@@ -121,11 +123,11 @@ static void InitDefaultsMatricula_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_Matricula_default_instance_;
-    new (ptr) ::Matricula();
+    void* ptr = &::sd::_Matricula_default_instance_;
+    new (ptr) ::sd::Matricula();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::Matricula::InitAsDefaultInstance();
+  ::sd::Matricula::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<2> scc_info_Matricula_red_2eproto =
@@ -137,11 +139,11 @@ static void InitDefaultsResponseStatus_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_ResponseStatus_default_instance_;
-    new (ptr) ::ResponseStatus();
+    void* ptr = &::sd::_ResponseStatus_default_instance_;
+    new (ptr) ::sd::ResponseStatus();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ResponseStatus::InitAsDefaultInstance();
+  ::sd::ResponseStatus::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<0> scc_info_ResponseStatus_red_2eproto =
@@ -151,11 +153,11 @@ static void InitDefaultsNotaRequest_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_NotaRequest_default_instance_;
-    new (ptr) ::NotaRequest();
+    void* ptr = &::sd::_NotaRequest_default_instance_;
+    new (ptr) ::sd::NotaRequest();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::NotaRequest::InitAsDefaultInstance();
+  ::sd::NotaRequest::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_NotaRequest_red_2eproto =
@@ -166,11 +168,11 @@ static void InitDefaultsNotaResponse_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_NotaResponse_default_instance_;
-    new (ptr) ::NotaResponse();
+    void* ptr = &::sd::_NotaResponse_default_instance_;
+    new (ptr) ::sd::NotaResponse();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::NotaResponse::InitAsDefaultInstance();
+  ::sd::NotaResponse::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<2> scc_info_NotaResponse_red_2eproto =
@@ -182,11 +184,11 @@ static void InitDefaultsMatriculaRequest_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_MatriculaRequest_default_instance_;
-    new (ptr) ::MatriculaRequest();
+    void* ptr = &::sd::_MatriculaRequest_default_instance_;
+    new (ptr) ::sd::MatriculaRequest();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::MatriculaRequest::InitAsDefaultInstance();
+  ::sd::MatriculaRequest::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_MatriculaRequest_red_2eproto =
@@ -197,11 +199,11 @@ static void InitDefaultsMatriculaResponse_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_MatriculaResponse_default_instance_;
-    new (ptr) ::MatriculaResponse();
+    void* ptr = &::sd::_MatriculaResponse_default_instance_;
+    new (ptr) ::sd::MatriculaResponse();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::MatriculaResponse::InitAsDefaultInstance();
+  ::sd::MatriculaResponse::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<3> scc_info_MatriculaResponse_red_2eproto =
@@ -214,11 +216,11 @@ static void InitDefaultsAlunosRequest_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_AlunosRequest_default_instance_;
-    new (ptr) ::AlunosRequest();
+    void* ptr = &::sd::_AlunosRequest_default_instance_;
+    new (ptr) ::sd::AlunosRequest();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::AlunosRequest::InitAsDefaultInstance();
+  ::sd::AlunosRequest::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_AlunosRequest_red_2eproto =
@@ -229,11 +231,11 @@ static void InitDefaultsAlunosResponse_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_AlunosResponse_default_instance_;
-    new (ptr) ::AlunosResponse();
+    void* ptr = &::sd::_AlunosResponse_default_instance_;
+    new (ptr) ::sd::AlunosResponse();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::AlunosResponse::InitAsDefaultInstance();
+  ::sd::AlunosResponse::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<2> scc_info_AlunosResponse_red_2eproto =
@@ -245,11 +247,11 @@ static void InitDefaultsDisciplinaRequest_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_DisciplinaRequest_default_instance_;
-    new (ptr) ::DisciplinaRequest();
+    void* ptr = &::sd::_DisciplinaRequest_default_instance_;
+    new (ptr) ::sd::DisciplinaRequest();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::DisciplinaRequest::InitAsDefaultInstance();
+  ::sd::DisciplinaRequest::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_DisciplinaRequest_red_2eproto =
@@ -260,11 +262,11 @@ static void InitDefaultsDisciplinaResponse_red_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_DisciplinaResponse_default_instance_;
-    new (ptr) ::DisciplinaResponse();
+    void* ptr = &::sd::_DisciplinaResponse_default_instance_;
+    new (ptr) ::sd::DisciplinaResponse();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::DisciplinaResponse::InitAsDefaultInstance();
+  ::sd::DisciplinaResponse::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<3> scc_info_DisciplinaResponse_red_2eproto =
@@ -295,138 +297,138 @@ constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descr
 
 const ::google::protobuf::uint32 TableStruct_red_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Curso, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::Curso, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Curso, codigo_),
-  PROTOBUF_FIELD_OFFSET(::Curso, nome_),
+  PROTOBUF_FIELD_OFFSET(::sd::Curso, codigo_),
+  PROTOBUF_FIELD_OFFSET(::sd::Curso, nome_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Disciplina, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::Disciplina, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Disciplina, codigo_),
-  PROTOBUF_FIELD_OFFSET(::Disciplina, nome_),
-  PROTOBUF_FIELD_OFFSET(::Disciplina, professor_),
-  PROTOBUF_FIELD_OFFSET(::Disciplina, curso_),
+  PROTOBUF_FIELD_OFFSET(::sd::Disciplina, codigo_),
+  PROTOBUF_FIELD_OFFSET(::sd::Disciplina, nome_),
+  PROTOBUF_FIELD_OFFSET(::sd::Disciplina, professor_),
+  PROTOBUF_FIELD_OFFSET(::sd::Disciplina, curso_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Aluno, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::Aluno, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Aluno, ra_),
-  PROTOBUF_FIELD_OFFSET(::Aluno, nome_),
-  PROTOBUF_FIELD_OFFSET(::Aluno, periodo_),
-  PROTOBUF_FIELD_OFFSET(::Aluno, curso_),
+  PROTOBUF_FIELD_OFFSET(::sd::Aluno, ra_),
+  PROTOBUF_FIELD_OFFSET(::sd::Aluno, nome_),
+  PROTOBUF_FIELD_OFFSET(::sd::Aluno, periodo_),
+  PROTOBUF_FIELD_OFFSET(::sd::Aluno, curso_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Matricula, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::Matricula, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Matricula, aluno_),
-  PROTOBUF_FIELD_OFFSET(::Matricula, disciplina_),
-  PROTOBUF_FIELD_OFFSET(::Matricula, ano_),
-  PROTOBUF_FIELD_OFFSET(::Matricula, semestre_),
-  PROTOBUF_FIELD_OFFSET(::Matricula, nota_),
-  PROTOBUF_FIELD_OFFSET(::Matricula, faltas_),
+  PROTOBUF_FIELD_OFFSET(::sd::Matricula, aluno_),
+  PROTOBUF_FIELD_OFFSET(::sd::Matricula, disciplina_),
+  PROTOBUF_FIELD_OFFSET(::sd::Matricula, ano_),
+  PROTOBUF_FIELD_OFFSET(::sd::Matricula, semestre_),
+  PROTOBUF_FIELD_OFFSET(::sd::Matricula, nota_),
+  PROTOBUF_FIELD_OFFSET(::sd::Matricula, faltas_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ResponseStatus, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::ResponseStatus, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ResponseStatus, statuscode_),
-  PROTOBUF_FIELD_OFFSET(::ResponseStatus, message_),
+  PROTOBUF_FIELD_OFFSET(::sd::ResponseStatus, statuscode_),
+  PROTOBUF_FIELD_OFFSET(::sd::ResponseStatus, message_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::NotaRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::NotaRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::NotaRequest, type_),
-  PROTOBUF_FIELD_OFFSET(::NotaRequest, matricula_),
+  PROTOBUF_FIELD_OFFSET(::sd::NotaRequest, type_),
+  PROTOBUF_FIELD_OFFSET(::sd::NotaRequest, matricula_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::NotaResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::NotaResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::NotaResponse, matricula_),
-  PROTOBUF_FIELD_OFFSET(::NotaResponse, status_),
+  PROTOBUF_FIELD_OFFSET(::sd::NotaResponse, matricula_),
+  PROTOBUF_FIELD_OFFSET(::sd::NotaResponse, status_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MatriculaRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::MatriculaRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MatriculaRequest, disciplina_),
-  PROTOBUF_FIELD_OFFSET(::MatriculaRequest, ano_),
-  PROTOBUF_FIELD_OFFSET(::MatriculaRequest, semestre_),
+  PROTOBUF_FIELD_OFFSET(::sd::MatriculaRequest, disciplina_),
+  PROTOBUF_FIELD_OFFSET(::sd::MatriculaRequest, ano_),
+  PROTOBUF_FIELD_OFFSET(::sd::MatriculaRequest, semestre_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MatriculaResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::MatriculaResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MatriculaResponse, disciplina_),
-  PROTOBUF_FIELD_OFFSET(::MatriculaResponse, matriculas_),
-  PROTOBUF_FIELD_OFFSET(::MatriculaResponse, status_),
+  PROTOBUF_FIELD_OFFSET(::sd::MatriculaResponse, disciplina_),
+  PROTOBUF_FIELD_OFFSET(::sd::MatriculaResponse, matriculas_),
+  PROTOBUF_FIELD_OFFSET(::sd::MatriculaResponse, status_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::AlunosRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::AlunosRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::AlunosRequest, disciplina_),
-  PROTOBUF_FIELD_OFFSET(::AlunosRequest, ano_),
-  PROTOBUF_FIELD_OFFSET(::AlunosRequest, semestre_),
+  PROTOBUF_FIELD_OFFSET(::sd::AlunosRequest, disciplina_),
+  PROTOBUF_FIELD_OFFSET(::sd::AlunosRequest, ano_),
+  PROTOBUF_FIELD_OFFSET(::sd::AlunosRequest, semestre_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::AlunosResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::AlunosResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::AlunosResponse, status_),
-  PROTOBUF_FIELD_OFFSET(::AlunosResponse, alunos_),
+  PROTOBUF_FIELD_OFFSET(::sd::AlunosResponse, status_),
+  PROTOBUF_FIELD_OFFSET(::sd::AlunosResponse, alunos_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::DisciplinaRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::DisciplinaRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::DisciplinaRequest, curso_),
+  PROTOBUF_FIELD_OFFSET(::sd::DisciplinaRequest, curso_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::DisciplinaResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sd::DisciplinaResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::DisciplinaResponse, curso_),
-  PROTOBUF_FIELD_OFFSET(::DisciplinaResponse, disciplinas_),
-  PROTOBUF_FIELD_OFFSET(::DisciplinaResponse, status_),
+  PROTOBUF_FIELD_OFFSET(::sd::DisciplinaResponse, curso_),
+  PROTOBUF_FIELD_OFFSET(::sd::DisciplinaResponse, disciplinas_),
+  PROTOBUF_FIELD_OFFSET(::sd::DisciplinaResponse, status_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::Curso)},
-  { 7, -1, sizeof(::Disciplina)},
-  { 16, -1, sizeof(::Aluno)},
-  { 25, -1, sizeof(::Matricula)},
-  { 36, -1, sizeof(::ResponseStatus)},
-  { 43, -1, sizeof(::NotaRequest)},
-  { 50, -1, sizeof(::NotaResponse)},
-  { 57, -1, sizeof(::MatriculaRequest)},
-  { 65, -1, sizeof(::MatriculaResponse)},
-  { 73, -1, sizeof(::AlunosRequest)},
-  { 81, -1, sizeof(::AlunosResponse)},
-  { 88, -1, sizeof(::DisciplinaRequest)},
-  { 94, -1, sizeof(::DisciplinaResponse)},
+  { 0, -1, sizeof(::sd::Curso)},
+  { 7, -1, sizeof(::sd::Disciplina)},
+  { 16, -1, sizeof(::sd::Aluno)},
+  { 25, -1, sizeof(::sd::Matricula)},
+  { 36, -1, sizeof(::sd::ResponseStatus)},
+  { 43, -1, sizeof(::sd::NotaRequest)},
+  { 50, -1, sizeof(::sd::NotaResponse)},
+  { 57, -1, sizeof(::sd::MatriculaRequest)},
+  { 65, -1, sizeof(::sd::MatriculaResponse)},
+  { 73, -1, sizeof(::sd::AlunosRequest)},
+  { 81, -1, sizeof(::sd::AlunosResponse)},
+  { 88, -1, sizeof(::sd::DisciplinaRequest)},
+  { 94, -1, sizeof(::sd::DisciplinaResponse)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_Curso_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_Disciplina_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_Aluno_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_Matricula_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_ResponseStatus_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_NotaRequest_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_NotaResponse_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_MatriculaRequest_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_MatriculaResponse_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_AlunosRequest_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_AlunosResponse_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_DisciplinaRequest_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_DisciplinaResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_Curso_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_Disciplina_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_Aluno_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_Matricula_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_ResponseStatus_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_NotaRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_NotaResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_MatriculaRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_MatriculaResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_AlunosRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_AlunosResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_DisciplinaRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::sd::_DisciplinaResponse_default_instance_),
 };
 
 ::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_red_2eproto = {
@@ -436,40 +438,42 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 };
 
 const char descriptor_table_protodef_red_2eproto[] =
-  "\n\tred.proto\"%\n\005Curso\022\016\n\006codigo\030\001 \001(\005\022\014\n\004"
-  "nome\030\002 \001(\t\"T\n\nDisciplina\022\016\n\006codigo\030\001 \001(\t"
-  "\022\014\n\004nome\030\002 \001(\t\022\021\n\tprofessor\030\003 \001(\t\022\025\n\005cur"
-  "so\030\004 \001(\0132\006.Curso\"I\n\005Aluno\022\n\n\002RA\030\001 \001(\005\022\014\n"
-  "\004nome\030\002 \001(\t\022\017\n\007periodo\030\003 \001(\005\022\025\n\005curso\030\004 "
-  "\001(\0132\006.Curso\"\200\001\n\tMatricula\022\025\n\005aluno\030\001 \001(\013"
-  "2\006.Aluno\022\037\n\ndisciplina\030\002 \001(\0132\013.Disciplin"
-  "a\022\013\n\003ano\030\003 \001(\005\022\020\n\010semestre\030\004 \001(\005\022\014\n\004nota"
-  "\030\005 \001(\002\022\016\n\006faltas\030\006 \001(\005\"5\n\016ResponseStatus"
-  "\022\022\n\nstatusCode\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"\231\001"
-  "\n\013NotaRequest\022(\n\004type\030\001 \001(\0162\032.NotaReques"
-  "t.OperationType\022\035\n\tmatricula\030\002 \001(\0132\n.Mat"
-  "ricula\"A\n\rOperationType\022\n\n\006CREATE\020\000\022\014\n\010R"
-  "ETRIEVE\020\001\022\n\n\006UPDATE\020\002\022\n\n\006DELETE\020\003\"N\n\014Not"
-  "aResponse\022\035\n\tmatricula\030\001 \001(\0132\n.Matricula"
-  "\022\037\n\006status\030\002 \001(\0132\017.ResponseStatus\"R\n\020Mat"
-  "riculaRequest\022\037\n\ndisciplina\030\001 \001(\0132\013.Disc"
-  "iplina\022\013\n\003ano\030\002 \001(\005\022\020\n\010semestre\030\003 \001(\005\"u\n"
-  "\021MatriculaResponse\022\037\n\ndisciplina\030\001 \001(\0132\013"
-  ".Disciplina\022\036\n\nmatriculas\030\002 \003(\0132\n.Matric"
-  "ula\022\037\n\006status\030\003 \001(\0132\017.ResponseStatus\"O\n\r"
-  "AlunosRequest\022\037\n\ndisciplina\030\001 \001(\0132\013.Disc"
-  "iplina\022\013\n\003ano\030\002 \001(\005\022\020\n\010semestre\030\003 \001(\005\"I\n"
-  "\016AlunosResponse\022\037\n\006status\030\001 \001(\0132\017.Respon"
-  "seStatus\022\026\n\006alunos\030\002 \003(\0132\006.Aluno\"*\n\021Disc"
-  "iplinaRequest\022\025\n\005curso\030\001 \001(\0132\006.Curso\"n\n\022"
-  "DisciplinaResponse\022\025\n\005curso\030\001 \001(\0132\006.Curs"
-  "o\022 \n\013disciplinas\030\002 \003(\0132\013.Disciplina\022\037\n\006s"
-  "tatus\030\003 \001(\0132\017.ResponseStatusb\006proto3"
+  "\n\tred.proto\022\002sd\"%\n\005Curso\022\016\n\006codigo\030\001 \001(\005"
+  "\022\014\n\004nome\030\002 \001(\t\"W\n\nDisciplina\022\016\n\006codigo\030\001"
+  " \001(\t\022\014\n\004nome\030\002 \001(\t\022\021\n\tprofessor\030\003 \001(\t\022\030\n"
+  "\005curso\030\004 \001(\0132\t.sd.Curso\"L\n\005Aluno\022\n\n\002RA\030\001"
+  " \001(\005\022\014\n\004nome\030\002 \001(\t\022\017\n\007periodo\030\003 \001(\005\022\030\n\005c"
+  "urso\030\004 \001(\0132\t.sd.Curso\"\206\001\n\tMatricula\022\030\n\005a"
+  "luno\030\001 \001(\0132\t.sd.Aluno\022\"\n\ndisciplina\030\002 \001("
+  "\0132\016.sd.Disciplina\022\013\n\003ano\030\003 \001(\005\022\020\n\010semest"
+  "re\030\004 \001(\005\022\014\n\004nota\030\005 \001(\002\022\016\n\006faltas\030\006 \001(\005\"5"
+  "\n\016ResponseStatus\022\022\n\nstatusCode\030\001 \001(\005\022\017\n\007"
+  "message\030\002 \001(\t\"\237\001\n\013NotaRequest\022+\n\004type\030\001 "
+  "\001(\0162\035.sd.NotaRequest.OperationType\022 \n\tma"
+  "tricula\030\002 \001(\0132\r.sd.Matricula\"A\n\rOperatio"
+  "nType\022\n\n\006CREATE\020\000\022\014\n\010RETRIEVE\020\001\022\n\n\006UPDAT"
+  "E\020\002\022\n\n\006DELETE\020\003\"T\n\014NotaResponse\022 \n\tmatri"
+  "cula\030\001 \001(\0132\r.sd.Matricula\022\"\n\006status\030\002 \001("
+  "\0132\022.sd.ResponseStatus\"U\n\020MatriculaReques"
+  "t\022\"\n\ndisciplina\030\001 \001(\0132\016.sd.Disciplina\022\013\n"
+  "\003ano\030\002 \001(\005\022\020\n\010semestre\030\003 \001(\005\"~\n\021Matricul"
+  "aResponse\022\"\n\ndisciplina\030\001 \001(\0132\016.sd.Disci"
+  "plina\022!\n\nmatriculas\030\002 \003(\0132\r.sd.Matricula"
+  "\022\"\n\006status\030\003 \001(\0132\022.sd.ResponseStatus\"R\n\r"
+  "AlunosRequest\022\"\n\ndisciplina\030\001 \001(\0132\016.sd.D"
+  "isciplina\022\013\n\003ano\030\002 \001(\005\022\020\n\010semestre\030\003 \001(\005"
+  "\"O\n\016AlunosResponse\022\"\n\006status\030\001 \001(\0132\022.sd."
+  "ResponseStatus\022\031\n\006alunos\030\002 \003(\0132\t.sd.Alun"
+  "o\"-\n\021DisciplinaRequest\022\030\n\005curso\030\001 \001(\0132\t."
+  "sd.Curso\"w\n\022DisciplinaResponse\022\030\n\005curso\030"
+  "\001 \001(\0132\t.sd.Curso\022#\n\013disciplinas\030\002 \003(\0132\016."
+  "sd.Disciplina\022\"\n\006status\030\003 \001(\0132\022.sd.Respo"
+  "nseStatusb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_red_2eproto = {
   false, InitDefaults_red_2eproto, 
   descriptor_table_protodef_red_2eproto,
-  "red.proto", &assign_descriptors_table_red_2eproto, 1156,
+  "red.proto", &assign_descriptors_table_red_2eproto, 1217,
 };
 
 void AddDescriptors_red_2eproto() {
@@ -481,6 +485,7 @@ void AddDescriptors_red_2eproto() {
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_red_2eproto = []() { AddDescriptors_red_2eproto(); return true; }();
+namespace sd {
 const ::google::protobuf::EnumDescriptor* NotaRequest_OperationType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_red_2eproto);
   return file_level_enum_descriptors_red_2eproto[0];
@@ -523,7 +528,7 @@ const int Curso::kNomeFieldNumber;
 Curso::Curso()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Curso)
+  // @@protoc_insertion_point(constructor:sd.Curso)
 }
 Curso::Curso(const Curso& from)
   : ::google::protobuf::Message(),
@@ -534,7 +539,7 @@ Curso::Curso(const Curso& from)
     nome_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.nome_);
   }
   codigo_ = from.codigo_;
-  // @@protoc_insertion_point(copy_constructor:Curso)
+  // @@protoc_insertion_point(copy_constructor:sd.Curso)
 }
 
 void Curso::SharedCtor() {
@@ -545,7 +550,7 @@ void Curso::SharedCtor() {
 }
 
 Curso::~Curso() {
-  // @@protoc_insertion_point(destructor:Curso)
+  // @@protoc_insertion_point(destructor:sd.Curso)
   SharedDtor();
 }
 
@@ -563,7 +568,7 @@ const Curso& Curso::default_instance() {
 
 
 void Curso::Clear() {
-// @@protoc_insertion_point(message_clear_start:Curso)
+// @@protoc_insertion_point(message_clear_start:sd.Curso)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -598,7 +603,7 @@ const char* Curso::_InternalParse(const char* begin, const char* end, void* obje
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("Curso.nome");
+        ctx->extra_parse_data().SetFieldName("sd.Curso.nome");
         object = msg->mutable_nome();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
           parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
@@ -637,7 +642,7 @@ bool Curso::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Curso)
+  // @@protoc_insertion_point(parse_start:sd.Curso)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -664,7 +669,7 @@ bool Curso::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->nome().data(), static_cast<int>(this->nome().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "Curso.nome"));
+            "sd.Curso.nome"));
         } else {
           goto handle_unusual;
         }
@@ -683,10 +688,10 @@ bool Curso::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:Curso)
+  // @@protoc_insertion_point(parse_success:sd.Curso)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Curso)
+  // @@protoc_insertion_point(parse_failure:sd.Curso)
   return false;
 #undef DO_
 }
@@ -694,7 +699,7 @@ failure:
 
 void Curso::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Curso)
+  // @@protoc_insertion_point(serialize_start:sd.Curso)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -708,7 +713,7 @@ void Curso::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->nome().data(), static_cast<int>(this->nome().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Curso.nome");
+      "sd.Curso.nome");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->nome(), output);
   }
@@ -717,12 +722,12 @@ void Curso::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:Curso)
+  // @@protoc_insertion_point(serialize_end:sd.Curso)
 }
 
 ::google::protobuf::uint8* Curso::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Curso)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.Curso)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -736,7 +741,7 @@ void Curso::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->nome().data(), static_cast<int>(this->nome().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Curso.nome");
+      "sd.Curso.nome");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->nome(), target);
@@ -746,12 +751,12 @@ void Curso::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Curso)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.Curso)
   return target;
 }
 
 size_t Curso::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Curso)
+// @@protoc_insertion_point(message_byte_size_start:sd.Curso)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -783,22 +788,22 @@ size_t Curso::ByteSizeLong() const {
 }
 
 void Curso::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Curso)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.Curso)
   GOOGLE_DCHECK_NE(&from, this);
   const Curso* source =
       ::google::protobuf::DynamicCastToGenerated<Curso>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Curso)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.Curso)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Curso)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.Curso)
     MergeFrom(*source);
   }
 }
 
 void Curso::MergeFrom(const Curso& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Curso)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.Curso)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -814,14 +819,14 @@ void Curso::MergeFrom(const Curso& from) {
 }
 
 void Curso::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Curso)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.Curso)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Curso::CopyFrom(const Curso& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Curso)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.Curso)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -852,15 +857,15 @@ void Curso::InternalSwap(Curso* other) {
 // ===================================================================
 
 void Disciplina::InitAsDefaultInstance() {
-  ::_Disciplina_default_instance_._instance.get_mutable()->curso_ = const_cast< ::Curso*>(
-      ::Curso::internal_default_instance());
+  ::sd::_Disciplina_default_instance_._instance.get_mutable()->curso_ = const_cast< ::sd::Curso*>(
+      ::sd::Curso::internal_default_instance());
 }
 class Disciplina::HasBitSetters {
  public:
-  static const ::Curso& curso(const Disciplina* msg);
+  static const ::sd::Curso& curso(const Disciplina* msg);
 };
 
-const ::Curso&
+const ::sd::Curso&
 Disciplina::HasBitSetters::curso(const Disciplina* msg) {
   return *msg->curso_;
 }
@@ -874,7 +879,7 @@ const int Disciplina::kCursoFieldNumber;
 Disciplina::Disciplina()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Disciplina)
+  // @@protoc_insertion_point(constructor:sd.Disciplina)
 }
 Disciplina::Disciplina(const Disciplina& from)
   : ::google::protobuf::Message(),
@@ -893,11 +898,11 @@ Disciplina::Disciplina(const Disciplina& from)
     professor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.professor_);
   }
   if (from.has_curso()) {
-    curso_ = new ::Curso(*from.curso_);
+    curso_ = new ::sd::Curso(*from.curso_);
   } else {
     curso_ = nullptr;
   }
-  // @@protoc_insertion_point(copy_constructor:Disciplina)
+  // @@protoc_insertion_point(copy_constructor:sd.Disciplina)
 }
 
 void Disciplina::SharedCtor() {
@@ -910,7 +915,7 @@ void Disciplina::SharedCtor() {
 }
 
 Disciplina::~Disciplina() {
-  // @@protoc_insertion_point(destructor:Disciplina)
+  // @@protoc_insertion_point(destructor:sd.Disciplina)
   SharedDtor();
 }
 
@@ -931,7 +936,7 @@ const Disciplina& Disciplina::default_instance() {
 
 
 void Disciplina::Clear() {
-// @@protoc_insertion_point(message_clear_start:Disciplina)
+// @@protoc_insertion_point(message_clear_start:sd.Disciplina)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -964,7 +969,7 @@ const char* Disciplina::_InternalParse(const char* begin, const char* end, void*
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("Disciplina.codigo");
+        ctx->extra_parse_data().SetFieldName("sd.Disciplina.codigo");
         object = msg->mutable_codigo();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
           parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
@@ -980,7 +985,7 @@ const char* Disciplina::_InternalParse(const char* begin, const char* end, void*
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("Disciplina.nome");
+        ctx->extra_parse_data().SetFieldName("sd.Disciplina.nome");
         object = msg->mutable_nome();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
           parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
@@ -996,7 +1001,7 @@ const char* Disciplina::_InternalParse(const char* begin, const char* end, void*
         if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("Disciplina.professor");
+        ctx->extra_parse_data().SetFieldName("sd.Disciplina.professor");
         object = msg->mutable_professor();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
           parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
@@ -1007,12 +1012,12 @@ const char* Disciplina::_InternalParse(const char* begin, const char* end, void*
         ptr += size;
         break;
       }
-      // .Curso curso = 4;
+      // .sd.Curso curso = 4;
       case 4: {
         if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Curso::_InternalParse;
+        parser_till_end = ::sd::Curso::_InternalParse;
         object = msg->mutable_curso();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -1048,7 +1053,7 @@ bool Disciplina::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Disciplina)
+  // @@protoc_insertion_point(parse_start:sd.Disciplina)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -1062,7 +1067,7 @@ bool Disciplina::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->codigo().data(), static_cast<int>(this->codigo().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "Disciplina.codigo"));
+            "sd.Disciplina.codigo"));
         } else {
           goto handle_unusual;
         }
@@ -1077,7 +1082,7 @@ bool Disciplina::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->nome().data(), static_cast<int>(this->nome().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "Disciplina.nome"));
+            "sd.Disciplina.nome"));
         } else {
           goto handle_unusual;
         }
@@ -1092,14 +1097,14 @@ bool Disciplina::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->professor().data(), static_cast<int>(this->professor().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "Disciplina.professor"));
+            "sd.Disciplina.professor"));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // .Curso curso = 4;
+      // .sd.Curso curso = 4;
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -1122,10 +1127,10 @@ bool Disciplina::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:Disciplina)
+  // @@protoc_insertion_point(parse_success:sd.Disciplina)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Disciplina)
+  // @@protoc_insertion_point(parse_failure:sd.Disciplina)
   return false;
 #undef DO_
 }
@@ -1133,7 +1138,7 @@ failure:
 
 void Disciplina::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Disciplina)
+  // @@protoc_insertion_point(serialize_start:sd.Disciplina)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1142,7 +1147,7 @@ void Disciplina::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->codigo().data(), static_cast<int>(this->codigo().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Disciplina.codigo");
+      "sd.Disciplina.codigo");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->codigo(), output);
   }
@@ -1152,7 +1157,7 @@ void Disciplina::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->nome().data(), static_cast<int>(this->nome().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Disciplina.nome");
+      "sd.Disciplina.nome");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->nome(), output);
   }
@@ -1162,12 +1167,12 @@ void Disciplina::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->professor().data(), static_cast<int>(this->professor().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Disciplina.professor");
+      "sd.Disciplina.professor");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->professor(), output);
   }
 
-  // .Curso curso = 4;
+  // .sd.Curso curso = 4;
   if (this->has_curso()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, HasBitSetters::curso(this), output);
@@ -1177,12 +1182,12 @@ void Disciplina::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:Disciplina)
+  // @@protoc_insertion_point(serialize_end:sd.Disciplina)
 }
 
 ::google::protobuf::uint8* Disciplina::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Disciplina)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.Disciplina)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1191,7 +1196,7 @@ void Disciplina::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->codigo().data(), static_cast<int>(this->codigo().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Disciplina.codigo");
+      "sd.Disciplina.codigo");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->codigo(), target);
@@ -1202,7 +1207,7 @@ void Disciplina::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->nome().data(), static_cast<int>(this->nome().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Disciplina.nome");
+      "sd.Disciplina.nome");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->nome(), target);
@@ -1213,13 +1218,13 @@ void Disciplina::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->professor().data(), static_cast<int>(this->professor().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Disciplina.professor");
+      "sd.Disciplina.professor");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->professor(), target);
   }
 
-  // .Curso curso = 4;
+  // .sd.Curso curso = 4;
   if (this->has_curso()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -1230,12 +1235,12 @@ void Disciplina::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Disciplina)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.Disciplina)
   return target;
 }
 
 size_t Disciplina::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Disciplina)
+// @@protoc_insertion_point(message_byte_size_start:sd.Disciplina)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1268,7 +1273,7 @@ size_t Disciplina::ByteSizeLong() const {
         this->professor());
   }
 
-  // .Curso curso = 4;
+  // .sd.Curso curso = 4;
   if (this->has_curso()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -1281,22 +1286,22 @@ size_t Disciplina::ByteSizeLong() const {
 }
 
 void Disciplina::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Disciplina)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.Disciplina)
   GOOGLE_DCHECK_NE(&from, this);
   const Disciplina* source =
       ::google::protobuf::DynamicCastToGenerated<Disciplina>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Disciplina)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.Disciplina)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Disciplina)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.Disciplina)
     MergeFrom(*source);
   }
 }
 
 void Disciplina::MergeFrom(const Disciplina& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Disciplina)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.Disciplina)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1315,19 +1320,19 @@ void Disciplina::MergeFrom(const Disciplina& from) {
     professor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.professor_);
   }
   if (from.has_curso()) {
-    mutable_curso()->::Curso::MergeFrom(from.curso());
+    mutable_curso()->::sd::Curso::MergeFrom(from.curso());
   }
 }
 
 void Disciplina::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Disciplina)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.Disciplina)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Disciplina::CopyFrom(const Disciplina& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Disciplina)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.Disciplina)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1362,15 +1367,15 @@ void Disciplina::InternalSwap(Disciplina* other) {
 // ===================================================================
 
 void Aluno::InitAsDefaultInstance() {
-  ::_Aluno_default_instance_._instance.get_mutable()->curso_ = const_cast< ::Curso*>(
-      ::Curso::internal_default_instance());
+  ::sd::_Aluno_default_instance_._instance.get_mutable()->curso_ = const_cast< ::sd::Curso*>(
+      ::sd::Curso::internal_default_instance());
 }
 class Aluno::HasBitSetters {
  public:
-  static const ::Curso& curso(const Aluno* msg);
+  static const ::sd::Curso& curso(const Aluno* msg);
 };
 
-const ::Curso&
+const ::sd::Curso&
 Aluno::HasBitSetters::curso(const Aluno* msg) {
   return *msg->curso_;
 }
@@ -1384,7 +1389,7 @@ const int Aluno::kCursoFieldNumber;
 Aluno::Aluno()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Aluno)
+  // @@protoc_insertion_point(constructor:sd.Aluno)
 }
 Aluno::Aluno(const Aluno& from)
   : ::google::protobuf::Message(),
@@ -1395,14 +1400,14 @@ Aluno::Aluno(const Aluno& from)
     nome_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.nome_);
   }
   if (from.has_curso()) {
-    curso_ = new ::Curso(*from.curso_);
+    curso_ = new ::sd::Curso(*from.curso_);
   } else {
     curso_ = nullptr;
   }
   ::memcpy(&ra_, &from.ra_,
     static_cast<size_t>(reinterpret_cast<char*>(&periodo_) -
     reinterpret_cast<char*>(&ra_)) + sizeof(periodo_));
-  // @@protoc_insertion_point(copy_constructor:Aluno)
+  // @@protoc_insertion_point(copy_constructor:sd.Aluno)
 }
 
 void Aluno::SharedCtor() {
@@ -1415,7 +1420,7 @@ void Aluno::SharedCtor() {
 }
 
 Aluno::~Aluno() {
-  // @@protoc_insertion_point(destructor:Aluno)
+  // @@protoc_insertion_point(destructor:sd.Aluno)
   SharedDtor();
 }
 
@@ -1434,7 +1439,7 @@ const Aluno& Aluno::default_instance() {
 
 
 void Aluno::Clear() {
-// @@protoc_insertion_point(message_clear_start:Aluno)
+// @@protoc_insertion_point(message_clear_start:sd.Aluno)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1475,7 +1480,7 @@ const char* Aluno::_InternalParse(const char* begin, const char* end, void* obje
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("Aluno.nome");
+        ctx->extra_parse_data().SetFieldName("sd.Aluno.nome");
         object = msg->mutable_nome();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
           parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
@@ -1493,12 +1498,12 @@ const char* Aluno::_InternalParse(const char* begin, const char* end, void* obje
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .Curso curso = 4;
+      // .sd.Curso curso = 4;
       case 4: {
         if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Curso::_InternalParse;
+        parser_till_end = ::sd::Curso::_InternalParse;
         object = msg->mutable_curso();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -1534,7 +1539,7 @@ bool Aluno::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Aluno)
+  // @@protoc_insertion_point(parse_start:sd.Aluno)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -1561,7 +1566,7 @@ bool Aluno::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->nome().data(), static_cast<int>(this->nome().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "Aluno.nome"));
+            "sd.Aluno.nome"));
         } else {
           goto handle_unusual;
         }
@@ -1581,7 +1586,7 @@ bool Aluno::MergePartialFromCodedStream(
         break;
       }
 
-      // .Curso curso = 4;
+      // .sd.Curso curso = 4;
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -1604,10 +1609,10 @@ bool Aluno::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:Aluno)
+  // @@protoc_insertion_point(parse_success:sd.Aluno)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Aluno)
+  // @@protoc_insertion_point(parse_failure:sd.Aluno)
   return false;
 #undef DO_
 }
@@ -1615,7 +1620,7 @@ failure:
 
 void Aluno::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Aluno)
+  // @@protoc_insertion_point(serialize_start:sd.Aluno)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1629,7 +1634,7 @@ void Aluno::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->nome().data(), static_cast<int>(this->nome().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Aluno.nome");
+      "sd.Aluno.nome");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->nome(), output);
   }
@@ -1639,7 +1644,7 @@ void Aluno::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->periodo(), output);
   }
 
-  // .Curso curso = 4;
+  // .sd.Curso curso = 4;
   if (this->has_curso()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, HasBitSetters::curso(this), output);
@@ -1649,12 +1654,12 @@ void Aluno::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:Aluno)
+  // @@protoc_insertion_point(serialize_end:sd.Aluno)
 }
 
 ::google::protobuf::uint8* Aluno::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Aluno)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.Aluno)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1668,7 +1673,7 @@ void Aluno::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->nome().data(), static_cast<int>(this->nome().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "Aluno.nome");
+      "sd.Aluno.nome");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->nome(), target);
@@ -1679,7 +1684,7 @@ void Aluno::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->periodo(), target);
   }
 
-  // .Curso curso = 4;
+  // .sd.Curso curso = 4;
   if (this->has_curso()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -1690,12 +1695,12 @@ void Aluno::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Aluno)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.Aluno)
   return target;
 }
 
 size_t Aluno::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Aluno)
+// @@protoc_insertion_point(message_byte_size_start:sd.Aluno)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1714,7 +1719,7 @@ size_t Aluno::ByteSizeLong() const {
         this->nome());
   }
 
-  // .Curso curso = 4;
+  // .sd.Curso curso = 4;
   if (this->has_curso()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -1741,22 +1746,22 @@ size_t Aluno::ByteSizeLong() const {
 }
 
 void Aluno::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Aluno)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.Aluno)
   GOOGLE_DCHECK_NE(&from, this);
   const Aluno* source =
       ::google::protobuf::DynamicCastToGenerated<Aluno>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Aluno)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.Aluno)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Aluno)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.Aluno)
     MergeFrom(*source);
   }
 }
 
 void Aluno::MergeFrom(const Aluno& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Aluno)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.Aluno)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1767,7 +1772,7 @@ void Aluno::MergeFrom(const Aluno& from) {
     nome_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.nome_);
   }
   if (from.has_curso()) {
-    mutable_curso()->::Curso::MergeFrom(from.curso());
+    mutable_curso()->::sd::Curso::MergeFrom(from.curso());
   }
   if (from.ra() != 0) {
     set_ra(from.ra());
@@ -1778,14 +1783,14 @@ void Aluno::MergeFrom(const Aluno& from) {
 }
 
 void Aluno::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Aluno)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.Aluno)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Aluno::CopyFrom(const Aluno& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Aluno)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.Aluno)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1818,22 +1823,22 @@ void Aluno::InternalSwap(Aluno* other) {
 // ===================================================================
 
 void Matricula::InitAsDefaultInstance() {
-  ::_Matricula_default_instance_._instance.get_mutable()->aluno_ = const_cast< ::Aluno*>(
-      ::Aluno::internal_default_instance());
-  ::_Matricula_default_instance_._instance.get_mutable()->disciplina_ = const_cast< ::Disciplina*>(
-      ::Disciplina::internal_default_instance());
+  ::sd::_Matricula_default_instance_._instance.get_mutable()->aluno_ = const_cast< ::sd::Aluno*>(
+      ::sd::Aluno::internal_default_instance());
+  ::sd::_Matricula_default_instance_._instance.get_mutable()->disciplina_ = const_cast< ::sd::Disciplina*>(
+      ::sd::Disciplina::internal_default_instance());
 }
 class Matricula::HasBitSetters {
  public:
-  static const ::Aluno& aluno(const Matricula* msg);
-  static const ::Disciplina& disciplina(const Matricula* msg);
+  static const ::sd::Aluno& aluno(const Matricula* msg);
+  static const ::sd::Disciplina& disciplina(const Matricula* msg);
 };
 
-const ::Aluno&
+const ::sd::Aluno&
 Matricula::HasBitSetters::aluno(const Matricula* msg) {
   return *msg->aluno_;
 }
-const ::Disciplina&
+const ::sd::Disciplina&
 Matricula::HasBitSetters::disciplina(const Matricula* msg) {
   return *msg->disciplina_;
 }
@@ -1849,26 +1854,26 @@ const int Matricula::kFaltasFieldNumber;
 Matricula::Matricula()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Matricula)
+  // @@protoc_insertion_point(constructor:sd.Matricula)
 }
 Matricula::Matricula(const Matricula& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_aluno()) {
-    aluno_ = new ::Aluno(*from.aluno_);
+    aluno_ = new ::sd::Aluno(*from.aluno_);
   } else {
     aluno_ = nullptr;
   }
   if (from.has_disciplina()) {
-    disciplina_ = new ::Disciplina(*from.disciplina_);
+    disciplina_ = new ::sd::Disciplina(*from.disciplina_);
   } else {
     disciplina_ = nullptr;
   }
   ::memcpy(&ano_, &from.ano_,
     static_cast<size_t>(reinterpret_cast<char*>(&faltas_) -
     reinterpret_cast<char*>(&ano_)) + sizeof(faltas_));
-  // @@protoc_insertion_point(copy_constructor:Matricula)
+  // @@protoc_insertion_point(copy_constructor:sd.Matricula)
 }
 
 void Matricula::SharedCtor() {
@@ -1880,7 +1885,7 @@ void Matricula::SharedCtor() {
 }
 
 Matricula::~Matricula() {
-  // @@protoc_insertion_point(destructor:Matricula)
+  // @@protoc_insertion_point(destructor:sd.Matricula)
   SharedDtor();
 }
 
@@ -1899,7 +1904,7 @@ const Matricula& Matricula::default_instance() {
 
 
 void Matricula::Clear() {
-// @@protoc_insertion_point(message_clear_start:Matricula)
+// @@protoc_insertion_point(message_clear_start:sd.Matricula)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1931,12 +1936,12 @@ const char* Matricula::_InternalParse(const char* begin, const char* end, void* 
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .Aluno aluno = 1;
+      // .sd.Aluno aluno = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Aluno::_InternalParse;
+        parser_till_end = ::sd::Aluno::_InternalParse;
         object = msg->mutable_aluno();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -1944,12 +1949,12 @@ const char* Matricula::_InternalParse(const char* begin, const char* end, void* 
             {parser_till_end, object}, ptr - size, ptr));
         break;
       }
-      // .Disciplina disciplina = 2;
+      // .sd.Disciplina disciplina = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Disciplina::_InternalParse;
+        parser_till_end = ::sd::Disciplina::_InternalParse;
         object = msg->mutable_disciplina();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -2009,13 +2014,13 @@ bool Matricula::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Matricula)
+  // @@protoc_insertion_point(parse_start:sd.Matricula)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Aluno aluno = 1;
+      // .sd.Aluno aluno = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -2026,7 +2031,7 @@ bool Matricula::MergePartialFromCodedStream(
         break;
       }
 
-      // .Disciplina disciplina = 2;
+      // .sd.Disciplina disciplina = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -2101,10 +2106,10 @@ bool Matricula::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:Matricula)
+  // @@protoc_insertion_point(parse_success:sd.Matricula)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Matricula)
+  // @@protoc_insertion_point(parse_failure:sd.Matricula)
   return false;
 #undef DO_
 }
@@ -2112,17 +2117,17 @@ failure:
 
 void Matricula::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Matricula)
+  // @@protoc_insertion_point(serialize_start:sd.Matricula)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Aluno aluno = 1;
+  // .sd.Aluno aluno = 1;
   if (this->has_aluno()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::aluno(this), output);
   }
 
-  // .Disciplina disciplina = 2;
+  // .sd.Disciplina disciplina = 2;
   if (this->has_disciplina()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::disciplina(this), output);
@@ -2152,23 +2157,23 @@ void Matricula::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:Matricula)
+  // @@protoc_insertion_point(serialize_end:sd.Matricula)
 }
 
 ::google::protobuf::uint8* Matricula::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Matricula)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.Matricula)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Aluno aluno = 1;
+  // .sd.Aluno aluno = 1;
   if (this->has_aluno()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         1, HasBitSetters::aluno(this), target);
   }
 
-  // .Disciplina disciplina = 2;
+  // .sd.Disciplina disciplina = 2;
   if (this->has_disciplina()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -2199,12 +2204,12 @@ void Matricula::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Matricula)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.Matricula)
   return target;
 }
 
 size_t Matricula::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Matricula)
+// @@protoc_insertion_point(message_byte_size_start:sd.Matricula)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2216,14 +2221,14 @@ size_t Matricula::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Aluno aluno = 1;
+  // .sd.Aluno aluno = 1;
   if (this->has_aluno()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *aluno_);
   }
 
-  // .Disciplina disciplina = 2;
+  // .sd.Disciplina disciplina = 2;
   if (this->has_disciplina()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -2262,32 +2267,32 @@ size_t Matricula::ByteSizeLong() const {
 }
 
 void Matricula::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Matricula)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.Matricula)
   GOOGLE_DCHECK_NE(&from, this);
   const Matricula* source =
       ::google::protobuf::DynamicCastToGenerated<Matricula>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Matricula)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.Matricula)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Matricula)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.Matricula)
     MergeFrom(*source);
   }
 }
 
 void Matricula::MergeFrom(const Matricula& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Matricula)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.Matricula)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_aluno()) {
-    mutable_aluno()->::Aluno::MergeFrom(from.aluno());
+    mutable_aluno()->::sd::Aluno::MergeFrom(from.aluno());
   }
   if (from.has_disciplina()) {
-    mutable_disciplina()->::Disciplina::MergeFrom(from.disciplina());
+    mutable_disciplina()->::sd::Disciplina::MergeFrom(from.disciplina());
   }
   if (from.ano() != 0) {
     set_ano(from.ano());
@@ -2304,14 +2309,14 @@ void Matricula::MergeFrom(const Matricula& from) {
 }
 
 void Matricula::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Matricula)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.Matricula)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Matricula::CopyFrom(const Matricula& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Matricula)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.Matricula)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2358,7 +2363,7 @@ const int ResponseStatus::kMessageFieldNumber;
 ResponseStatus::ResponseStatus()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ResponseStatus)
+  // @@protoc_insertion_point(constructor:sd.ResponseStatus)
 }
 ResponseStatus::ResponseStatus(const ResponseStatus& from)
   : ::google::protobuf::Message(),
@@ -2369,7 +2374,7 @@ ResponseStatus::ResponseStatus(const ResponseStatus& from)
     message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
   }
   statuscode_ = from.statuscode_;
-  // @@protoc_insertion_point(copy_constructor:ResponseStatus)
+  // @@protoc_insertion_point(copy_constructor:sd.ResponseStatus)
 }
 
 void ResponseStatus::SharedCtor() {
@@ -2380,7 +2385,7 @@ void ResponseStatus::SharedCtor() {
 }
 
 ResponseStatus::~ResponseStatus() {
-  // @@protoc_insertion_point(destructor:ResponseStatus)
+  // @@protoc_insertion_point(destructor:sd.ResponseStatus)
   SharedDtor();
 }
 
@@ -2398,7 +2403,7 @@ const ResponseStatus& ResponseStatus::default_instance() {
 
 
 void ResponseStatus::Clear() {
-// @@protoc_insertion_point(message_clear_start:ResponseStatus)
+// @@protoc_insertion_point(message_clear_start:sd.ResponseStatus)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2433,7 +2438,7 @@ const char* ResponseStatus::_InternalParse(const char* begin, const char* end, v
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("ResponseStatus.message");
+        ctx->extra_parse_data().SetFieldName("sd.ResponseStatus.message");
         object = msg->mutable_message();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
           parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
@@ -2472,7 +2477,7 @@ bool ResponseStatus::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ResponseStatus)
+  // @@protoc_insertion_point(parse_start:sd.ResponseStatus)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -2499,7 +2504,7 @@ bool ResponseStatus::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->message().data(), static_cast<int>(this->message().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "ResponseStatus.message"));
+            "sd.ResponseStatus.message"));
         } else {
           goto handle_unusual;
         }
@@ -2518,10 +2523,10 @@ bool ResponseStatus::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:ResponseStatus)
+  // @@protoc_insertion_point(parse_success:sd.ResponseStatus)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:ResponseStatus)
+  // @@protoc_insertion_point(parse_failure:sd.ResponseStatus)
   return false;
 #undef DO_
 }
@@ -2529,7 +2534,7 @@ failure:
 
 void ResponseStatus::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ResponseStatus)
+  // @@protoc_insertion_point(serialize_start:sd.ResponseStatus)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2543,7 +2548,7 @@ void ResponseStatus::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->message().data(), static_cast<int>(this->message().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "ResponseStatus.message");
+      "sd.ResponseStatus.message");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->message(), output);
   }
@@ -2552,12 +2557,12 @@ void ResponseStatus::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:ResponseStatus)
+  // @@protoc_insertion_point(serialize_end:sd.ResponseStatus)
 }
 
 ::google::protobuf::uint8* ResponseStatus::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ResponseStatus)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.ResponseStatus)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2571,7 +2576,7 @@ void ResponseStatus::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->message().data(), static_cast<int>(this->message().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "ResponseStatus.message");
+      "sd.ResponseStatus.message");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->message(), target);
@@ -2581,12 +2586,12 @@ void ResponseStatus::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:ResponseStatus)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.ResponseStatus)
   return target;
 }
 
 size_t ResponseStatus::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ResponseStatus)
+// @@protoc_insertion_point(message_byte_size_start:sd.ResponseStatus)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2618,22 +2623,22 @@ size_t ResponseStatus::ByteSizeLong() const {
 }
 
 void ResponseStatus::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ResponseStatus)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.ResponseStatus)
   GOOGLE_DCHECK_NE(&from, this);
   const ResponseStatus* source =
       ::google::protobuf::DynamicCastToGenerated<ResponseStatus>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ResponseStatus)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.ResponseStatus)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ResponseStatus)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.ResponseStatus)
     MergeFrom(*source);
   }
 }
 
 void ResponseStatus::MergeFrom(const ResponseStatus& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ResponseStatus)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.ResponseStatus)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -2649,14 +2654,14 @@ void ResponseStatus::MergeFrom(const ResponseStatus& from) {
 }
 
 void ResponseStatus::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ResponseStatus)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.ResponseStatus)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void ResponseStatus::CopyFrom(const ResponseStatus& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ResponseStatus)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.ResponseStatus)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2687,15 +2692,15 @@ void ResponseStatus::InternalSwap(ResponseStatus* other) {
 // ===================================================================
 
 void NotaRequest::InitAsDefaultInstance() {
-  ::_NotaRequest_default_instance_._instance.get_mutable()->matricula_ = const_cast< ::Matricula*>(
-      ::Matricula::internal_default_instance());
+  ::sd::_NotaRequest_default_instance_._instance.get_mutable()->matricula_ = const_cast< ::sd::Matricula*>(
+      ::sd::Matricula::internal_default_instance());
 }
 class NotaRequest::HasBitSetters {
  public:
-  static const ::Matricula& matricula(const NotaRequest* msg);
+  static const ::sd::Matricula& matricula(const NotaRequest* msg);
 };
 
-const ::Matricula&
+const ::sd::Matricula&
 NotaRequest::HasBitSetters::matricula(const NotaRequest* msg) {
   return *msg->matricula_;
 }
@@ -2707,19 +2712,19 @@ const int NotaRequest::kMatriculaFieldNumber;
 NotaRequest::NotaRequest()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:NotaRequest)
+  // @@protoc_insertion_point(constructor:sd.NotaRequest)
 }
 NotaRequest::NotaRequest(const NotaRequest& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_matricula()) {
-    matricula_ = new ::Matricula(*from.matricula_);
+    matricula_ = new ::sd::Matricula(*from.matricula_);
   } else {
     matricula_ = nullptr;
   }
   type_ = from.type_;
-  // @@protoc_insertion_point(copy_constructor:NotaRequest)
+  // @@protoc_insertion_point(copy_constructor:sd.NotaRequest)
 }
 
 void NotaRequest::SharedCtor() {
@@ -2731,7 +2736,7 @@ void NotaRequest::SharedCtor() {
 }
 
 NotaRequest::~NotaRequest() {
-  // @@protoc_insertion_point(destructor:NotaRequest)
+  // @@protoc_insertion_point(destructor:sd.NotaRequest)
   SharedDtor();
 }
 
@@ -2749,7 +2754,7 @@ const NotaRequest& NotaRequest::default_instance() {
 
 
 void NotaRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:NotaRequest)
+// @@protoc_insertion_point(message_clear_start:sd.NotaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2775,20 +2780,20 @@ const char* NotaRequest::_InternalParse(const char* begin, const char* end, void
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .NotaRequest.OperationType type = 1;
+      // .sd.NotaRequest.OperationType type = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
         ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
-        msg->set_type(static_cast<::NotaRequest_OperationType>(val));
+        msg->set_type(static_cast<::sd::NotaRequest_OperationType>(val));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .Matricula matricula = 2;
+      // .sd.Matricula matricula = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Matricula::_InternalParse;
+        parser_till_end = ::sd::Matricula::_InternalParse;
         object = msg->mutable_matricula();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -2820,27 +2825,27 @@ bool NotaRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:NotaRequest)
+  // @@protoc_insertion_point(parse_start:sd.NotaRequest)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .NotaRequest.OperationType type = 1;
+      // .sd.NotaRequest.OperationType type = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_type(static_cast< ::NotaRequest_OperationType >(value));
+          set_type(static_cast< ::sd::NotaRequest_OperationType >(value));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // .Matricula matricula = 2;
+      // .sd.Matricula matricula = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -2863,10 +2868,10 @@ bool NotaRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:NotaRequest)
+  // @@protoc_insertion_point(parse_success:sd.NotaRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:NotaRequest)
+  // @@protoc_insertion_point(parse_failure:sd.NotaRequest)
   return false;
 #undef DO_
 }
@@ -2874,17 +2879,17 @@ failure:
 
 void NotaRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:NotaRequest)
+  // @@protoc_insertion_point(serialize_start:sd.NotaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .NotaRequest.OperationType type = 1;
+  // .sd.NotaRequest.OperationType type = 1;
   if (this->type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->type(), output);
   }
 
-  // .Matricula matricula = 2;
+  // .sd.Matricula matricula = 2;
   if (this->has_matricula()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::matricula(this), output);
@@ -2894,22 +2899,22 @@ void NotaRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:NotaRequest)
+  // @@protoc_insertion_point(serialize_end:sd.NotaRequest)
 }
 
 ::google::protobuf::uint8* NotaRequest::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:NotaRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.NotaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .NotaRequest.OperationType type = 1;
+  // .sd.NotaRequest.OperationType type = 1;
   if (this->type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->type(), target);
   }
 
-  // .Matricula matricula = 2;
+  // .sd.Matricula matricula = 2;
   if (this->has_matricula()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -2920,12 +2925,12 @@ void NotaRequest::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:NotaRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.NotaRequest)
   return target;
 }
 
 size_t NotaRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:NotaRequest)
+// @@protoc_insertion_point(message_byte_size_start:sd.NotaRequest)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2937,14 +2942,14 @@ size_t NotaRequest::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Matricula matricula = 2;
+  // .sd.Matricula matricula = 2;
   if (this->has_matricula()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *matricula_);
   }
 
-  // .NotaRequest.OperationType type = 1;
+  // .sd.NotaRequest.OperationType type = 1;
   if (this->type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
@@ -2956,29 +2961,29 @@ size_t NotaRequest::ByteSizeLong() const {
 }
 
 void NotaRequest::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:NotaRequest)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.NotaRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const NotaRequest* source =
       ::google::protobuf::DynamicCastToGenerated<NotaRequest>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:NotaRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.NotaRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:NotaRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.NotaRequest)
     MergeFrom(*source);
   }
 }
 
 void NotaRequest::MergeFrom(const NotaRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:NotaRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.NotaRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_matricula()) {
-    mutable_matricula()->::Matricula::MergeFrom(from.matricula());
+    mutable_matricula()->::sd::Matricula::MergeFrom(from.matricula());
   }
   if (from.type() != 0) {
     set_type(from.type());
@@ -2986,14 +2991,14 @@ void NotaRequest::MergeFrom(const NotaRequest& from) {
 }
 
 void NotaRequest::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:NotaRequest)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.NotaRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void NotaRequest::CopyFrom(const NotaRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:NotaRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.NotaRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3023,22 +3028,22 @@ void NotaRequest::InternalSwap(NotaRequest* other) {
 // ===================================================================
 
 void NotaResponse::InitAsDefaultInstance() {
-  ::_NotaResponse_default_instance_._instance.get_mutable()->matricula_ = const_cast< ::Matricula*>(
-      ::Matricula::internal_default_instance());
-  ::_NotaResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::ResponseStatus*>(
-      ::ResponseStatus::internal_default_instance());
+  ::sd::_NotaResponse_default_instance_._instance.get_mutable()->matricula_ = const_cast< ::sd::Matricula*>(
+      ::sd::Matricula::internal_default_instance());
+  ::sd::_NotaResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::sd::ResponseStatus*>(
+      ::sd::ResponseStatus::internal_default_instance());
 }
 class NotaResponse::HasBitSetters {
  public:
-  static const ::Matricula& matricula(const NotaResponse* msg);
-  static const ::ResponseStatus& status(const NotaResponse* msg);
+  static const ::sd::Matricula& matricula(const NotaResponse* msg);
+  static const ::sd::ResponseStatus& status(const NotaResponse* msg);
 };
 
-const ::Matricula&
+const ::sd::Matricula&
 NotaResponse::HasBitSetters::matricula(const NotaResponse* msg) {
   return *msg->matricula_;
 }
-const ::ResponseStatus&
+const ::sd::ResponseStatus&
 NotaResponse::HasBitSetters::status(const NotaResponse* msg) {
   return *msg->status_;
 }
@@ -3050,23 +3055,23 @@ const int NotaResponse::kStatusFieldNumber;
 NotaResponse::NotaResponse()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:NotaResponse)
+  // @@protoc_insertion_point(constructor:sd.NotaResponse)
 }
 NotaResponse::NotaResponse(const NotaResponse& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_matricula()) {
-    matricula_ = new ::Matricula(*from.matricula_);
+    matricula_ = new ::sd::Matricula(*from.matricula_);
   } else {
     matricula_ = nullptr;
   }
   if (from.has_status()) {
-    status_ = new ::ResponseStatus(*from.status_);
+    status_ = new ::sd::ResponseStatus(*from.status_);
   } else {
     status_ = nullptr;
   }
-  // @@protoc_insertion_point(copy_constructor:NotaResponse)
+  // @@protoc_insertion_point(copy_constructor:sd.NotaResponse)
 }
 
 void NotaResponse::SharedCtor() {
@@ -3078,7 +3083,7 @@ void NotaResponse::SharedCtor() {
 }
 
 NotaResponse::~NotaResponse() {
-  // @@protoc_insertion_point(destructor:NotaResponse)
+  // @@protoc_insertion_point(destructor:sd.NotaResponse)
   SharedDtor();
 }
 
@@ -3097,7 +3102,7 @@ const NotaResponse& NotaResponse::default_instance() {
 
 
 void NotaResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:NotaResponse)
+// @@protoc_insertion_point(message_clear_start:sd.NotaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3126,12 +3131,12 @@ const char* NotaResponse::_InternalParse(const char* begin, const char* end, voi
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .Matricula matricula = 1;
+      // .sd.Matricula matricula = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Matricula::_InternalParse;
+        parser_till_end = ::sd::Matricula::_InternalParse;
         object = msg->mutable_matricula();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -3139,12 +3144,12 @@ const char* NotaResponse::_InternalParse(const char* begin, const char* end, voi
             {parser_till_end, object}, ptr - size, ptr));
         break;
       }
-      // .ResponseStatus status = 2;
+      // .sd.ResponseStatus status = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::ResponseStatus::_InternalParse;
+        parser_till_end = ::sd::ResponseStatus::_InternalParse;
         object = msg->mutable_status();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -3176,13 +3181,13 @@ bool NotaResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:NotaResponse)
+  // @@protoc_insertion_point(parse_start:sd.NotaResponse)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Matricula matricula = 1;
+      // .sd.Matricula matricula = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -3193,7 +3198,7 @@ bool NotaResponse::MergePartialFromCodedStream(
         break;
       }
 
-      // .ResponseStatus status = 2;
+      // .sd.ResponseStatus status = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -3216,10 +3221,10 @@ bool NotaResponse::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:NotaResponse)
+  // @@protoc_insertion_point(parse_success:sd.NotaResponse)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:NotaResponse)
+  // @@protoc_insertion_point(parse_failure:sd.NotaResponse)
   return false;
 #undef DO_
 }
@@ -3227,17 +3232,17 @@ failure:
 
 void NotaResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:NotaResponse)
+  // @@protoc_insertion_point(serialize_start:sd.NotaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Matricula matricula = 1;
+  // .sd.Matricula matricula = 1;
   if (this->has_matricula()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::matricula(this), output);
   }
 
-  // .ResponseStatus status = 2;
+  // .sd.ResponseStatus status = 2;
   if (this->has_status()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::status(this), output);
@@ -3247,23 +3252,23 @@ void NotaResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:NotaResponse)
+  // @@protoc_insertion_point(serialize_end:sd.NotaResponse)
 }
 
 ::google::protobuf::uint8* NotaResponse::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:NotaResponse)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.NotaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Matricula matricula = 1;
+  // .sd.Matricula matricula = 1;
   if (this->has_matricula()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         1, HasBitSetters::matricula(this), target);
   }
 
-  // .ResponseStatus status = 2;
+  // .sd.ResponseStatus status = 2;
   if (this->has_status()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -3274,12 +3279,12 @@ void NotaResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:NotaResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.NotaResponse)
   return target;
 }
 
 size_t NotaResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:NotaResponse)
+// @@protoc_insertion_point(message_byte_size_start:sd.NotaResponse)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3291,14 +3296,14 @@ size_t NotaResponse::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Matricula matricula = 1;
+  // .sd.Matricula matricula = 1;
   if (this->has_matricula()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *matricula_);
   }
 
-  // .ResponseStatus status = 2;
+  // .sd.ResponseStatus status = 2;
   if (this->has_status()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -3311,44 +3316,44 @@ size_t NotaResponse::ByteSizeLong() const {
 }
 
 void NotaResponse::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:NotaResponse)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.NotaResponse)
   GOOGLE_DCHECK_NE(&from, this);
   const NotaResponse* source =
       ::google::protobuf::DynamicCastToGenerated<NotaResponse>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:NotaResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.NotaResponse)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:NotaResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.NotaResponse)
     MergeFrom(*source);
   }
 }
 
 void NotaResponse::MergeFrom(const NotaResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:NotaResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.NotaResponse)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_matricula()) {
-    mutable_matricula()->::Matricula::MergeFrom(from.matricula());
+    mutable_matricula()->::sd::Matricula::MergeFrom(from.matricula());
   }
   if (from.has_status()) {
-    mutable_status()->::ResponseStatus::MergeFrom(from.status());
+    mutable_status()->::sd::ResponseStatus::MergeFrom(from.status());
   }
 }
 
 void NotaResponse::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:NotaResponse)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.NotaResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void NotaResponse::CopyFrom(const NotaResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:NotaResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.NotaResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3378,15 +3383,15 @@ void NotaResponse::InternalSwap(NotaResponse* other) {
 // ===================================================================
 
 void MatriculaRequest::InitAsDefaultInstance() {
-  ::_MatriculaRequest_default_instance_._instance.get_mutable()->disciplina_ = const_cast< ::Disciplina*>(
-      ::Disciplina::internal_default_instance());
+  ::sd::_MatriculaRequest_default_instance_._instance.get_mutable()->disciplina_ = const_cast< ::sd::Disciplina*>(
+      ::sd::Disciplina::internal_default_instance());
 }
 class MatriculaRequest::HasBitSetters {
  public:
-  static const ::Disciplina& disciplina(const MatriculaRequest* msg);
+  static const ::sd::Disciplina& disciplina(const MatriculaRequest* msg);
 };
 
-const ::Disciplina&
+const ::sd::Disciplina&
 MatriculaRequest::HasBitSetters::disciplina(const MatriculaRequest* msg) {
   return *msg->disciplina_;
 }
@@ -3399,21 +3404,21 @@ const int MatriculaRequest::kSemestreFieldNumber;
 MatriculaRequest::MatriculaRequest()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:MatriculaRequest)
+  // @@protoc_insertion_point(constructor:sd.MatriculaRequest)
 }
 MatriculaRequest::MatriculaRequest(const MatriculaRequest& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_disciplina()) {
-    disciplina_ = new ::Disciplina(*from.disciplina_);
+    disciplina_ = new ::sd::Disciplina(*from.disciplina_);
   } else {
     disciplina_ = nullptr;
   }
   ::memcpy(&ano_, &from.ano_,
     static_cast<size_t>(reinterpret_cast<char*>(&semestre_) -
     reinterpret_cast<char*>(&ano_)) + sizeof(semestre_));
-  // @@protoc_insertion_point(copy_constructor:MatriculaRequest)
+  // @@protoc_insertion_point(copy_constructor:sd.MatriculaRequest)
 }
 
 void MatriculaRequest::SharedCtor() {
@@ -3425,7 +3430,7 @@ void MatriculaRequest::SharedCtor() {
 }
 
 MatriculaRequest::~MatriculaRequest() {
-  // @@protoc_insertion_point(destructor:MatriculaRequest)
+  // @@protoc_insertion_point(destructor:sd.MatriculaRequest)
   SharedDtor();
 }
 
@@ -3443,7 +3448,7 @@ const MatriculaRequest& MatriculaRequest::default_instance() {
 
 
 void MatriculaRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:MatriculaRequest)
+// @@protoc_insertion_point(message_clear_start:sd.MatriculaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3471,12 +3476,12 @@ const char* MatriculaRequest::_InternalParse(const char* begin, const char* end,
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .Disciplina disciplina = 1;
+      // .sd.Disciplina disciplina = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Disciplina::_InternalParse;
+        parser_till_end = ::sd::Disciplina::_InternalParse;
         object = msg->mutable_disciplina();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -3522,13 +3527,13 @@ bool MatriculaRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:MatriculaRequest)
+  // @@protoc_insertion_point(parse_start:sd.MatriculaRequest)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Disciplina disciplina = 1;
+      // .sd.Disciplina disciplina = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -3577,10 +3582,10 @@ bool MatriculaRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:MatriculaRequest)
+  // @@protoc_insertion_point(parse_success:sd.MatriculaRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:MatriculaRequest)
+  // @@protoc_insertion_point(parse_failure:sd.MatriculaRequest)
   return false;
 #undef DO_
 }
@@ -3588,11 +3593,11 @@ failure:
 
 void MatriculaRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:MatriculaRequest)
+  // @@protoc_insertion_point(serialize_start:sd.MatriculaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::disciplina(this), output);
@@ -3612,16 +3617,16 @@ void MatriculaRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:MatriculaRequest)
+  // @@protoc_insertion_point(serialize_end:sd.MatriculaRequest)
 }
 
 ::google::protobuf::uint8* MatriculaRequest::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MatriculaRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.MatriculaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -3642,12 +3647,12 @@ void MatriculaRequest::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MatriculaRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.MatriculaRequest)
   return target;
 }
 
 size_t MatriculaRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MatriculaRequest)
+// @@protoc_insertion_point(message_byte_size_start:sd.MatriculaRequest)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3659,7 +3664,7 @@ size_t MatriculaRequest::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -3686,29 +3691,29 @@ size_t MatriculaRequest::ByteSizeLong() const {
 }
 
 void MatriculaRequest::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MatriculaRequest)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.MatriculaRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const MatriculaRequest* source =
       ::google::protobuf::DynamicCastToGenerated<MatriculaRequest>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MatriculaRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.MatriculaRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MatriculaRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.MatriculaRequest)
     MergeFrom(*source);
   }
 }
 
 void MatriculaRequest::MergeFrom(const MatriculaRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MatriculaRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.MatriculaRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_disciplina()) {
-    mutable_disciplina()->::Disciplina::MergeFrom(from.disciplina());
+    mutable_disciplina()->::sd::Disciplina::MergeFrom(from.disciplina());
   }
   if (from.ano() != 0) {
     set_ano(from.ano());
@@ -3719,14 +3724,14 @@ void MatriculaRequest::MergeFrom(const MatriculaRequest& from) {
 }
 
 void MatriculaRequest::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MatriculaRequest)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.MatriculaRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MatriculaRequest::CopyFrom(const MatriculaRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MatriculaRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.MatriculaRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3757,22 +3762,22 @@ void MatriculaRequest::InternalSwap(MatriculaRequest* other) {
 // ===================================================================
 
 void MatriculaResponse::InitAsDefaultInstance() {
-  ::_MatriculaResponse_default_instance_._instance.get_mutable()->disciplina_ = const_cast< ::Disciplina*>(
-      ::Disciplina::internal_default_instance());
-  ::_MatriculaResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::ResponseStatus*>(
-      ::ResponseStatus::internal_default_instance());
+  ::sd::_MatriculaResponse_default_instance_._instance.get_mutable()->disciplina_ = const_cast< ::sd::Disciplina*>(
+      ::sd::Disciplina::internal_default_instance());
+  ::sd::_MatriculaResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::sd::ResponseStatus*>(
+      ::sd::ResponseStatus::internal_default_instance());
 }
 class MatriculaResponse::HasBitSetters {
  public:
-  static const ::Disciplina& disciplina(const MatriculaResponse* msg);
-  static const ::ResponseStatus& status(const MatriculaResponse* msg);
+  static const ::sd::Disciplina& disciplina(const MatriculaResponse* msg);
+  static const ::sd::ResponseStatus& status(const MatriculaResponse* msg);
 };
 
-const ::Disciplina&
+const ::sd::Disciplina&
 MatriculaResponse::HasBitSetters::disciplina(const MatriculaResponse* msg) {
   return *msg->disciplina_;
 }
-const ::ResponseStatus&
+const ::sd::ResponseStatus&
 MatriculaResponse::HasBitSetters::status(const MatriculaResponse* msg) {
   return *msg->status_;
 }
@@ -3785,7 +3790,7 @@ const int MatriculaResponse::kStatusFieldNumber;
 MatriculaResponse::MatriculaResponse()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:MatriculaResponse)
+  // @@protoc_insertion_point(constructor:sd.MatriculaResponse)
 }
 MatriculaResponse::MatriculaResponse(const MatriculaResponse& from)
   : ::google::protobuf::Message(),
@@ -3793,16 +3798,16 @@ MatriculaResponse::MatriculaResponse(const MatriculaResponse& from)
       matriculas_(from.matriculas_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_disciplina()) {
-    disciplina_ = new ::Disciplina(*from.disciplina_);
+    disciplina_ = new ::sd::Disciplina(*from.disciplina_);
   } else {
     disciplina_ = nullptr;
   }
   if (from.has_status()) {
-    status_ = new ::ResponseStatus(*from.status_);
+    status_ = new ::sd::ResponseStatus(*from.status_);
   } else {
     status_ = nullptr;
   }
-  // @@protoc_insertion_point(copy_constructor:MatriculaResponse)
+  // @@protoc_insertion_point(copy_constructor:sd.MatriculaResponse)
 }
 
 void MatriculaResponse::SharedCtor() {
@@ -3814,7 +3819,7 @@ void MatriculaResponse::SharedCtor() {
 }
 
 MatriculaResponse::~MatriculaResponse() {
-  // @@protoc_insertion_point(destructor:MatriculaResponse)
+  // @@protoc_insertion_point(destructor:sd.MatriculaResponse)
   SharedDtor();
 }
 
@@ -3833,7 +3838,7 @@ const MatriculaResponse& MatriculaResponse::default_instance() {
 
 
 void MatriculaResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:MatriculaResponse)
+// @@protoc_insertion_point(message_clear_start:sd.MatriculaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3863,12 +3868,12 @@ const char* MatriculaResponse::_InternalParse(const char* begin, const char* end
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .Disciplina disciplina = 1;
+      // .sd.Disciplina disciplina = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Disciplina::_InternalParse;
+        parser_till_end = ::sd::Disciplina::_InternalParse;
         object = msg->mutable_disciplina();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -3876,13 +3881,13 @@ const char* MatriculaResponse::_InternalParse(const char* begin, const char* end
             {parser_till_end, object}, ptr - size, ptr));
         break;
       }
-      // repeated .Matricula matriculas = 2;
+      // repeated .sd.Matricula matriculas = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         do {
           ptr = ::google::protobuf::io::ReadSize(ptr, &size);
           GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-          parser_till_end = ::Matricula::_InternalParse;
+          parser_till_end = ::sd::Matricula::_InternalParse;
           object = msg->add_matriculas();
           if (size > end - ptr) goto len_delim_till_end;
           ptr += size;
@@ -3892,12 +3897,12 @@ const char* MatriculaResponse::_InternalParse(const char* begin, const char* end
         } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 18 && (ptr += 1));
         break;
       }
-      // .ResponseStatus status = 3;
+      // .sd.ResponseStatus status = 3;
       case 3: {
         if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::ResponseStatus::_InternalParse;
+        parser_till_end = ::sd::ResponseStatus::_InternalParse;
         object = msg->mutable_status();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -3929,13 +3934,13 @@ bool MatriculaResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:MatriculaResponse)
+  // @@protoc_insertion_point(parse_start:sd.MatriculaResponse)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Disciplina disciplina = 1;
+      // .sd.Disciplina disciplina = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -3946,7 +3951,7 @@ bool MatriculaResponse::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .Matricula matriculas = 2;
+      // repeated .sd.Matricula matriculas = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -3957,7 +3962,7 @@ bool MatriculaResponse::MergePartialFromCodedStream(
         break;
       }
 
-      // .ResponseStatus status = 3;
+      // .sd.ResponseStatus status = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -3980,10 +3985,10 @@ bool MatriculaResponse::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:MatriculaResponse)
+  // @@protoc_insertion_point(parse_success:sd.MatriculaResponse)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:MatriculaResponse)
+  // @@protoc_insertion_point(parse_failure:sd.MatriculaResponse)
   return false;
 #undef DO_
 }
@@ -3991,17 +3996,17 @@ failure:
 
 void MatriculaResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:MatriculaResponse)
+  // @@protoc_insertion_point(serialize_start:sd.MatriculaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::disciplina(this), output);
   }
 
-  // repeated .Matricula matriculas = 2;
+  // repeated .sd.Matricula matriculas = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->matriculas_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
@@ -4010,7 +4015,7 @@ void MatriculaResponse::SerializeWithCachedSizes(
       output);
   }
 
-  // .ResponseStatus status = 3;
+  // .sd.ResponseStatus status = 3;
   if (this->has_status()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, HasBitSetters::status(this), output);
@@ -4020,23 +4025,23 @@ void MatriculaResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:MatriculaResponse)
+  // @@protoc_insertion_point(serialize_end:sd.MatriculaResponse)
 }
 
 ::google::protobuf::uint8* MatriculaResponse::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MatriculaResponse)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.MatriculaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         1, HasBitSetters::disciplina(this), target);
   }
 
-  // repeated .Matricula matriculas = 2;
+  // repeated .sd.Matricula matriculas = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->matriculas_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
@@ -4044,7 +4049,7 @@ void MatriculaResponse::SerializeWithCachedSizes(
         2, this->matriculas(static_cast<int>(i)), target);
   }
 
-  // .ResponseStatus status = 3;
+  // .sd.ResponseStatus status = 3;
   if (this->has_status()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -4055,12 +4060,12 @@ void MatriculaResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MatriculaResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.MatriculaResponse)
   return target;
 }
 
 size_t MatriculaResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MatriculaResponse)
+// @@protoc_insertion_point(message_byte_size_start:sd.MatriculaResponse)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4072,7 +4077,7 @@ size_t MatriculaResponse::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .Matricula matriculas = 2;
+  // repeated .sd.Matricula matriculas = 2;
   {
     unsigned int count = static_cast<unsigned int>(this->matriculas_size());
     total_size += 1UL * count;
@@ -4083,14 +4088,14 @@ size_t MatriculaResponse::ByteSizeLong() const {
     }
   }
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *disciplina_);
   }
 
-  // .ResponseStatus status = 3;
+  // .sd.ResponseStatus status = 3;
   if (this->has_status()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -4103,22 +4108,22 @@ size_t MatriculaResponse::ByteSizeLong() const {
 }
 
 void MatriculaResponse::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MatriculaResponse)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.MatriculaResponse)
   GOOGLE_DCHECK_NE(&from, this);
   const MatriculaResponse* source =
       ::google::protobuf::DynamicCastToGenerated<MatriculaResponse>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MatriculaResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.MatriculaResponse)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MatriculaResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.MatriculaResponse)
     MergeFrom(*source);
   }
 }
 
 void MatriculaResponse::MergeFrom(const MatriculaResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MatriculaResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.MatriculaResponse)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -4126,22 +4131,22 @@ void MatriculaResponse::MergeFrom(const MatriculaResponse& from) {
 
   matriculas_.MergeFrom(from.matriculas_);
   if (from.has_disciplina()) {
-    mutable_disciplina()->::Disciplina::MergeFrom(from.disciplina());
+    mutable_disciplina()->::sd::Disciplina::MergeFrom(from.disciplina());
   }
   if (from.has_status()) {
-    mutable_status()->::ResponseStatus::MergeFrom(from.status());
+    mutable_status()->::sd::ResponseStatus::MergeFrom(from.status());
   }
 }
 
 void MatriculaResponse::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MatriculaResponse)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.MatriculaResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MatriculaResponse::CopyFrom(const MatriculaResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MatriculaResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.MatriculaResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4172,15 +4177,15 @@ void MatriculaResponse::InternalSwap(MatriculaResponse* other) {
 // ===================================================================
 
 void AlunosRequest::InitAsDefaultInstance() {
-  ::_AlunosRequest_default_instance_._instance.get_mutable()->disciplina_ = const_cast< ::Disciplina*>(
-      ::Disciplina::internal_default_instance());
+  ::sd::_AlunosRequest_default_instance_._instance.get_mutable()->disciplina_ = const_cast< ::sd::Disciplina*>(
+      ::sd::Disciplina::internal_default_instance());
 }
 class AlunosRequest::HasBitSetters {
  public:
-  static const ::Disciplina& disciplina(const AlunosRequest* msg);
+  static const ::sd::Disciplina& disciplina(const AlunosRequest* msg);
 };
 
-const ::Disciplina&
+const ::sd::Disciplina&
 AlunosRequest::HasBitSetters::disciplina(const AlunosRequest* msg) {
   return *msg->disciplina_;
 }
@@ -4193,21 +4198,21 @@ const int AlunosRequest::kSemestreFieldNumber;
 AlunosRequest::AlunosRequest()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:AlunosRequest)
+  // @@protoc_insertion_point(constructor:sd.AlunosRequest)
 }
 AlunosRequest::AlunosRequest(const AlunosRequest& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_disciplina()) {
-    disciplina_ = new ::Disciplina(*from.disciplina_);
+    disciplina_ = new ::sd::Disciplina(*from.disciplina_);
   } else {
     disciplina_ = nullptr;
   }
   ::memcpy(&ano_, &from.ano_,
     static_cast<size_t>(reinterpret_cast<char*>(&semestre_) -
     reinterpret_cast<char*>(&ano_)) + sizeof(semestre_));
-  // @@protoc_insertion_point(copy_constructor:AlunosRequest)
+  // @@protoc_insertion_point(copy_constructor:sd.AlunosRequest)
 }
 
 void AlunosRequest::SharedCtor() {
@@ -4219,7 +4224,7 @@ void AlunosRequest::SharedCtor() {
 }
 
 AlunosRequest::~AlunosRequest() {
-  // @@protoc_insertion_point(destructor:AlunosRequest)
+  // @@protoc_insertion_point(destructor:sd.AlunosRequest)
   SharedDtor();
 }
 
@@ -4237,7 +4242,7 @@ const AlunosRequest& AlunosRequest::default_instance() {
 
 
 void AlunosRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:AlunosRequest)
+// @@protoc_insertion_point(message_clear_start:sd.AlunosRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4265,12 +4270,12 @@ const char* AlunosRequest::_InternalParse(const char* begin, const char* end, vo
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .Disciplina disciplina = 1;
+      // .sd.Disciplina disciplina = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Disciplina::_InternalParse;
+        parser_till_end = ::sd::Disciplina::_InternalParse;
         object = msg->mutable_disciplina();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -4316,13 +4321,13 @@ bool AlunosRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:AlunosRequest)
+  // @@protoc_insertion_point(parse_start:sd.AlunosRequest)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Disciplina disciplina = 1;
+      // .sd.Disciplina disciplina = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -4371,10 +4376,10 @@ bool AlunosRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:AlunosRequest)
+  // @@protoc_insertion_point(parse_success:sd.AlunosRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:AlunosRequest)
+  // @@protoc_insertion_point(parse_failure:sd.AlunosRequest)
   return false;
 #undef DO_
 }
@@ -4382,11 +4387,11 @@ failure:
 
 void AlunosRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:AlunosRequest)
+  // @@protoc_insertion_point(serialize_start:sd.AlunosRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::disciplina(this), output);
@@ -4406,16 +4411,16 @@ void AlunosRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:AlunosRequest)
+  // @@protoc_insertion_point(serialize_end:sd.AlunosRequest)
 }
 
 ::google::protobuf::uint8* AlunosRequest::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:AlunosRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.AlunosRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -4436,12 +4441,12 @@ void AlunosRequest::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:AlunosRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.AlunosRequest)
   return target;
 }
 
 size_t AlunosRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:AlunosRequest)
+// @@protoc_insertion_point(message_byte_size_start:sd.AlunosRequest)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4453,7 +4458,7 @@ size_t AlunosRequest::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   if (this->has_disciplina()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -4480,29 +4485,29 @@ size_t AlunosRequest::ByteSizeLong() const {
 }
 
 void AlunosRequest::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:AlunosRequest)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.AlunosRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const AlunosRequest* source =
       ::google::protobuf::DynamicCastToGenerated<AlunosRequest>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:AlunosRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.AlunosRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:AlunosRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.AlunosRequest)
     MergeFrom(*source);
   }
 }
 
 void AlunosRequest::MergeFrom(const AlunosRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:AlunosRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.AlunosRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_disciplina()) {
-    mutable_disciplina()->::Disciplina::MergeFrom(from.disciplina());
+    mutable_disciplina()->::sd::Disciplina::MergeFrom(from.disciplina());
   }
   if (from.ano() != 0) {
     set_ano(from.ano());
@@ -4513,14 +4518,14 @@ void AlunosRequest::MergeFrom(const AlunosRequest& from) {
 }
 
 void AlunosRequest::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:AlunosRequest)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.AlunosRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void AlunosRequest::CopyFrom(const AlunosRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:AlunosRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.AlunosRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4551,15 +4556,15 @@ void AlunosRequest::InternalSwap(AlunosRequest* other) {
 // ===================================================================
 
 void AlunosResponse::InitAsDefaultInstance() {
-  ::_AlunosResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::ResponseStatus*>(
-      ::ResponseStatus::internal_default_instance());
+  ::sd::_AlunosResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::sd::ResponseStatus*>(
+      ::sd::ResponseStatus::internal_default_instance());
 }
 class AlunosResponse::HasBitSetters {
  public:
-  static const ::ResponseStatus& status(const AlunosResponse* msg);
+  static const ::sd::ResponseStatus& status(const AlunosResponse* msg);
 };
 
-const ::ResponseStatus&
+const ::sd::ResponseStatus&
 AlunosResponse::HasBitSetters::status(const AlunosResponse* msg) {
   return *msg->status_;
 }
@@ -4571,7 +4576,7 @@ const int AlunosResponse::kAlunosFieldNumber;
 AlunosResponse::AlunosResponse()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:AlunosResponse)
+  // @@protoc_insertion_point(constructor:sd.AlunosResponse)
 }
 AlunosResponse::AlunosResponse(const AlunosResponse& from)
   : ::google::protobuf::Message(),
@@ -4579,11 +4584,11 @@ AlunosResponse::AlunosResponse(const AlunosResponse& from)
       alunos_(from.alunos_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_status()) {
-    status_ = new ::ResponseStatus(*from.status_);
+    status_ = new ::sd::ResponseStatus(*from.status_);
   } else {
     status_ = nullptr;
   }
-  // @@protoc_insertion_point(copy_constructor:AlunosResponse)
+  // @@protoc_insertion_point(copy_constructor:sd.AlunosResponse)
 }
 
 void AlunosResponse::SharedCtor() {
@@ -4593,7 +4598,7 @@ void AlunosResponse::SharedCtor() {
 }
 
 AlunosResponse::~AlunosResponse() {
-  // @@protoc_insertion_point(destructor:AlunosResponse)
+  // @@protoc_insertion_point(destructor:sd.AlunosResponse)
   SharedDtor();
 }
 
@@ -4611,7 +4616,7 @@ const AlunosResponse& AlunosResponse::default_instance() {
 
 
 void AlunosResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:AlunosResponse)
+// @@protoc_insertion_point(message_clear_start:sd.AlunosResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4637,12 +4642,12 @@ const char* AlunosResponse::_InternalParse(const char* begin, const char* end, v
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .ResponseStatus status = 1;
+      // .sd.ResponseStatus status = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::ResponseStatus::_InternalParse;
+        parser_till_end = ::sd::ResponseStatus::_InternalParse;
         object = msg->mutable_status();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -4650,13 +4655,13 @@ const char* AlunosResponse::_InternalParse(const char* begin, const char* end, v
             {parser_till_end, object}, ptr - size, ptr));
         break;
       }
-      // repeated .Aluno alunos = 2;
+      // repeated .sd.Aluno alunos = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         do {
           ptr = ::google::protobuf::io::ReadSize(ptr, &size);
           GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-          parser_till_end = ::Aluno::_InternalParse;
+          parser_till_end = ::sd::Aluno::_InternalParse;
           object = msg->add_alunos();
           if (size > end - ptr) goto len_delim_till_end;
           ptr += size;
@@ -4690,13 +4695,13 @@ bool AlunosResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:AlunosResponse)
+  // @@protoc_insertion_point(parse_start:sd.AlunosResponse)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .ResponseStatus status = 1;
+      // .sd.ResponseStatus status = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -4707,7 +4712,7 @@ bool AlunosResponse::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .Aluno alunos = 2;
+      // repeated .sd.Aluno alunos = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -4730,10 +4735,10 @@ bool AlunosResponse::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:AlunosResponse)
+  // @@protoc_insertion_point(parse_success:sd.AlunosResponse)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:AlunosResponse)
+  // @@protoc_insertion_point(parse_failure:sd.AlunosResponse)
   return false;
 #undef DO_
 }
@@ -4741,17 +4746,17 @@ failure:
 
 void AlunosResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:AlunosResponse)
+  // @@protoc_insertion_point(serialize_start:sd.AlunosResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ResponseStatus status = 1;
+  // .sd.ResponseStatus status = 1;
   if (this->has_status()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::status(this), output);
   }
 
-  // repeated .Aluno alunos = 2;
+  // repeated .sd.Aluno alunos = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->alunos_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
@@ -4764,23 +4769,23 @@ void AlunosResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:AlunosResponse)
+  // @@protoc_insertion_point(serialize_end:sd.AlunosResponse)
 }
 
 ::google::protobuf::uint8* AlunosResponse::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:AlunosResponse)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.AlunosResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ResponseStatus status = 1;
+  // .sd.ResponseStatus status = 1;
   if (this->has_status()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         1, HasBitSetters::status(this), target);
   }
 
-  // repeated .Aluno alunos = 2;
+  // repeated .sd.Aluno alunos = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->alunos_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
@@ -4792,12 +4797,12 @@ void AlunosResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:AlunosResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.AlunosResponse)
   return target;
 }
 
 size_t AlunosResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:AlunosResponse)
+// @@protoc_insertion_point(message_byte_size_start:sd.AlunosResponse)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4809,7 +4814,7 @@ size_t AlunosResponse::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .Aluno alunos = 2;
+  // repeated .sd.Aluno alunos = 2;
   {
     unsigned int count = static_cast<unsigned int>(this->alunos_size());
     total_size += 1UL * count;
@@ -4820,7 +4825,7 @@ size_t AlunosResponse::ByteSizeLong() const {
     }
   }
 
-  // .ResponseStatus status = 1;
+  // .sd.ResponseStatus status = 1;
   if (this->has_status()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -4833,22 +4838,22 @@ size_t AlunosResponse::ByteSizeLong() const {
 }
 
 void AlunosResponse::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:AlunosResponse)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.AlunosResponse)
   GOOGLE_DCHECK_NE(&from, this);
   const AlunosResponse* source =
       ::google::protobuf::DynamicCastToGenerated<AlunosResponse>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:AlunosResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.AlunosResponse)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:AlunosResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.AlunosResponse)
     MergeFrom(*source);
   }
 }
 
 void AlunosResponse::MergeFrom(const AlunosResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:AlunosResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.AlunosResponse)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -4856,19 +4861,19 @@ void AlunosResponse::MergeFrom(const AlunosResponse& from) {
 
   alunos_.MergeFrom(from.alunos_);
   if (from.has_status()) {
-    mutable_status()->::ResponseStatus::MergeFrom(from.status());
+    mutable_status()->::sd::ResponseStatus::MergeFrom(from.status());
   }
 }
 
 void AlunosResponse::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:AlunosResponse)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.AlunosResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void AlunosResponse::CopyFrom(const AlunosResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:AlunosResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.AlunosResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4898,15 +4903,15 @@ void AlunosResponse::InternalSwap(AlunosResponse* other) {
 // ===================================================================
 
 void DisciplinaRequest::InitAsDefaultInstance() {
-  ::_DisciplinaRequest_default_instance_._instance.get_mutable()->curso_ = const_cast< ::Curso*>(
-      ::Curso::internal_default_instance());
+  ::sd::_DisciplinaRequest_default_instance_._instance.get_mutable()->curso_ = const_cast< ::sd::Curso*>(
+      ::sd::Curso::internal_default_instance());
 }
 class DisciplinaRequest::HasBitSetters {
  public:
-  static const ::Curso& curso(const DisciplinaRequest* msg);
+  static const ::sd::Curso& curso(const DisciplinaRequest* msg);
 };
 
-const ::Curso&
+const ::sd::Curso&
 DisciplinaRequest::HasBitSetters::curso(const DisciplinaRequest* msg) {
   return *msg->curso_;
 }
@@ -4917,18 +4922,18 @@ const int DisciplinaRequest::kCursoFieldNumber;
 DisciplinaRequest::DisciplinaRequest()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DisciplinaRequest)
+  // @@protoc_insertion_point(constructor:sd.DisciplinaRequest)
 }
 DisciplinaRequest::DisciplinaRequest(const DisciplinaRequest& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_curso()) {
-    curso_ = new ::Curso(*from.curso_);
+    curso_ = new ::sd::Curso(*from.curso_);
   } else {
     curso_ = nullptr;
   }
-  // @@protoc_insertion_point(copy_constructor:DisciplinaRequest)
+  // @@protoc_insertion_point(copy_constructor:sd.DisciplinaRequest)
 }
 
 void DisciplinaRequest::SharedCtor() {
@@ -4938,7 +4943,7 @@ void DisciplinaRequest::SharedCtor() {
 }
 
 DisciplinaRequest::~DisciplinaRequest() {
-  // @@protoc_insertion_point(destructor:DisciplinaRequest)
+  // @@protoc_insertion_point(destructor:sd.DisciplinaRequest)
   SharedDtor();
 }
 
@@ -4956,7 +4961,7 @@ const DisciplinaRequest& DisciplinaRequest::default_instance() {
 
 
 void DisciplinaRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:DisciplinaRequest)
+// @@protoc_insertion_point(message_clear_start:sd.DisciplinaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4981,12 +4986,12 @@ const char* DisciplinaRequest::_InternalParse(const char* begin, const char* end
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .Curso curso = 1;
+      // .sd.Curso curso = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Curso::_InternalParse;
+        parser_till_end = ::sd::Curso::_InternalParse;
         object = msg->mutable_curso();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -5018,13 +5023,13 @@ bool DisciplinaRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DisciplinaRequest)
+  // @@protoc_insertion_point(parse_start:sd.DisciplinaRequest)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Curso curso = 1;
+      // .sd.Curso curso = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -5047,10 +5052,10 @@ bool DisciplinaRequest::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:DisciplinaRequest)
+  // @@protoc_insertion_point(parse_success:sd.DisciplinaRequest)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:DisciplinaRequest)
+  // @@protoc_insertion_point(parse_failure:sd.DisciplinaRequest)
   return false;
 #undef DO_
 }
@@ -5058,11 +5063,11 @@ failure:
 
 void DisciplinaRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DisciplinaRequest)
+  // @@protoc_insertion_point(serialize_start:sd.DisciplinaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Curso curso = 1;
+  // .sd.Curso curso = 1;
   if (this->has_curso()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::curso(this), output);
@@ -5072,16 +5077,16 @@ void DisciplinaRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DisciplinaRequest)
+  // @@protoc_insertion_point(serialize_end:sd.DisciplinaRequest)
 }
 
 ::google::protobuf::uint8* DisciplinaRequest::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DisciplinaRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.DisciplinaRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Curso curso = 1;
+  // .sd.Curso curso = 1;
   if (this->has_curso()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -5092,12 +5097,12 @@ void DisciplinaRequest::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DisciplinaRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.DisciplinaRequest)
   return target;
 }
 
 size_t DisciplinaRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DisciplinaRequest)
+// @@protoc_insertion_point(message_byte_size_start:sd.DisciplinaRequest)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5109,7 +5114,7 @@ size_t DisciplinaRequest::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Curso curso = 1;
+  // .sd.Curso curso = 1;
   if (this->has_curso()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -5122,41 +5127,41 @@ size_t DisciplinaRequest::ByteSizeLong() const {
 }
 
 void DisciplinaRequest::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:DisciplinaRequest)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.DisciplinaRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const DisciplinaRequest* source =
       ::google::protobuf::DynamicCastToGenerated<DisciplinaRequest>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DisciplinaRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.DisciplinaRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:DisciplinaRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.DisciplinaRequest)
     MergeFrom(*source);
   }
 }
 
 void DisciplinaRequest::MergeFrom(const DisciplinaRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DisciplinaRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.DisciplinaRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_curso()) {
-    mutable_curso()->::Curso::MergeFrom(from.curso());
+    mutable_curso()->::sd::Curso::MergeFrom(from.curso());
   }
 }
 
 void DisciplinaRequest::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:DisciplinaRequest)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.DisciplinaRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void DisciplinaRequest::CopyFrom(const DisciplinaRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DisciplinaRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.DisciplinaRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5185,22 +5190,22 @@ void DisciplinaRequest::InternalSwap(DisciplinaRequest* other) {
 // ===================================================================
 
 void DisciplinaResponse::InitAsDefaultInstance() {
-  ::_DisciplinaResponse_default_instance_._instance.get_mutable()->curso_ = const_cast< ::Curso*>(
-      ::Curso::internal_default_instance());
-  ::_DisciplinaResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::ResponseStatus*>(
-      ::ResponseStatus::internal_default_instance());
+  ::sd::_DisciplinaResponse_default_instance_._instance.get_mutable()->curso_ = const_cast< ::sd::Curso*>(
+      ::sd::Curso::internal_default_instance());
+  ::sd::_DisciplinaResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::sd::ResponseStatus*>(
+      ::sd::ResponseStatus::internal_default_instance());
 }
 class DisciplinaResponse::HasBitSetters {
  public:
-  static const ::Curso& curso(const DisciplinaResponse* msg);
-  static const ::ResponseStatus& status(const DisciplinaResponse* msg);
+  static const ::sd::Curso& curso(const DisciplinaResponse* msg);
+  static const ::sd::ResponseStatus& status(const DisciplinaResponse* msg);
 };
 
-const ::Curso&
+const ::sd::Curso&
 DisciplinaResponse::HasBitSetters::curso(const DisciplinaResponse* msg) {
   return *msg->curso_;
 }
-const ::ResponseStatus&
+const ::sd::ResponseStatus&
 DisciplinaResponse::HasBitSetters::status(const DisciplinaResponse* msg) {
   return *msg->status_;
 }
@@ -5213,7 +5218,7 @@ const int DisciplinaResponse::kStatusFieldNumber;
 DisciplinaResponse::DisciplinaResponse()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DisciplinaResponse)
+  // @@protoc_insertion_point(constructor:sd.DisciplinaResponse)
 }
 DisciplinaResponse::DisciplinaResponse(const DisciplinaResponse& from)
   : ::google::protobuf::Message(),
@@ -5221,16 +5226,16 @@ DisciplinaResponse::DisciplinaResponse(const DisciplinaResponse& from)
       disciplinas_(from.disciplinas_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_curso()) {
-    curso_ = new ::Curso(*from.curso_);
+    curso_ = new ::sd::Curso(*from.curso_);
   } else {
     curso_ = nullptr;
   }
   if (from.has_status()) {
-    status_ = new ::ResponseStatus(*from.status_);
+    status_ = new ::sd::ResponseStatus(*from.status_);
   } else {
     status_ = nullptr;
   }
-  // @@protoc_insertion_point(copy_constructor:DisciplinaResponse)
+  // @@protoc_insertion_point(copy_constructor:sd.DisciplinaResponse)
 }
 
 void DisciplinaResponse::SharedCtor() {
@@ -5242,7 +5247,7 @@ void DisciplinaResponse::SharedCtor() {
 }
 
 DisciplinaResponse::~DisciplinaResponse() {
-  // @@protoc_insertion_point(destructor:DisciplinaResponse)
+  // @@protoc_insertion_point(destructor:sd.DisciplinaResponse)
   SharedDtor();
 }
 
@@ -5261,7 +5266,7 @@ const DisciplinaResponse& DisciplinaResponse::default_instance() {
 
 
 void DisciplinaResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:DisciplinaResponse)
+// @@protoc_insertion_point(message_clear_start:sd.DisciplinaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5291,12 +5296,12 @@ const char* DisciplinaResponse::_InternalParse(const char* begin, const char* en
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .Curso curso = 1;
+      // .sd.Curso curso = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::Curso::_InternalParse;
+        parser_till_end = ::sd::Curso::_InternalParse;
         object = msg->mutable_curso();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -5304,13 +5309,13 @@ const char* DisciplinaResponse::_InternalParse(const char* begin, const char* en
             {parser_till_end, object}, ptr - size, ptr));
         break;
       }
-      // repeated .Disciplina disciplinas = 2;
+      // repeated .sd.Disciplina disciplinas = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         do {
           ptr = ::google::protobuf::io::ReadSize(ptr, &size);
           GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-          parser_till_end = ::Disciplina::_InternalParse;
+          parser_till_end = ::sd::Disciplina::_InternalParse;
           object = msg->add_disciplinas();
           if (size > end - ptr) goto len_delim_till_end;
           ptr += size;
@@ -5320,12 +5325,12 @@ const char* DisciplinaResponse::_InternalParse(const char* begin, const char* en
         } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 18 && (ptr += 1));
         break;
       }
-      // .ResponseStatus status = 3;
+      // .sd.ResponseStatus status = 3;
       case 3: {
         if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::ResponseStatus::_InternalParse;
+        parser_till_end = ::sd::ResponseStatus::_InternalParse;
         object = msg->mutable_status();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -5357,13 +5362,13 @@ bool DisciplinaResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DisciplinaResponse)
+  // @@protoc_insertion_point(parse_start:sd.DisciplinaResponse)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Curso curso = 1;
+      // .sd.Curso curso = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -5374,7 +5379,7 @@ bool DisciplinaResponse::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .Disciplina disciplinas = 2;
+      // repeated .sd.Disciplina disciplinas = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -5385,7 +5390,7 @@ bool DisciplinaResponse::MergePartialFromCodedStream(
         break;
       }
 
-      // .ResponseStatus status = 3;
+      // .sd.ResponseStatus status = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -5408,10 +5413,10 @@ bool DisciplinaResponse::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:DisciplinaResponse)
+  // @@protoc_insertion_point(parse_success:sd.DisciplinaResponse)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:DisciplinaResponse)
+  // @@protoc_insertion_point(parse_failure:sd.DisciplinaResponse)
   return false;
 #undef DO_
 }
@@ -5419,17 +5424,17 @@ failure:
 
 void DisciplinaResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DisciplinaResponse)
+  // @@protoc_insertion_point(serialize_start:sd.DisciplinaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Curso curso = 1;
+  // .sd.Curso curso = 1;
   if (this->has_curso()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::curso(this), output);
   }
 
-  // repeated .Disciplina disciplinas = 2;
+  // repeated .sd.Disciplina disciplinas = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->disciplinas_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
@@ -5438,7 +5443,7 @@ void DisciplinaResponse::SerializeWithCachedSizes(
       output);
   }
 
-  // .ResponseStatus status = 3;
+  // .sd.ResponseStatus status = 3;
   if (this->has_status()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, HasBitSetters::status(this), output);
@@ -5448,23 +5453,23 @@ void DisciplinaResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DisciplinaResponse)
+  // @@protoc_insertion_point(serialize_end:sd.DisciplinaResponse)
 }
 
 ::google::protobuf::uint8* DisciplinaResponse::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DisciplinaResponse)
+  // @@protoc_insertion_point(serialize_to_array_start:sd.DisciplinaResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Curso curso = 1;
+  // .sd.Curso curso = 1;
   if (this->has_curso()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         1, HasBitSetters::curso(this), target);
   }
 
-  // repeated .Disciplina disciplinas = 2;
+  // repeated .sd.Disciplina disciplinas = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->disciplinas_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
@@ -5472,7 +5477,7 @@ void DisciplinaResponse::SerializeWithCachedSizes(
         2, this->disciplinas(static_cast<int>(i)), target);
   }
 
-  // .ResponseStatus status = 3;
+  // .sd.ResponseStatus status = 3;
   if (this->has_status()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -5483,12 +5488,12 @@ void DisciplinaResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DisciplinaResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:sd.DisciplinaResponse)
   return target;
 }
 
 size_t DisciplinaResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DisciplinaResponse)
+// @@protoc_insertion_point(message_byte_size_start:sd.DisciplinaResponse)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5500,7 +5505,7 @@ size_t DisciplinaResponse::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .Disciplina disciplinas = 2;
+  // repeated .sd.Disciplina disciplinas = 2;
   {
     unsigned int count = static_cast<unsigned int>(this->disciplinas_size());
     total_size += 1UL * count;
@@ -5511,14 +5516,14 @@ size_t DisciplinaResponse::ByteSizeLong() const {
     }
   }
 
-  // .Curso curso = 1;
+  // .sd.Curso curso = 1;
   if (this->has_curso()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *curso_);
   }
 
-  // .ResponseStatus status = 3;
+  // .sd.ResponseStatus status = 3;
   if (this->has_status()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -5531,22 +5536,22 @@ size_t DisciplinaResponse::ByteSizeLong() const {
 }
 
 void DisciplinaResponse::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:DisciplinaResponse)
+// @@protoc_insertion_point(generalized_merge_from_start:sd.DisciplinaResponse)
   GOOGLE_DCHECK_NE(&from, this);
   const DisciplinaResponse* source =
       ::google::protobuf::DynamicCastToGenerated<DisciplinaResponse>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DisciplinaResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sd.DisciplinaResponse)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:DisciplinaResponse)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sd.DisciplinaResponse)
     MergeFrom(*source);
   }
 }
 
 void DisciplinaResponse::MergeFrom(const DisciplinaResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DisciplinaResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:sd.DisciplinaResponse)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -5554,22 +5559,22 @@ void DisciplinaResponse::MergeFrom(const DisciplinaResponse& from) {
 
   disciplinas_.MergeFrom(from.disciplinas_);
   if (from.has_curso()) {
-    mutable_curso()->::Curso::MergeFrom(from.curso());
+    mutable_curso()->::sd::Curso::MergeFrom(from.curso());
   }
   if (from.has_status()) {
-    mutable_status()->::ResponseStatus::MergeFrom(from.status());
+    mutable_status()->::sd::ResponseStatus::MergeFrom(from.status());
   }
 }
 
 void DisciplinaResponse::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:DisciplinaResponse)
+// @@protoc_insertion_point(generalized_copy_from_start:sd.DisciplinaResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void DisciplinaResponse::CopyFrom(const DisciplinaResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DisciplinaResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:sd.DisciplinaResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5598,46 +5603,47 @@ void DisciplinaResponse::InternalSwap(DisciplinaResponse* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace sd
 namespace google {
 namespace protobuf {
-template<> PROTOBUF_NOINLINE ::Curso* Arena::CreateMaybeMessage< ::Curso >(Arena* arena) {
-  return Arena::CreateInternal< ::Curso >(arena);
+template<> PROTOBUF_NOINLINE ::sd::Curso* Arena::CreateMaybeMessage< ::sd::Curso >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::Curso >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Disciplina* Arena::CreateMaybeMessage< ::Disciplina >(Arena* arena) {
-  return Arena::CreateInternal< ::Disciplina >(arena);
+template<> PROTOBUF_NOINLINE ::sd::Disciplina* Arena::CreateMaybeMessage< ::sd::Disciplina >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::Disciplina >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Aluno* Arena::CreateMaybeMessage< ::Aluno >(Arena* arena) {
-  return Arena::CreateInternal< ::Aluno >(arena);
+template<> PROTOBUF_NOINLINE ::sd::Aluno* Arena::CreateMaybeMessage< ::sd::Aluno >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::Aluno >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Matricula* Arena::CreateMaybeMessage< ::Matricula >(Arena* arena) {
-  return Arena::CreateInternal< ::Matricula >(arena);
+template<> PROTOBUF_NOINLINE ::sd::Matricula* Arena::CreateMaybeMessage< ::sd::Matricula >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::Matricula >(arena);
 }
-template<> PROTOBUF_NOINLINE ::ResponseStatus* Arena::CreateMaybeMessage< ::ResponseStatus >(Arena* arena) {
-  return Arena::CreateInternal< ::ResponseStatus >(arena);
+template<> PROTOBUF_NOINLINE ::sd::ResponseStatus* Arena::CreateMaybeMessage< ::sd::ResponseStatus >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::ResponseStatus >(arena);
 }
-template<> PROTOBUF_NOINLINE ::NotaRequest* Arena::CreateMaybeMessage< ::NotaRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::NotaRequest >(arena);
+template<> PROTOBUF_NOINLINE ::sd::NotaRequest* Arena::CreateMaybeMessage< ::sd::NotaRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::NotaRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::NotaResponse* Arena::CreateMaybeMessage< ::NotaResponse >(Arena* arena) {
-  return Arena::CreateInternal< ::NotaResponse >(arena);
+template<> PROTOBUF_NOINLINE ::sd::NotaResponse* Arena::CreateMaybeMessage< ::sd::NotaResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::NotaResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MatriculaRequest* Arena::CreateMaybeMessage< ::MatriculaRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::MatriculaRequest >(arena);
+template<> PROTOBUF_NOINLINE ::sd::MatriculaRequest* Arena::CreateMaybeMessage< ::sd::MatriculaRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::MatriculaRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MatriculaResponse* Arena::CreateMaybeMessage< ::MatriculaResponse >(Arena* arena) {
-  return Arena::CreateInternal< ::MatriculaResponse >(arena);
+template<> PROTOBUF_NOINLINE ::sd::MatriculaResponse* Arena::CreateMaybeMessage< ::sd::MatriculaResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::MatriculaResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::AlunosRequest* Arena::CreateMaybeMessage< ::AlunosRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::AlunosRequest >(arena);
+template<> PROTOBUF_NOINLINE ::sd::AlunosRequest* Arena::CreateMaybeMessage< ::sd::AlunosRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::AlunosRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::AlunosResponse* Arena::CreateMaybeMessage< ::AlunosResponse >(Arena* arena) {
-  return Arena::CreateInternal< ::AlunosResponse >(arena);
+template<> PROTOBUF_NOINLINE ::sd::AlunosResponse* Arena::CreateMaybeMessage< ::sd::AlunosResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::AlunosResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::DisciplinaRequest* Arena::CreateMaybeMessage< ::DisciplinaRequest >(Arena* arena) {
-  return Arena::CreateInternal< ::DisciplinaRequest >(arena);
+template<> PROTOBUF_NOINLINE ::sd::DisciplinaRequest* Arena::CreateMaybeMessage< ::sd::DisciplinaRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::DisciplinaRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::DisciplinaResponse* Arena::CreateMaybeMessage< ::DisciplinaResponse >(Arena* arena) {
-  return Arena::CreateInternal< ::DisciplinaResponse >(arena);
+template<> PROTOBUF_NOINLINE ::sd::DisciplinaResponse* Arena::CreateMaybeMessage< ::sd::DisciplinaResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::sd::DisciplinaResponse >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

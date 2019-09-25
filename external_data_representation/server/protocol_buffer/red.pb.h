@@ -49,6 +49,7 @@ struct TableStruct_red_2eproto {
   static const ::google::protobuf::uint32 offsets[];
 };
 void AddDescriptors_red_2eproto();
+namespace sd {
 class Aluno;
 class AlunoDefaultTypeInternal;
 extern AlunoDefaultTypeInternal _Aluno_default_instance_;
@@ -88,23 +89,25 @@ extern NotaResponseDefaultTypeInternal _NotaResponse_default_instance_;
 class ResponseStatus;
 class ResponseStatusDefaultTypeInternal;
 extern ResponseStatusDefaultTypeInternal _ResponseStatus_default_instance_;
+}  // namespace sd
 namespace google {
 namespace protobuf {
-template<> ::Aluno* Arena::CreateMaybeMessage<::Aluno>(Arena*);
-template<> ::AlunosRequest* Arena::CreateMaybeMessage<::AlunosRequest>(Arena*);
-template<> ::AlunosResponse* Arena::CreateMaybeMessage<::AlunosResponse>(Arena*);
-template<> ::Curso* Arena::CreateMaybeMessage<::Curso>(Arena*);
-template<> ::Disciplina* Arena::CreateMaybeMessage<::Disciplina>(Arena*);
-template<> ::DisciplinaRequest* Arena::CreateMaybeMessage<::DisciplinaRequest>(Arena*);
-template<> ::DisciplinaResponse* Arena::CreateMaybeMessage<::DisciplinaResponse>(Arena*);
-template<> ::Matricula* Arena::CreateMaybeMessage<::Matricula>(Arena*);
-template<> ::MatriculaRequest* Arena::CreateMaybeMessage<::MatriculaRequest>(Arena*);
-template<> ::MatriculaResponse* Arena::CreateMaybeMessage<::MatriculaResponse>(Arena*);
-template<> ::NotaRequest* Arena::CreateMaybeMessage<::NotaRequest>(Arena*);
-template<> ::NotaResponse* Arena::CreateMaybeMessage<::NotaResponse>(Arena*);
-template<> ::ResponseStatus* Arena::CreateMaybeMessage<::ResponseStatus>(Arena*);
+template<> ::sd::Aluno* Arena::CreateMaybeMessage<::sd::Aluno>(Arena*);
+template<> ::sd::AlunosRequest* Arena::CreateMaybeMessage<::sd::AlunosRequest>(Arena*);
+template<> ::sd::AlunosResponse* Arena::CreateMaybeMessage<::sd::AlunosResponse>(Arena*);
+template<> ::sd::Curso* Arena::CreateMaybeMessage<::sd::Curso>(Arena*);
+template<> ::sd::Disciplina* Arena::CreateMaybeMessage<::sd::Disciplina>(Arena*);
+template<> ::sd::DisciplinaRequest* Arena::CreateMaybeMessage<::sd::DisciplinaRequest>(Arena*);
+template<> ::sd::DisciplinaResponse* Arena::CreateMaybeMessage<::sd::DisciplinaResponse>(Arena*);
+template<> ::sd::Matricula* Arena::CreateMaybeMessage<::sd::Matricula>(Arena*);
+template<> ::sd::MatriculaRequest* Arena::CreateMaybeMessage<::sd::MatriculaRequest>(Arena*);
+template<> ::sd::MatriculaResponse* Arena::CreateMaybeMessage<::sd::MatriculaResponse>(Arena*);
+template<> ::sd::NotaRequest* Arena::CreateMaybeMessage<::sd::NotaRequest>(Arena*);
+template<> ::sd::NotaResponse* Arena::CreateMaybeMessage<::sd::NotaResponse>(Arena*);
+template<> ::sd::ResponseStatus* Arena::CreateMaybeMessage<::sd::ResponseStatus>(Arena*);
 }  // namespace protobuf
 }  // namespace google
+namespace sd {
 
 enum NotaRequest_OperationType {
   NotaRequest_OperationType_CREATE = 0,
@@ -132,7 +135,7 @@ inline bool NotaRequest_OperationType_Parse(
 // ===================================================================
 
 class Curso final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Curso) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.Curso) */ {
  public:
   Curso();
   virtual ~Curso();
@@ -246,7 +249,7 @@ class Curso final :
   ::google::protobuf::int32 codigo() const;
   void set_codigo(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:Curso)
+  // @@protoc_insertion_point(class_scope:sd.Curso)
  private:
   class HasBitSetters;
 
@@ -259,7 +262,7 @@ class Curso final :
 // -------------------------------------------------------------------
 
 class Disciplina final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Disciplina) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.Disciplina) */ {
  public:
   Disciplina();
   virtual ~Disciplina();
@@ -395,16 +398,16 @@ class Disciplina final :
   ::std::string* release_professor();
   void set_allocated_professor(::std::string* professor);
 
-  // .Curso curso = 4;
+  // .sd.Curso curso = 4;
   bool has_curso() const;
   void clear_curso();
   static const int kCursoFieldNumber = 4;
-  const ::Curso& curso() const;
-  ::Curso* release_curso();
-  ::Curso* mutable_curso();
-  void set_allocated_curso(::Curso* curso);
+  const ::sd::Curso& curso() const;
+  ::sd::Curso* release_curso();
+  ::sd::Curso* mutable_curso();
+  void set_allocated_curso(::sd::Curso* curso);
 
-  // @@protoc_insertion_point(class_scope:Disciplina)
+  // @@protoc_insertion_point(class_scope:sd.Disciplina)
  private:
   class HasBitSetters;
 
@@ -412,14 +415,14 @@ class Disciplina final :
   ::google::protobuf::internal::ArenaStringPtr codigo_;
   ::google::protobuf::internal::ArenaStringPtr nome_;
   ::google::protobuf::internal::ArenaStringPtr professor_;
-  ::Curso* curso_;
+  ::sd::Curso* curso_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_red_2eproto;
 };
 // -------------------------------------------------------------------
 
 class Aluno final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Aluno) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.Aluno) */ {
  public:
   Aluno();
   virtual ~Aluno();
@@ -527,14 +530,14 @@ class Aluno final :
   ::std::string* release_nome();
   void set_allocated_nome(::std::string* nome);
 
-  // .Curso curso = 4;
+  // .sd.Curso curso = 4;
   bool has_curso() const;
   void clear_curso();
   static const int kCursoFieldNumber = 4;
-  const ::Curso& curso() const;
-  ::Curso* release_curso();
-  ::Curso* mutable_curso();
-  void set_allocated_curso(::Curso* curso);
+  const ::sd::Curso& curso() const;
+  ::sd::Curso* release_curso();
+  ::sd::Curso* mutable_curso();
+  void set_allocated_curso(::sd::Curso* curso);
 
   // int32 RA = 1;
   void clear_ra();
@@ -548,13 +551,13 @@ class Aluno final :
   ::google::protobuf::int32 periodo() const;
   void set_periodo(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:Aluno)
+  // @@protoc_insertion_point(class_scope:sd.Aluno)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr nome_;
-  ::Curso* curso_;
+  ::sd::Curso* curso_;
   ::google::protobuf::int32 ra_;
   ::google::protobuf::int32 periodo_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -563,7 +566,7 @@ class Aluno final :
 // -------------------------------------------------------------------
 
 class Matricula final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:Matricula) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.Matricula) */ {
  public:
   Matricula();
   virtual ~Matricula();
@@ -657,23 +660,23 @@ class Matricula final :
 
   // accessors -------------------------------------------------------
 
-  // .Aluno aluno = 1;
+  // .sd.Aluno aluno = 1;
   bool has_aluno() const;
   void clear_aluno();
   static const int kAlunoFieldNumber = 1;
-  const ::Aluno& aluno() const;
-  ::Aluno* release_aluno();
-  ::Aluno* mutable_aluno();
-  void set_allocated_aluno(::Aluno* aluno);
+  const ::sd::Aluno& aluno() const;
+  ::sd::Aluno* release_aluno();
+  ::sd::Aluno* mutable_aluno();
+  void set_allocated_aluno(::sd::Aluno* aluno);
 
-  // .Disciplina disciplina = 2;
+  // .sd.Disciplina disciplina = 2;
   bool has_disciplina() const;
   void clear_disciplina();
   static const int kDisciplinaFieldNumber = 2;
-  const ::Disciplina& disciplina() const;
-  ::Disciplina* release_disciplina();
-  ::Disciplina* mutable_disciplina();
-  void set_allocated_disciplina(::Disciplina* disciplina);
+  const ::sd::Disciplina& disciplina() const;
+  ::sd::Disciplina* release_disciplina();
+  ::sd::Disciplina* mutable_disciplina();
+  void set_allocated_disciplina(::sd::Disciplina* disciplina);
 
   // int32 ano = 3;
   void clear_ano();
@@ -699,13 +702,13 @@ class Matricula final :
   ::google::protobuf::int32 faltas() const;
   void set_faltas(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:Matricula)
+  // @@protoc_insertion_point(class_scope:sd.Matricula)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::Aluno* aluno_;
-  ::Disciplina* disciplina_;
+  ::sd::Aluno* aluno_;
+  ::sd::Disciplina* disciplina_;
   ::google::protobuf::int32 ano_;
   ::google::protobuf::int32 semestre_;
   float nota_;
@@ -716,7 +719,7 @@ class Matricula final :
 // -------------------------------------------------------------------
 
 class ResponseStatus final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:ResponseStatus) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.ResponseStatus) */ {
  public:
   ResponseStatus();
   virtual ~ResponseStatus();
@@ -830,7 +833,7 @@ class ResponseStatus final :
   ::google::protobuf::int32 statuscode() const;
   void set_statuscode(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:ResponseStatus)
+  // @@protoc_insertion_point(class_scope:sd.ResponseStatus)
  private:
   class HasBitSetters;
 
@@ -843,7 +846,7 @@ class ResponseStatus final :
 // -------------------------------------------------------------------
 
 class NotaRequest final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:NotaRequest) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.NotaRequest) */ {
  public:
   NotaRequest();
   virtual ~NotaRequest();
@@ -967,27 +970,27 @@ class NotaRequest final :
 
   // accessors -------------------------------------------------------
 
-  // .Matricula matricula = 2;
+  // .sd.Matricula matricula = 2;
   bool has_matricula() const;
   void clear_matricula();
   static const int kMatriculaFieldNumber = 2;
-  const ::Matricula& matricula() const;
-  ::Matricula* release_matricula();
-  ::Matricula* mutable_matricula();
-  void set_allocated_matricula(::Matricula* matricula);
+  const ::sd::Matricula& matricula() const;
+  ::sd::Matricula* release_matricula();
+  ::sd::Matricula* mutable_matricula();
+  void set_allocated_matricula(::sd::Matricula* matricula);
 
-  // .NotaRequest.OperationType type = 1;
+  // .sd.NotaRequest.OperationType type = 1;
   void clear_type();
   static const int kTypeFieldNumber = 1;
-  ::NotaRequest_OperationType type() const;
-  void set_type(::NotaRequest_OperationType value);
+  ::sd::NotaRequest_OperationType type() const;
+  void set_type(::sd::NotaRequest_OperationType value);
 
-  // @@protoc_insertion_point(class_scope:NotaRequest)
+  // @@protoc_insertion_point(class_scope:sd.NotaRequest)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::Matricula* matricula_;
+  ::sd::Matricula* matricula_;
   int type_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_red_2eproto;
@@ -995,7 +998,7 @@ class NotaRequest final :
 // -------------------------------------------------------------------
 
 class NotaResponse final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:NotaResponse) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.NotaResponse) */ {
  public:
   NotaResponse();
   virtual ~NotaResponse();
@@ -1089,38 +1092,38 @@ class NotaResponse final :
 
   // accessors -------------------------------------------------------
 
-  // .Matricula matricula = 1;
+  // .sd.Matricula matricula = 1;
   bool has_matricula() const;
   void clear_matricula();
   static const int kMatriculaFieldNumber = 1;
-  const ::Matricula& matricula() const;
-  ::Matricula* release_matricula();
-  ::Matricula* mutable_matricula();
-  void set_allocated_matricula(::Matricula* matricula);
+  const ::sd::Matricula& matricula() const;
+  ::sd::Matricula* release_matricula();
+  ::sd::Matricula* mutable_matricula();
+  void set_allocated_matricula(::sd::Matricula* matricula);
 
-  // .ResponseStatus status = 2;
+  // .sd.ResponseStatus status = 2;
   bool has_status() const;
   void clear_status();
   static const int kStatusFieldNumber = 2;
-  const ::ResponseStatus& status() const;
-  ::ResponseStatus* release_status();
-  ::ResponseStatus* mutable_status();
-  void set_allocated_status(::ResponseStatus* status);
+  const ::sd::ResponseStatus& status() const;
+  ::sd::ResponseStatus* release_status();
+  ::sd::ResponseStatus* mutable_status();
+  void set_allocated_status(::sd::ResponseStatus* status);
 
-  // @@protoc_insertion_point(class_scope:NotaResponse)
+  // @@protoc_insertion_point(class_scope:sd.NotaResponse)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::Matricula* matricula_;
-  ::ResponseStatus* status_;
+  ::sd::Matricula* matricula_;
+  ::sd::ResponseStatus* status_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_red_2eproto;
 };
 // -------------------------------------------------------------------
 
 class MatriculaRequest final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:MatriculaRequest) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.MatriculaRequest) */ {
  public:
   MatriculaRequest();
   virtual ~MatriculaRequest();
@@ -1214,14 +1217,14 @@ class MatriculaRequest final :
 
   // accessors -------------------------------------------------------
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   bool has_disciplina() const;
   void clear_disciplina();
   static const int kDisciplinaFieldNumber = 1;
-  const ::Disciplina& disciplina() const;
-  ::Disciplina* release_disciplina();
-  ::Disciplina* mutable_disciplina();
-  void set_allocated_disciplina(::Disciplina* disciplina);
+  const ::sd::Disciplina& disciplina() const;
+  ::sd::Disciplina* release_disciplina();
+  ::sd::Disciplina* mutable_disciplina();
+  void set_allocated_disciplina(::sd::Disciplina* disciplina);
 
   // int32 ano = 2;
   void clear_ano();
@@ -1235,12 +1238,12 @@ class MatriculaRequest final :
   ::google::protobuf::int32 semestre() const;
   void set_semestre(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:MatriculaRequest)
+  // @@protoc_insertion_point(class_scope:sd.MatriculaRequest)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::Disciplina* disciplina_;
+  ::sd::Disciplina* disciplina_;
   ::google::protobuf::int32 ano_;
   ::google::protobuf::int32 semestre_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -1249,7 +1252,7 @@ class MatriculaRequest final :
 // -------------------------------------------------------------------
 
 class MatriculaResponse final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:MatriculaResponse) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.MatriculaResponse) */ {
  public:
   MatriculaResponse();
   virtual ~MatriculaResponse();
@@ -1343,51 +1346,51 @@ class MatriculaResponse final :
 
   // accessors -------------------------------------------------------
 
-  // repeated .Matricula matriculas = 2;
+  // repeated .sd.Matricula matriculas = 2;
   int matriculas_size() const;
   void clear_matriculas();
   static const int kMatriculasFieldNumber = 2;
-  ::Matricula* mutable_matriculas(int index);
-  ::google::protobuf::RepeatedPtrField< ::Matricula >*
+  ::sd::Matricula* mutable_matriculas(int index);
+  ::google::protobuf::RepeatedPtrField< ::sd::Matricula >*
       mutable_matriculas();
-  const ::Matricula& matriculas(int index) const;
-  ::Matricula* add_matriculas();
-  const ::google::protobuf::RepeatedPtrField< ::Matricula >&
+  const ::sd::Matricula& matriculas(int index) const;
+  ::sd::Matricula* add_matriculas();
+  const ::google::protobuf::RepeatedPtrField< ::sd::Matricula >&
       matriculas() const;
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   bool has_disciplina() const;
   void clear_disciplina();
   static const int kDisciplinaFieldNumber = 1;
-  const ::Disciplina& disciplina() const;
-  ::Disciplina* release_disciplina();
-  ::Disciplina* mutable_disciplina();
-  void set_allocated_disciplina(::Disciplina* disciplina);
+  const ::sd::Disciplina& disciplina() const;
+  ::sd::Disciplina* release_disciplina();
+  ::sd::Disciplina* mutable_disciplina();
+  void set_allocated_disciplina(::sd::Disciplina* disciplina);
 
-  // .ResponseStatus status = 3;
+  // .sd.ResponseStatus status = 3;
   bool has_status() const;
   void clear_status();
   static const int kStatusFieldNumber = 3;
-  const ::ResponseStatus& status() const;
-  ::ResponseStatus* release_status();
-  ::ResponseStatus* mutable_status();
-  void set_allocated_status(::ResponseStatus* status);
+  const ::sd::ResponseStatus& status() const;
+  ::sd::ResponseStatus* release_status();
+  ::sd::ResponseStatus* mutable_status();
+  void set_allocated_status(::sd::ResponseStatus* status);
 
-  // @@protoc_insertion_point(class_scope:MatriculaResponse)
+  // @@protoc_insertion_point(class_scope:sd.MatriculaResponse)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::Matricula > matriculas_;
-  ::Disciplina* disciplina_;
-  ::ResponseStatus* status_;
+  ::google::protobuf::RepeatedPtrField< ::sd::Matricula > matriculas_;
+  ::sd::Disciplina* disciplina_;
+  ::sd::ResponseStatus* status_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_red_2eproto;
 };
 // -------------------------------------------------------------------
 
 class AlunosRequest final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:AlunosRequest) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.AlunosRequest) */ {
  public:
   AlunosRequest();
   virtual ~AlunosRequest();
@@ -1481,14 +1484,14 @@ class AlunosRequest final :
 
   // accessors -------------------------------------------------------
 
-  // .Disciplina disciplina = 1;
+  // .sd.Disciplina disciplina = 1;
   bool has_disciplina() const;
   void clear_disciplina();
   static const int kDisciplinaFieldNumber = 1;
-  const ::Disciplina& disciplina() const;
-  ::Disciplina* release_disciplina();
-  ::Disciplina* mutable_disciplina();
-  void set_allocated_disciplina(::Disciplina* disciplina);
+  const ::sd::Disciplina& disciplina() const;
+  ::sd::Disciplina* release_disciplina();
+  ::sd::Disciplina* mutable_disciplina();
+  void set_allocated_disciplina(::sd::Disciplina* disciplina);
 
   // int32 ano = 2;
   void clear_ano();
@@ -1502,12 +1505,12 @@ class AlunosRequest final :
   ::google::protobuf::int32 semestre() const;
   void set_semestre(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:AlunosRequest)
+  // @@protoc_insertion_point(class_scope:sd.AlunosRequest)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::Disciplina* disciplina_;
+  ::sd::Disciplina* disciplina_;
   ::google::protobuf::int32 ano_;
   ::google::protobuf::int32 semestre_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -1516,7 +1519,7 @@ class AlunosRequest final :
 // -------------------------------------------------------------------
 
 class AlunosResponse final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:AlunosResponse) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.AlunosResponse) */ {
  public:
   AlunosResponse();
   virtual ~AlunosResponse();
@@ -1610,41 +1613,41 @@ class AlunosResponse final :
 
   // accessors -------------------------------------------------------
 
-  // repeated .Aluno alunos = 2;
+  // repeated .sd.Aluno alunos = 2;
   int alunos_size() const;
   void clear_alunos();
   static const int kAlunosFieldNumber = 2;
-  ::Aluno* mutable_alunos(int index);
-  ::google::protobuf::RepeatedPtrField< ::Aluno >*
+  ::sd::Aluno* mutable_alunos(int index);
+  ::google::protobuf::RepeatedPtrField< ::sd::Aluno >*
       mutable_alunos();
-  const ::Aluno& alunos(int index) const;
-  ::Aluno* add_alunos();
-  const ::google::protobuf::RepeatedPtrField< ::Aluno >&
+  const ::sd::Aluno& alunos(int index) const;
+  ::sd::Aluno* add_alunos();
+  const ::google::protobuf::RepeatedPtrField< ::sd::Aluno >&
       alunos() const;
 
-  // .ResponseStatus status = 1;
+  // .sd.ResponseStatus status = 1;
   bool has_status() const;
   void clear_status();
   static const int kStatusFieldNumber = 1;
-  const ::ResponseStatus& status() const;
-  ::ResponseStatus* release_status();
-  ::ResponseStatus* mutable_status();
-  void set_allocated_status(::ResponseStatus* status);
+  const ::sd::ResponseStatus& status() const;
+  ::sd::ResponseStatus* release_status();
+  ::sd::ResponseStatus* mutable_status();
+  void set_allocated_status(::sd::ResponseStatus* status);
 
-  // @@protoc_insertion_point(class_scope:AlunosResponse)
+  // @@protoc_insertion_point(class_scope:sd.AlunosResponse)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::Aluno > alunos_;
-  ::ResponseStatus* status_;
+  ::google::protobuf::RepeatedPtrField< ::sd::Aluno > alunos_;
+  ::sd::ResponseStatus* status_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_red_2eproto;
 };
 // -------------------------------------------------------------------
 
 class DisciplinaRequest final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:DisciplinaRequest) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.DisciplinaRequest) */ {
  public:
   DisciplinaRequest();
   virtual ~DisciplinaRequest();
@@ -1738,28 +1741,28 @@ class DisciplinaRequest final :
 
   // accessors -------------------------------------------------------
 
-  // .Curso curso = 1;
+  // .sd.Curso curso = 1;
   bool has_curso() const;
   void clear_curso();
   static const int kCursoFieldNumber = 1;
-  const ::Curso& curso() const;
-  ::Curso* release_curso();
-  ::Curso* mutable_curso();
-  void set_allocated_curso(::Curso* curso);
+  const ::sd::Curso& curso() const;
+  ::sd::Curso* release_curso();
+  ::sd::Curso* mutable_curso();
+  void set_allocated_curso(::sd::Curso* curso);
 
-  // @@protoc_insertion_point(class_scope:DisciplinaRequest)
+  // @@protoc_insertion_point(class_scope:sd.DisciplinaRequest)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::Curso* curso_;
+  ::sd::Curso* curso_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_red_2eproto;
 };
 // -------------------------------------------------------------------
 
 class DisciplinaResponse final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:DisciplinaResponse) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:sd.DisciplinaResponse) */ {
  public:
   DisciplinaResponse();
   virtual ~DisciplinaResponse();
@@ -1853,44 +1856,44 @@ class DisciplinaResponse final :
 
   // accessors -------------------------------------------------------
 
-  // repeated .Disciplina disciplinas = 2;
+  // repeated .sd.Disciplina disciplinas = 2;
   int disciplinas_size() const;
   void clear_disciplinas();
   static const int kDisciplinasFieldNumber = 2;
-  ::Disciplina* mutable_disciplinas(int index);
-  ::google::protobuf::RepeatedPtrField< ::Disciplina >*
+  ::sd::Disciplina* mutable_disciplinas(int index);
+  ::google::protobuf::RepeatedPtrField< ::sd::Disciplina >*
       mutable_disciplinas();
-  const ::Disciplina& disciplinas(int index) const;
-  ::Disciplina* add_disciplinas();
-  const ::google::protobuf::RepeatedPtrField< ::Disciplina >&
+  const ::sd::Disciplina& disciplinas(int index) const;
+  ::sd::Disciplina* add_disciplinas();
+  const ::google::protobuf::RepeatedPtrField< ::sd::Disciplina >&
       disciplinas() const;
 
-  // .Curso curso = 1;
+  // .sd.Curso curso = 1;
   bool has_curso() const;
   void clear_curso();
   static const int kCursoFieldNumber = 1;
-  const ::Curso& curso() const;
-  ::Curso* release_curso();
-  ::Curso* mutable_curso();
-  void set_allocated_curso(::Curso* curso);
+  const ::sd::Curso& curso() const;
+  ::sd::Curso* release_curso();
+  ::sd::Curso* mutable_curso();
+  void set_allocated_curso(::sd::Curso* curso);
 
-  // .ResponseStatus status = 3;
+  // .sd.ResponseStatus status = 3;
   bool has_status() const;
   void clear_status();
   static const int kStatusFieldNumber = 3;
-  const ::ResponseStatus& status() const;
-  ::ResponseStatus* release_status();
-  ::ResponseStatus* mutable_status();
-  void set_allocated_status(::ResponseStatus* status);
+  const ::sd::ResponseStatus& status() const;
+  ::sd::ResponseStatus* release_status();
+  ::sd::ResponseStatus* mutable_status();
+  void set_allocated_status(::sd::ResponseStatus* status);
 
-  // @@protoc_insertion_point(class_scope:DisciplinaResponse)
+  // @@protoc_insertion_point(class_scope:sd.DisciplinaResponse)
  private:
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::Disciplina > disciplinas_;
-  ::Curso* curso_;
-  ::ResponseStatus* status_;
+  ::google::protobuf::RepeatedPtrField< ::sd::Disciplina > disciplinas_;
+  ::sd::Curso* curso_;
+  ::sd::ResponseStatus* status_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_red_2eproto;
 };
@@ -1910,13 +1913,13 @@ inline void Curso::clear_codigo() {
   codigo_ = 0;
 }
 inline ::google::protobuf::int32 Curso::codigo() const {
-  // @@protoc_insertion_point(field_get:Curso.codigo)
+  // @@protoc_insertion_point(field_get:sd.Curso.codigo)
   return codigo_;
 }
 inline void Curso::set_codigo(::google::protobuf::int32 value) {
   
   codigo_ = value;
-  // @@protoc_insertion_point(field_set:Curso.codigo)
+  // @@protoc_insertion_point(field_set:sd.Curso.codigo)
 }
 
 // string nome = 2;
@@ -1924,41 +1927,41 @@ inline void Curso::clear_nome() {
   nome_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Curso::nome() const {
-  // @@protoc_insertion_point(field_get:Curso.nome)
+  // @@protoc_insertion_point(field_get:sd.Curso.nome)
   return nome_.GetNoArena();
 }
 inline void Curso::set_nome(const ::std::string& value) {
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:Curso.nome)
+  // @@protoc_insertion_point(field_set:sd.Curso.nome)
 }
 #if LANG_CXX11
 inline void Curso::set_nome(::std::string&& value) {
   
   nome_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:Curso.nome)
+  // @@protoc_insertion_point(field_set_rvalue:sd.Curso.nome)
 }
 #endif
 inline void Curso::set_nome(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:Curso.nome)
+  // @@protoc_insertion_point(field_set_char:sd.Curso.nome)
 }
 inline void Curso::set_nome(const char* value, size_t size) {
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:Curso.nome)
+  // @@protoc_insertion_point(field_set_pointer:sd.Curso.nome)
 }
 inline ::std::string* Curso::mutable_nome() {
   
-  // @@protoc_insertion_point(field_mutable:Curso.nome)
+  // @@protoc_insertion_point(field_mutable:sd.Curso.nome)
   return nome_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Curso::release_nome() {
-  // @@protoc_insertion_point(field_release:Curso.nome)
+  // @@protoc_insertion_point(field_release:sd.Curso.nome)
   
   return nome_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1969,7 +1972,7 @@ inline void Curso::set_allocated_nome(::std::string* nome) {
     
   }
   nome_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), nome);
-  // @@protoc_insertion_point(field_set_allocated:Curso.nome)
+  // @@protoc_insertion_point(field_set_allocated:sd.Curso.nome)
 }
 
 // -------------------------------------------------------------------
@@ -1981,41 +1984,41 @@ inline void Disciplina::clear_codigo() {
   codigo_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Disciplina::codigo() const {
-  // @@protoc_insertion_point(field_get:Disciplina.codigo)
+  // @@protoc_insertion_point(field_get:sd.Disciplina.codigo)
   return codigo_.GetNoArena();
 }
 inline void Disciplina::set_codigo(const ::std::string& value) {
   
   codigo_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:Disciplina.codigo)
+  // @@protoc_insertion_point(field_set:sd.Disciplina.codigo)
 }
 #if LANG_CXX11
 inline void Disciplina::set_codigo(::std::string&& value) {
   
   codigo_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:Disciplina.codigo)
+  // @@protoc_insertion_point(field_set_rvalue:sd.Disciplina.codigo)
 }
 #endif
 inline void Disciplina::set_codigo(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   codigo_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:Disciplina.codigo)
+  // @@protoc_insertion_point(field_set_char:sd.Disciplina.codigo)
 }
 inline void Disciplina::set_codigo(const char* value, size_t size) {
   
   codigo_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:Disciplina.codigo)
+  // @@protoc_insertion_point(field_set_pointer:sd.Disciplina.codigo)
 }
 inline ::std::string* Disciplina::mutable_codigo() {
   
-  // @@protoc_insertion_point(field_mutable:Disciplina.codigo)
+  // @@protoc_insertion_point(field_mutable:sd.Disciplina.codigo)
   return codigo_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Disciplina::release_codigo() {
-  // @@protoc_insertion_point(field_release:Disciplina.codigo)
+  // @@protoc_insertion_point(field_release:sd.Disciplina.codigo)
   
   return codigo_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2026,7 +2029,7 @@ inline void Disciplina::set_allocated_codigo(::std::string* codigo) {
     
   }
   codigo_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), codigo);
-  // @@protoc_insertion_point(field_set_allocated:Disciplina.codigo)
+  // @@protoc_insertion_point(field_set_allocated:sd.Disciplina.codigo)
 }
 
 // string nome = 2;
@@ -2034,41 +2037,41 @@ inline void Disciplina::clear_nome() {
   nome_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Disciplina::nome() const {
-  // @@protoc_insertion_point(field_get:Disciplina.nome)
+  // @@protoc_insertion_point(field_get:sd.Disciplina.nome)
   return nome_.GetNoArena();
 }
 inline void Disciplina::set_nome(const ::std::string& value) {
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:Disciplina.nome)
+  // @@protoc_insertion_point(field_set:sd.Disciplina.nome)
 }
 #if LANG_CXX11
 inline void Disciplina::set_nome(::std::string&& value) {
   
   nome_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:Disciplina.nome)
+  // @@protoc_insertion_point(field_set_rvalue:sd.Disciplina.nome)
 }
 #endif
 inline void Disciplina::set_nome(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:Disciplina.nome)
+  // @@protoc_insertion_point(field_set_char:sd.Disciplina.nome)
 }
 inline void Disciplina::set_nome(const char* value, size_t size) {
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:Disciplina.nome)
+  // @@protoc_insertion_point(field_set_pointer:sd.Disciplina.nome)
 }
 inline ::std::string* Disciplina::mutable_nome() {
   
-  // @@protoc_insertion_point(field_mutable:Disciplina.nome)
+  // @@protoc_insertion_point(field_mutable:sd.Disciplina.nome)
   return nome_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Disciplina::release_nome() {
-  // @@protoc_insertion_point(field_release:Disciplina.nome)
+  // @@protoc_insertion_point(field_release:sd.Disciplina.nome)
   
   return nome_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2079,7 +2082,7 @@ inline void Disciplina::set_allocated_nome(::std::string* nome) {
     
   }
   nome_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), nome);
-  // @@protoc_insertion_point(field_set_allocated:Disciplina.nome)
+  // @@protoc_insertion_point(field_set_allocated:sd.Disciplina.nome)
 }
 
 // string professor = 3;
@@ -2087,41 +2090,41 @@ inline void Disciplina::clear_professor() {
   professor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Disciplina::professor() const {
-  // @@protoc_insertion_point(field_get:Disciplina.professor)
+  // @@protoc_insertion_point(field_get:sd.Disciplina.professor)
   return professor_.GetNoArena();
 }
 inline void Disciplina::set_professor(const ::std::string& value) {
   
   professor_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:Disciplina.professor)
+  // @@protoc_insertion_point(field_set:sd.Disciplina.professor)
 }
 #if LANG_CXX11
 inline void Disciplina::set_professor(::std::string&& value) {
   
   professor_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:Disciplina.professor)
+  // @@protoc_insertion_point(field_set_rvalue:sd.Disciplina.professor)
 }
 #endif
 inline void Disciplina::set_professor(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   professor_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:Disciplina.professor)
+  // @@protoc_insertion_point(field_set_char:sd.Disciplina.professor)
 }
 inline void Disciplina::set_professor(const char* value, size_t size) {
   
   professor_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:Disciplina.professor)
+  // @@protoc_insertion_point(field_set_pointer:sd.Disciplina.professor)
 }
 inline ::std::string* Disciplina::mutable_professor() {
   
-  // @@protoc_insertion_point(field_mutable:Disciplina.professor)
+  // @@protoc_insertion_point(field_mutable:sd.Disciplina.professor)
   return professor_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Disciplina::release_professor() {
-  // @@protoc_insertion_point(field_release:Disciplina.professor)
+  // @@protoc_insertion_point(field_release:sd.Disciplina.professor)
   
   return professor_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2132,10 +2135,10 @@ inline void Disciplina::set_allocated_professor(::std::string* professor) {
     
   }
   professor_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), professor);
-  // @@protoc_insertion_point(field_set_allocated:Disciplina.professor)
+  // @@protoc_insertion_point(field_set_allocated:sd.Disciplina.professor)
 }
 
-// .Curso curso = 4;
+// .sd.Curso curso = 4;
 inline bool Disciplina::has_curso() const {
   return this != internal_default_instance() && curso_ != nullptr;
 }
@@ -2145,29 +2148,29 @@ inline void Disciplina::clear_curso() {
   }
   curso_ = nullptr;
 }
-inline const ::Curso& Disciplina::curso() const {
-  const ::Curso* p = curso_;
-  // @@protoc_insertion_point(field_get:Disciplina.curso)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Curso*>(
-      &::_Curso_default_instance_);
+inline const ::sd::Curso& Disciplina::curso() const {
+  const ::sd::Curso* p = curso_;
+  // @@protoc_insertion_point(field_get:sd.Disciplina.curso)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Curso*>(
+      &::sd::_Curso_default_instance_);
 }
-inline ::Curso* Disciplina::release_curso() {
-  // @@protoc_insertion_point(field_release:Disciplina.curso)
+inline ::sd::Curso* Disciplina::release_curso() {
+  // @@protoc_insertion_point(field_release:sd.Disciplina.curso)
   
-  ::Curso* temp = curso_;
+  ::sd::Curso* temp = curso_;
   curso_ = nullptr;
   return temp;
 }
-inline ::Curso* Disciplina::mutable_curso() {
+inline ::sd::Curso* Disciplina::mutable_curso() {
   
   if (curso_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Curso>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Curso>(GetArenaNoVirtual());
     curso_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:Disciplina.curso)
+  // @@protoc_insertion_point(field_mutable:sd.Disciplina.curso)
   return curso_;
 }
-inline void Disciplina::set_allocated_curso(::Curso* curso) {
+inline void Disciplina::set_allocated_curso(::sd::Curso* curso) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete curso_;
@@ -2183,7 +2186,7 @@ inline void Disciplina::set_allocated_curso(::Curso* curso) {
     
   }
   curso_ = curso;
-  // @@protoc_insertion_point(field_set_allocated:Disciplina.curso)
+  // @@protoc_insertion_point(field_set_allocated:sd.Disciplina.curso)
 }
 
 // -------------------------------------------------------------------
@@ -2195,13 +2198,13 @@ inline void Aluno::clear_ra() {
   ra_ = 0;
 }
 inline ::google::protobuf::int32 Aluno::ra() const {
-  // @@protoc_insertion_point(field_get:Aluno.RA)
+  // @@protoc_insertion_point(field_get:sd.Aluno.RA)
   return ra_;
 }
 inline void Aluno::set_ra(::google::protobuf::int32 value) {
   
   ra_ = value;
-  // @@protoc_insertion_point(field_set:Aluno.RA)
+  // @@protoc_insertion_point(field_set:sd.Aluno.RA)
 }
 
 // string nome = 2;
@@ -2209,41 +2212,41 @@ inline void Aluno::clear_nome() {
   nome_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Aluno::nome() const {
-  // @@protoc_insertion_point(field_get:Aluno.nome)
+  // @@protoc_insertion_point(field_get:sd.Aluno.nome)
   return nome_.GetNoArena();
 }
 inline void Aluno::set_nome(const ::std::string& value) {
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:Aluno.nome)
+  // @@protoc_insertion_point(field_set:sd.Aluno.nome)
 }
 #if LANG_CXX11
 inline void Aluno::set_nome(::std::string&& value) {
   
   nome_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:Aluno.nome)
+  // @@protoc_insertion_point(field_set_rvalue:sd.Aluno.nome)
 }
 #endif
 inline void Aluno::set_nome(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:Aluno.nome)
+  // @@protoc_insertion_point(field_set_char:sd.Aluno.nome)
 }
 inline void Aluno::set_nome(const char* value, size_t size) {
   
   nome_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:Aluno.nome)
+  // @@protoc_insertion_point(field_set_pointer:sd.Aluno.nome)
 }
 inline ::std::string* Aluno::mutable_nome() {
   
-  // @@protoc_insertion_point(field_mutable:Aluno.nome)
+  // @@protoc_insertion_point(field_mutable:sd.Aluno.nome)
   return nome_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Aluno::release_nome() {
-  // @@protoc_insertion_point(field_release:Aluno.nome)
+  // @@protoc_insertion_point(field_release:sd.Aluno.nome)
   
   return nome_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2254,7 +2257,7 @@ inline void Aluno::set_allocated_nome(::std::string* nome) {
     
   }
   nome_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), nome);
-  // @@protoc_insertion_point(field_set_allocated:Aluno.nome)
+  // @@protoc_insertion_point(field_set_allocated:sd.Aluno.nome)
 }
 
 // int32 periodo = 3;
@@ -2262,16 +2265,16 @@ inline void Aluno::clear_periodo() {
   periodo_ = 0;
 }
 inline ::google::protobuf::int32 Aluno::periodo() const {
-  // @@protoc_insertion_point(field_get:Aluno.periodo)
+  // @@protoc_insertion_point(field_get:sd.Aluno.periodo)
   return periodo_;
 }
 inline void Aluno::set_periodo(::google::protobuf::int32 value) {
   
   periodo_ = value;
-  // @@protoc_insertion_point(field_set:Aluno.periodo)
+  // @@protoc_insertion_point(field_set:sd.Aluno.periodo)
 }
 
-// .Curso curso = 4;
+// .sd.Curso curso = 4;
 inline bool Aluno::has_curso() const {
   return this != internal_default_instance() && curso_ != nullptr;
 }
@@ -2281,29 +2284,29 @@ inline void Aluno::clear_curso() {
   }
   curso_ = nullptr;
 }
-inline const ::Curso& Aluno::curso() const {
-  const ::Curso* p = curso_;
-  // @@protoc_insertion_point(field_get:Aluno.curso)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Curso*>(
-      &::_Curso_default_instance_);
+inline const ::sd::Curso& Aluno::curso() const {
+  const ::sd::Curso* p = curso_;
+  // @@protoc_insertion_point(field_get:sd.Aluno.curso)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Curso*>(
+      &::sd::_Curso_default_instance_);
 }
-inline ::Curso* Aluno::release_curso() {
-  // @@protoc_insertion_point(field_release:Aluno.curso)
+inline ::sd::Curso* Aluno::release_curso() {
+  // @@protoc_insertion_point(field_release:sd.Aluno.curso)
   
-  ::Curso* temp = curso_;
+  ::sd::Curso* temp = curso_;
   curso_ = nullptr;
   return temp;
 }
-inline ::Curso* Aluno::mutable_curso() {
+inline ::sd::Curso* Aluno::mutable_curso() {
   
   if (curso_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Curso>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Curso>(GetArenaNoVirtual());
     curso_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:Aluno.curso)
+  // @@protoc_insertion_point(field_mutable:sd.Aluno.curso)
   return curso_;
 }
-inline void Aluno::set_allocated_curso(::Curso* curso) {
+inline void Aluno::set_allocated_curso(::sd::Curso* curso) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete curso_;
@@ -2319,14 +2322,14 @@ inline void Aluno::set_allocated_curso(::Curso* curso) {
     
   }
   curso_ = curso;
-  // @@protoc_insertion_point(field_set_allocated:Aluno.curso)
+  // @@protoc_insertion_point(field_set_allocated:sd.Aluno.curso)
 }
 
 // -------------------------------------------------------------------
 
 // Matricula
 
-// .Aluno aluno = 1;
+// .sd.Aluno aluno = 1;
 inline bool Matricula::has_aluno() const {
   return this != internal_default_instance() && aluno_ != nullptr;
 }
@@ -2336,29 +2339,29 @@ inline void Matricula::clear_aluno() {
   }
   aluno_ = nullptr;
 }
-inline const ::Aluno& Matricula::aluno() const {
-  const ::Aluno* p = aluno_;
-  // @@protoc_insertion_point(field_get:Matricula.aluno)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Aluno*>(
-      &::_Aluno_default_instance_);
+inline const ::sd::Aluno& Matricula::aluno() const {
+  const ::sd::Aluno* p = aluno_;
+  // @@protoc_insertion_point(field_get:sd.Matricula.aluno)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Aluno*>(
+      &::sd::_Aluno_default_instance_);
 }
-inline ::Aluno* Matricula::release_aluno() {
-  // @@protoc_insertion_point(field_release:Matricula.aluno)
+inline ::sd::Aluno* Matricula::release_aluno() {
+  // @@protoc_insertion_point(field_release:sd.Matricula.aluno)
   
-  ::Aluno* temp = aluno_;
+  ::sd::Aluno* temp = aluno_;
   aluno_ = nullptr;
   return temp;
 }
-inline ::Aluno* Matricula::mutable_aluno() {
+inline ::sd::Aluno* Matricula::mutable_aluno() {
   
   if (aluno_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Aluno>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Aluno>(GetArenaNoVirtual());
     aluno_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:Matricula.aluno)
+  // @@protoc_insertion_point(field_mutable:sd.Matricula.aluno)
   return aluno_;
 }
-inline void Matricula::set_allocated_aluno(::Aluno* aluno) {
+inline void Matricula::set_allocated_aluno(::sd::Aluno* aluno) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete aluno_;
@@ -2374,10 +2377,10 @@ inline void Matricula::set_allocated_aluno(::Aluno* aluno) {
     
   }
   aluno_ = aluno;
-  // @@protoc_insertion_point(field_set_allocated:Matricula.aluno)
+  // @@protoc_insertion_point(field_set_allocated:sd.Matricula.aluno)
 }
 
-// .Disciplina disciplina = 2;
+// .sd.Disciplina disciplina = 2;
 inline bool Matricula::has_disciplina() const {
   return this != internal_default_instance() && disciplina_ != nullptr;
 }
@@ -2387,29 +2390,29 @@ inline void Matricula::clear_disciplina() {
   }
   disciplina_ = nullptr;
 }
-inline const ::Disciplina& Matricula::disciplina() const {
-  const ::Disciplina* p = disciplina_;
-  // @@protoc_insertion_point(field_get:Matricula.disciplina)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Disciplina*>(
-      &::_Disciplina_default_instance_);
+inline const ::sd::Disciplina& Matricula::disciplina() const {
+  const ::sd::Disciplina* p = disciplina_;
+  // @@protoc_insertion_point(field_get:sd.Matricula.disciplina)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Disciplina*>(
+      &::sd::_Disciplina_default_instance_);
 }
-inline ::Disciplina* Matricula::release_disciplina() {
-  // @@protoc_insertion_point(field_release:Matricula.disciplina)
+inline ::sd::Disciplina* Matricula::release_disciplina() {
+  // @@protoc_insertion_point(field_release:sd.Matricula.disciplina)
   
-  ::Disciplina* temp = disciplina_;
+  ::sd::Disciplina* temp = disciplina_;
   disciplina_ = nullptr;
   return temp;
 }
-inline ::Disciplina* Matricula::mutable_disciplina() {
+inline ::sd::Disciplina* Matricula::mutable_disciplina() {
   
   if (disciplina_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Disciplina>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Disciplina>(GetArenaNoVirtual());
     disciplina_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:Matricula.disciplina)
+  // @@protoc_insertion_point(field_mutable:sd.Matricula.disciplina)
   return disciplina_;
 }
-inline void Matricula::set_allocated_disciplina(::Disciplina* disciplina) {
+inline void Matricula::set_allocated_disciplina(::sd::Disciplina* disciplina) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete disciplina_;
@@ -2425,7 +2428,7 @@ inline void Matricula::set_allocated_disciplina(::Disciplina* disciplina) {
     
   }
   disciplina_ = disciplina;
-  // @@protoc_insertion_point(field_set_allocated:Matricula.disciplina)
+  // @@protoc_insertion_point(field_set_allocated:sd.Matricula.disciplina)
 }
 
 // int32 ano = 3;
@@ -2433,13 +2436,13 @@ inline void Matricula::clear_ano() {
   ano_ = 0;
 }
 inline ::google::protobuf::int32 Matricula::ano() const {
-  // @@protoc_insertion_point(field_get:Matricula.ano)
+  // @@protoc_insertion_point(field_get:sd.Matricula.ano)
   return ano_;
 }
 inline void Matricula::set_ano(::google::protobuf::int32 value) {
   
   ano_ = value;
-  // @@protoc_insertion_point(field_set:Matricula.ano)
+  // @@protoc_insertion_point(field_set:sd.Matricula.ano)
 }
 
 // int32 semestre = 4;
@@ -2447,13 +2450,13 @@ inline void Matricula::clear_semestre() {
   semestre_ = 0;
 }
 inline ::google::protobuf::int32 Matricula::semestre() const {
-  // @@protoc_insertion_point(field_get:Matricula.semestre)
+  // @@protoc_insertion_point(field_get:sd.Matricula.semestre)
   return semestre_;
 }
 inline void Matricula::set_semestre(::google::protobuf::int32 value) {
   
   semestre_ = value;
-  // @@protoc_insertion_point(field_set:Matricula.semestre)
+  // @@protoc_insertion_point(field_set:sd.Matricula.semestre)
 }
 
 // float nota = 5;
@@ -2461,13 +2464,13 @@ inline void Matricula::clear_nota() {
   nota_ = 0;
 }
 inline float Matricula::nota() const {
-  // @@protoc_insertion_point(field_get:Matricula.nota)
+  // @@protoc_insertion_point(field_get:sd.Matricula.nota)
   return nota_;
 }
 inline void Matricula::set_nota(float value) {
   
   nota_ = value;
-  // @@protoc_insertion_point(field_set:Matricula.nota)
+  // @@protoc_insertion_point(field_set:sd.Matricula.nota)
 }
 
 // int32 faltas = 6;
@@ -2475,13 +2478,13 @@ inline void Matricula::clear_faltas() {
   faltas_ = 0;
 }
 inline ::google::protobuf::int32 Matricula::faltas() const {
-  // @@protoc_insertion_point(field_get:Matricula.faltas)
+  // @@protoc_insertion_point(field_get:sd.Matricula.faltas)
   return faltas_;
 }
 inline void Matricula::set_faltas(::google::protobuf::int32 value) {
   
   faltas_ = value;
-  // @@protoc_insertion_point(field_set:Matricula.faltas)
+  // @@protoc_insertion_point(field_set:sd.Matricula.faltas)
 }
 
 // -------------------------------------------------------------------
@@ -2493,13 +2496,13 @@ inline void ResponseStatus::clear_statuscode() {
   statuscode_ = 0;
 }
 inline ::google::protobuf::int32 ResponseStatus::statuscode() const {
-  // @@protoc_insertion_point(field_get:ResponseStatus.statusCode)
+  // @@protoc_insertion_point(field_get:sd.ResponseStatus.statusCode)
   return statuscode_;
 }
 inline void ResponseStatus::set_statuscode(::google::protobuf::int32 value) {
   
   statuscode_ = value;
-  // @@protoc_insertion_point(field_set:ResponseStatus.statusCode)
+  // @@protoc_insertion_point(field_set:sd.ResponseStatus.statusCode)
 }
 
 // string message = 2;
@@ -2507,41 +2510,41 @@ inline void ResponseStatus::clear_message() {
   message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ResponseStatus::message() const {
-  // @@protoc_insertion_point(field_get:ResponseStatus.message)
+  // @@protoc_insertion_point(field_get:sd.ResponseStatus.message)
   return message_.GetNoArena();
 }
 inline void ResponseStatus::set_message(const ::std::string& value) {
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:ResponseStatus.message)
+  // @@protoc_insertion_point(field_set:sd.ResponseStatus.message)
 }
 #if LANG_CXX11
 inline void ResponseStatus::set_message(::std::string&& value) {
   
   message_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:ResponseStatus.message)
+  // @@protoc_insertion_point(field_set_rvalue:sd.ResponseStatus.message)
 }
 #endif
 inline void ResponseStatus::set_message(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:ResponseStatus.message)
+  // @@protoc_insertion_point(field_set_char:sd.ResponseStatus.message)
 }
 inline void ResponseStatus::set_message(const char* value, size_t size) {
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:ResponseStatus.message)
+  // @@protoc_insertion_point(field_set_pointer:sd.ResponseStatus.message)
 }
 inline ::std::string* ResponseStatus::mutable_message() {
   
-  // @@protoc_insertion_point(field_mutable:ResponseStatus.message)
+  // @@protoc_insertion_point(field_mutable:sd.ResponseStatus.message)
   return message_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* ResponseStatus::release_message() {
-  // @@protoc_insertion_point(field_release:ResponseStatus.message)
+  // @@protoc_insertion_point(field_release:sd.ResponseStatus.message)
   
   return message_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2552,28 +2555,28 @@ inline void ResponseStatus::set_allocated_message(::std::string* message) {
     
   }
   message_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), message);
-  // @@protoc_insertion_point(field_set_allocated:ResponseStatus.message)
+  // @@protoc_insertion_point(field_set_allocated:sd.ResponseStatus.message)
 }
 
 // -------------------------------------------------------------------
 
 // NotaRequest
 
-// .NotaRequest.OperationType type = 1;
+// .sd.NotaRequest.OperationType type = 1;
 inline void NotaRequest::clear_type() {
   type_ = 0;
 }
-inline ::NotaRequest_OperationType NotaRequest::type() const {
-  // @@protoc_insertion_point(field_get:NotaRequest.type)
-  return static_cast< ::NotaRequest_OperationType >(type_);
+inline ::sd::NotaRequest_OperationType NotaRequest::type() const {
+  // @@protoc_insertion_point(field_get:sd.NotaRequest.type)
+  return static_cast< ::sd::NotaRequest_OperationType >(type_);
 }
-inline void NotaRequest::set_type(::NotaRequest_OperationType value) {
+inline void NotaRequest::set_type(::sd::NotaRequest_OperationType value) {
   
   type_ = value;
-  // @@protoc_insertion_point(field_set:NotaRequest.type)
+  // @@protoc_insertion_point(field_set:sd.NotaRequest.type)
 }
 
-// .Matricula matricula = 2;
+// .sd.Matricula matricula = 2;
 inline bool NotaRequest::has_matricula() const {
   return this != internal_default_instance() && matricula_ != nullptr;
 }
@@ -2583,29 +2586,29 @@ inline void NotaRequest::clear_matricula() {
   }
   matricula_ = nullptr;
 }
-inline const ::Matricula& NotaRequest::matricula() const {
-  const ::Matricula* p = matricula_;
-  // @@protoc_insertion_point(field_get:NotaRequest.matricula)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Matricula*>(
-      &::_Matricula_default_instance_);
+inline const ::sd::Matricula& NotaRequest::matricula() const {
+  const ::sd::Matricula* p = matricula_;
+  // @@protoc_insertion_point(field_get:sd.NotaRequest.matricula)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Matricula*>(
+      &::sd::_Matricula_default_instance_);
 }
-inline ::Matricula* NotaRequest::release_matricula() {
-  // @@protoc_insertion_point(field_release:NotaRequest.matricula)
+inline ::sd::Matricula* NotaRequest::release_matricula() {
+  // @@protoc_insertion_point(field_release:sd.NotaRequest.matricula)
   
-  ::Matricula* temp = matricula_;
+  ::sd::Matricula* temp = matricula_;
   matricula_ = nullptr;
   return temp;
 }
-inline ::Matricula* NotaRequest::mutable_matricula() {
+inline ::sd::Matricula* NotaRequest::mutable_matricula() {
   
   if (matricula_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Matricula>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Matricula>(GetArenaNoVirtual());
     matricula_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:NotaRequest.matricula)
+  // @@protoc_insertion_point(field_mutable:sd.NotaRequest.matricula)
   return matricula_;
 }
-inline void NotaRequest::set_allocated_matricula(::Matricula* matricula) {
+inline void NotaRequest::set_allocated_matricula(::sd::Matricula* matricula) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete matricula_;
@@ -2621,14 +2624,14 @@ inline void NotaRequest::set_allocated_matricula(::Matricula* matricula) {
     
   }
   matricula_ = matricula;
-  // @@protoc_insertion_point(field_set_allocated:NotaRequest.matricula)
+  // @@protoc_insertion_point(field_set_allocated:sd.NotaRequest.matricula)
 }
 
 // -------------------------------------------------------------------
 
 // NotaResponse
 
-// .Matricula matricula = 1;
+// .sd.Matricula matricula = 1;
 inline bool NotaResponse::has_matricula() const {
   return this != internal_default_instance() && matricula_ != nullptr;
 }
@@ -2638,29 +2641,29 @@ inline void NotaResponse::clear_matricula() {
   }
   matricula_ = nullptr;
 }
-inline const ::Matricula& NotaResponse::matricula() const {
-  const ::Matricula* p = matricula_;
-  // @@protoc_insertion_point(field_get:NotaResponse.matricula)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Matricula*>(
-      &::_Matricula_default_instance_);
+inline const ::sd::Matricula& NotaResponse::matricula() const {
+  const ::sd::Matricula* p = matricula_;
+  // @@protoc_insertion_point(field_get:sd.NotaResponse.matricula)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Matricula*>(
+      &::sd::_Matricula_default_instance_);
 }
-inline ::Matricula* NotaResponse::release_matricula() {
-  // @@protoc_insertion_point(field_release:NotaResponse.matricula)
+inline ::sd::Matricula* NotaResponse::release_matricula() {
+  // @@protoc_insertion_point(field_release:sd.NotaResponse.matricula)
   
-  ::Matricula* temp = matricula_;
+  ::sd::Matricula* temp = matricula_;
   matricula_ = nullptr;
   return temp;
 }
-inline ::Matricula* NotaResponse::mutable_matricula() {
+inline ::sd::Matricula* NotaResponse::mutable_matricula() {
   
   if (matricula_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Matricula>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Matricula>(GetArenaNoVirtual());
     matricula_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:NotaResponse.matricula)
+  // @@protoc_insertion_point(field_mutable:sd.NotaResponse.matricula)
   return matricula_;
 }
-inline void NotaResponse::set_allocated_matricula(::Matricula* matricula) {
+inline void NotaResponse::set_allocated_matricula(::sd::Matricula* matricula) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete matricula_;
@@ -2676,10 +2679,10 @@ inline void NotaResponse::set_allocated_matricula(::Matricula* matricula) {
     
   }
   matricula_ = matricula;
-  // @@protoc_insertion_point(field_set_allocated:NotaResponse.matricula)
+  // @@protoc_insertion_point(field_set_allocated:sd.NotaResponse.matricula)
 }
 
-// .ResponseStatus status = 2;
+// .sd.ResponseStatus status = 2;
 inline bool NotaResponse::has_status() const {
   return this != internal_default_instance() && status_ != nullptr;
 }
@@ -2689,29 +2692,29 @@ inline void NotaResponse::clear_status() {
   }
   status_ = nullptr;
 }
-inline const ::ResponseStatus& NotaResponse::status() const {
-  const ::ResponseStatus* p = status_;
-  // @@protoc_insertion_point(field_get:NotaResponse.status)
-  return p != nullptr ? *p : *reinterpret_cast<const ::ResponseStatus*>(
-      &::_ResponseStatus_default_instance_);
+inline const ::sd::ResponseStatus& NotaResponse::status() const {
+  const ::sd::ResponseStatus* p = status_;
+  // @@protoc_insertion_point(field_get:sd.NotaResponse.status)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::ResponseStatus*>(
+      &::sd::_ResponseStatus_default_instance_);
 }
-inline ::ResponseStatus* NotaResponse::release_status() {
-  // @@protoc_insertion_point(field_release:NotaResponse.status)
+inline ::sd::ResponseStatus* NotaResponse::release_status() {
+  // @@protoc_insertion_point(field_release:sd.NotaResponse.status)
   
-  ::ResponseStatus* temp = status_;
+  ::sd::ResponseStatus* temp = status_;
   status_ = nullptr;
   return temp;
 }
-inline ::ResponseStatus* NotaResponse::mutable_status() {
+inline ::sd::ResponseStatus* NotaResponse::mutable_status() {
   
   if (status_ == nullptr) {
-    auto* p = CreateMaybeMessage<::ResponseStatus>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::ResponseStatus>(GetArenaNoVirtual());
     status_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:NotaResponse.status)
+  // @@protoc_insertion_point(field_mutable:sd.NotaResponse.status)
   return status_;
 }
-inline void NotaResponse::set_allocated_status(::ResponseStatus* status) {
+inline void NotaResponse::set_allocated_status(::sd::ResponseStatus* status) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete status_;
@@ -2727,14 +2730,14 @@ inline void NotaResponse::set_allocated_status(::ResponseStatus* status) {
     
   }
   status_ = status;
-  // @@protoc_insertion_point(field_set_allocated:NotaResponse.status)
+  // @@protoc_insertion_point(field_set_allocated:sd.NotaResponse.status)
 }
 
 // -------------------------------------------------------------------
 
 // MatriculaRequest
 
-// .Disciplina disciplina = 1;
+// .sd.Disciplina disciplina = 1;
 inline bool MatriculaRequest::has_disciplina() const {
   return this != internal_default_instance() && disciplina_ != nullptr;
 }
@@ -2744,29 +2747,29 @@ inline void MatriculaRequest::clear_disciplina() {
   }
   disciplina_ = nullptr;
 }
-inline const ::Disciplina& MatriculaRequest::disciplina() const {
-  const ::Disciplina* p = disciplina_;
-  // @@protoc_insertion_point(field_get:MatriculaRequest.disciplina)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Disciplina*>(
-      &::_Disciplina_default_instance_);
+inline const ::sd::Disciplina& MatriculaRequest::disciplina() const {
+  const ::sd::Disciplina* p = disciplina_;
+  // @@protoc_insertion_point(field_get:sd.MatriculaRequest.disciplina)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Disciplina*>(
+      &::sd::_Disciplina_default_instance_);
 }
-inline ::Disciplina* MatriculaRequest::release_disciplina() {
-  // @@protoc_insertion_point(field_release:MatriculaRequest.disciplina)
+inline ::sd::Disciplina* MatriculaRequest::release_disciplina() {
+  // @@protoc_insertion_point(field_release:sd.MatriculaRequest.disciplina)
   
-  ::Disciplina* temp = disciplina_;
+  ::sd::Disciplina* temp = disciplina_;
   disciplina_ = nullptr;
   return temp;
 }
-inline ::Disciplina* MatriculaRequest::mutable_disciplina() {
+inline ::sd::Disciplina* MatriculaRequest::mutable_disciplina() {
   
   if (disciplina_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Disciplina>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Disciplina>(GetArenaNoVirtual());
     disciplina_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:MatriculaRequest.disciplina)
+  // @@protoc_insertion_point(field_mutable:sd.MatriculaRequest.disciplina)
   return disciplina_;
 }
-inline void MatriculaRequest::set_allocated_disciplina(::Disciplina* disciplina) {
+inline void MatriculaRequest::set_allocated_disciplina(::sd::Disciplina* disciplina) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete disciplina_;
@@ -2782,7 +2785,7 @@ inline void MatriculaRequest::set_allocated_disciplina(::Disciplina* disciplina)
     
   }
   disciplina_ = disciplina;
-  // @@protoc_insertion_point(field_set_allocated:MatriculaRequest.disciplina)
+  // @@protoc_insertion_point(field_set_allocated:sd.MatriculaRequest.disciplina)
 }
 
 // int32 ano = 2;
@@ -2790,13 +2793,13 @@ inline void MatriculaRequest::clear_ano() {
   ano_ = 0;
 }
 inline ::google::protobuf::int32 MatriculaRequest::ano() const {
-  // @@protoc_insertion_point(field_get:MatriculaRequest.ano)
+  // @@protoc_insertion_point(field_get:sd.MatriculaRequest.ano)
   return ano_;
 }
 inline void MatriculaRequest::set_ano(::google::protobuf::int32 value) {
   
   ano_ = value;
-  // @@protoc_insertion_point(field_set:MatriculaRequest.ano)
+  // @@protoc_insertion_point(field_set:sd.MatriculaRequest.ano)
 }
 
 // int32 semestre = 3;
@@ -2804,20 +2807,20 @@ inline void MatriculaRequest::clear_semestre() {
   semestre_ = 0;
 }
 inline ::google::protobuf::int32 MatriculaRequest::semestre() const {
-  // @@protoc_insertion_point(field_get:MatriculaRequest.semestre)
+  // @@protoc_insertion_point(field_get:sd.MatriculaRequest.semestre)
   return semestre_;
 }
 inline void MatriculaRequest::set_semestre(::google::protobuf::int32 value) {
   
   semestre_ = value;
-  // @@protoc_insertion_point(field_set:MatriculaRequest.semestre)
+  // @@protoc_insertion_point(field_set:sd.MatriculaRequest.semestre)
 }
 
 // -------------------------------------------------------------------
 
 // MatriculaResponse
 
-// .Disciplina disciplina = 1;
+// .sd.Disciplina disciplina = 1;
 inline bool MatriculaResponse::has_disciplina() const {
   return this != internal_default_instance() && disciplina_ != nullptr;
 }
@@ -2827,29 +2830,29 @@ inline void MatriculaResponse::clear_disciplina() {
   }
   disciplina_ = nullptr;
 }
-inline const ::Disciplina& MatriculaResponse::disciplina() const {
-  const ::Disciplina* p = disciplina_;
-  // @@protoc_insertion_point(field_get:MatriculaResponse.disciplina)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Disciplina*>(
-      &::_Disciplina_default_instance_);
+inline const ::sd::Disciplina& MatriculaResponse::disciplina() const {
+  const ::sd::Disciplina* p = disciplina_;
+  // @@protoc_insertion_point(field_get:sd.MatriculaResponse.disciplina)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Disciplina*>(
+      &::sd::_Disciplina_default_instance_);
 }
-inline ::Disciplina* MatriculaResponse::release_disciplina() {
-  // @@protoc_insertion_point(field_release:MatriculaResponse.disciplina)
+inline ::sd::Disciplina* MatriculaResponse::release_disciplina() {
+  // @@protoc_insertion_point(field_release:sd.MatriculaResponse.disciplina)
   
-  ::Disciplina* temp = disciplina_;
+  ::sd::Disciplina* temp = disciplina_;
   disciplina_ = nullptr;
   return temp;
 }
-inline ::Disciplina* MatriculaResponse::mutable_disciplina() {
+inline ::sd::Disciplina* MatriculaResponse::mutable_disciplina() {
   
   if (disciplina_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Disciplina>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Disciplina>(GetArenaNoVirtual());
     disciplina_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:MatriculaResponse.disciplina)
+  // @@protoc_insertion_point(field_mutable:sd.MatriculaResponse.disciplina)
   return disciplina_;
 }
-inline void MatriculaResponse::set_allocated_disciplina(::Disciplina* disciplina) {
+inline void MatriculaResponse::set_allocated_disciplina(::sd::Disciplina* disciplina) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete disciplina_;
@@ -2865,40 +2868,40 @@ inline void MatriculaResponse::set_allocated_disciplina(::Disciplina* disciplina
     
   }
   disciplina_ = disciplina;
-  // @@protoc_insertion_point(field_set_allocated:MatriculaResponse.disciplina)
+  // @@protoc_insertion_point(field_set_allocated:sd.MatriculaResponse.disciplina)
 }
 
-// repeated .Matricula matriculas = 2;
+// repeated .sd.Matricula matriculas = 2;
 inline int MatriculaResponse::matriculas_size() const {
   return matriculas_.size();
 }
 inline void MatriculaResponse::clear_matriculas() {
   matriculas_.Clear();
 }
-inline ::Matricula* MatriculaResponse::mutable_matriculas(int index) {
-  // @@protoc_insertion_point(field_mutable:MatriculaResponse.matriculas)
+inline ::sd::Matricula* MatriculaResponse::mutable_matriculas(int index) {
+  // @@protoc_insertion_point(field_mutable:sd.MatriculaResponse.matriculas)
   return matriculas_.Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField< ::Matricula >*
+inline ::google::protobuf::RepeatedPtrField< ::sd::Matricula >*
 MatriculaResponse::mutable_matriculas() {
-  // @@protoc_insertion_point(field_mutable_list:MatriculaResponse.matriculas)
+  // @@protoc_insertion_point(field_mutable_list:sd.MatriculaResponse.matriculas)
   return &matriculas_;
 }
-inline const ::Matricula& MatriculaResponse::matriculas(int index) const {
-  // @@protoc_insertion_point(field_get:MatriculaResponse.matriculas)
+inline const ::sd::Matricula& MatriculaResponse::matriculas(int index) const {
+  // @@protoc_insertion_point(field_get:sd.MatriculaResponse.matriculas)
   return matriculas_.Get(index);
 }
-inline ::Matricula* MatriculaResponse::add_matriculas() {
-  // @@protoc_insertion_point(field_add:MatriculaResponse.matriculas)
+inline ::sd::Matricula* MatriculaResponse::add_matriculas() {
+  // @@protoc_insertion_point(field_add:sd.MatriculaResponse.matriculas)
   return matriculas_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::Matricula >&
+inline const ::google::protobuf::RepeatedPtrField< ::sd::Matricula >&
 MatriculaResponse::matriculas() const {
-  // @@protoc_insertion_point(field_list:MatriculaResponse.matriculas)
+  // @@protoc_insertion_point(field_list:sd.MatriculaResponse.matriculas)
   return matriculas_;
 }
 
-// .ResponseStatus status = 3;
+// .sd.ResponseStatus status = 3;
 inline bool MatriculaResponse::has_status() const {
   return this != internal_default_instance() && status_ != nullptr;
 }
@@ -2908,29 +2911,29 @@ inline void MatriculaResponse::clear_status() {
   }
   status_ = nullptr;
 }
-inline const ::ResponseStatus& MatriculaResponse::status() const {
-  const ::ResponseStatus* p = status_;
-  // @@protoc_insertion_point(field_get:MatriculaResponse.status)
-  return p != nullptr ? *p : *reinterpret_cast<const ::ResponseStatus*>(
-      &::_ResponseStatus_default_instance_);
+inline const ::sd::ResponseStatus& MatriculaResponse::status() const {
+  const ::sd::ResponseStatus* p = status_;
+  // @@protoc_insertion_point(field_get:sd.MatriculaResponse.status)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::ResponseStatus*>(
+      &::sd::_ResponseStatus_default_instance_);
 }
-inline ::ResponseStatus* MatriculaResponse::release_status() {
-  // @@protoc_insertion_point(field_release:MatriculaResponse.status)
+inline ::sd::ResponseStatus* MatriculaResponse::release_status() {
+  // @@protoc_insertion_point(field_release:sd.MatriculaResponse.status)
   
-  ::ResponseStatus* temp = status_;
+  ::sd::ResponseStatus* temp = status_;
   status_ = nullptr;
   return temp;
 }
-inline ::ResponseStatus* MatriculaResponse::mutable_status() {
+inline ::sd::ResponseStatus* MatriculaResponse::mutable_status() {
   
   if (status_ == nullptr) {
-    auto* p = CreateMaybeMessage<::ResponseStatus>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::ResponseStatus>(GetArenaNoVirtual());
     status_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:MatriculaResponse.status)
+  // @@protoc_insertion_point(field_mutable:sd.MatriculaResponse.status)
   return status_;
 }
-inline void MatriculaResponse::set_allocated_status(::ResponseStatus* status) {
+inline void MatriculaResponse::set_allocated_status(::sd::ResponseStatus* status) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete status_;
@@ -2946,14 +2949,14 @@ inline void MatriculaResponse::set_allocated_status(::ResponseStatus* status) {
     
   }
   status_ = status;
-  // @@protoc_insertion_point(field_set_allocated:MatriculaResponse.status)
+  // @@protoc_insertion_point(field_set_allocated:sd.MatriculaResponse.status)
 }
 
 // -------------------------------------------------------------------
 
 // AlunosRequest
 
-// .Disciplina disciplina = 1;
+// .sd.Disciplina disciplina = 1;
 inline bool AlunosRequest::has_disciplina() const {
   return this != internal_default_instance() && disciplina_ != nullptr;
 }
@@ -2963,29 +2966,29 @@ inline void AlunosRequest::clear_disciplina() {
   }
   disciplina_ = nullptr;
 }
-inline const ::Disciplina& AlunosRequest::disciplina() const {
-  const ::Disciplina* p = disciplina_;
-  // @@protoc_insertion_point(field_get:AlunosRequest.disciplina)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Disciplina*>(
-      &::_Disciplina_default_instance_);
+inline const ::sd::Disciplina& AlunosRequest::disciplina() const {
+  const ::sd::Disciplina* p = disciplina_;
+  // @@protoc_insertion_point(field_get:sd.AlunosRequest.disciplina)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Disciplina*>(
+      &::sd::_Disciplina_default_instance_);
 }
-inline ::Disciplina* AlunosRequest::release_disciplina() {
-  // @@protoc_insertion_point(field_release:AlunosRequest.disciplina)
+inline ::sd::Disciplina* AlunosRequest::release_disciplina() {
+  // @@protoc_insertion_point(field_release:sd.AlunosRequest.disciplina)
   
-  ::Disciplina* temp = disciplina_;
+  ::sd::Disciplina* temp = disciplina_;
   disciplina_ = nullptr;
   return temp;
 }
-inline ::Disciplina* AlunosRequest::mutable_disciplina() {
+inline ::sd::Disciplina* AlunosRequest::mutable_disciplina() {
   
   if (disciplina_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Disciplina>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Disciplina>(GetArenaNoVirtual());
     disciplina_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:AlunosRequest.disciplina)
+  // @@protoc_insertion_point(field_mutable:sd.AlunosRequest.disciplina)
   return disciplina_;
 }
-inline void AlunosRequest::set_allocated_disciplina(::Disciplina* disciplina) {
+inline void AlunosRequest::set_allocated_disciplina(::sd::Disciplina* disciplina) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete disciplina_;
@@ -3001,7 +3004,7 @@ inline void AlunosRequest::set_allocated_disciplina(::Disciplina* disciplina) {
     
   }
   disciplina_ = disciplina;
-  // @@protoc_insertion_point(field_set_allocated:AlunosRequest.disciplina)
+  // @@protoc_insertion_point(field_set_allocated:sd.AlunosRequest.disciplina)
 }
 
 // int32 ano = 2;
@@ -3009,13 +3012,13 @@ inline void AlunosRequest::clear_ano() {
   ano_ = 0;
 }
 inline ::google::protobuf::int32 AlunosRequest::ano() const {
-  // @@protoc_insertion_point(field_get:AlunosRequest.ano)
+  // @@protoc_insertion_point(field_get:sd.AlunosRequest.ano)
   return ano_;
 }
 inline void AlunosRequest::set_ano(::google::protobuf::int32 value) {
   
   ano_ = value;
-  // @@protoc_insertion_point(field_set:AlunosRequest.ano)
+  // @@protoc_insertion_point(field_set:sd.AlunosRequest.ano)
 }
 
 // int32 semestre = 3;
@@ -3023,20 +3026,20 @@ inline void AlunosRequest::clear_semestre() {
   semestre_ = 0;
 }
 inline ::google::protobuf::int32 AlunosRequest::semestre() const {
-  // @@protoc_insertion_point(field_get:AlunosRequest.semestre)
+  // @@protoc_insertion_point(field_get:sd.AlunosRequest.semestre)
   return semestre_;
 }
 inline void AlunosRequest::set_semestre(::google::protobuf::int32 value) {
   
   semestre_ = value;
-  // @@protoc_insertion_point(field_set:AlunosRequest.semestre)
+  // @@protoc_insertion_point(field_set:sd.AlunosRequest.semestre)
 }
 
 // -------------------------------------------------------------------
 
 // AlunosResponse
 
-// .ResponseStatus status = 1;
+// .sd.ResponseStatus status = 1;
 inline bool AlunosResponse::has_status() const {
   return this != internal_default_instance() && status_ != nullptr;
 }
@@ -3046,29 +3049,29 @@ inline void AlunosResponse::clear_status() {
   }
   status_ = nullptr;
 }
-inline const ::ResponseStatus& AlunosResponse::status() const {
-  const ::ResponseStatus* p = status_;
-  // @@protoc_insertion_point(field_get:AlunosResponse.status)
-  return p != nullptr ? *p : *reinterpret_cast<const ::ResponseStatus*>(
-      &::_ResponseStatus_default_instance_);
+inline const ::sd::ResponseStatus& AlunosResponse::status() const {
+  const ::sd::ResponseStatus* p = status_;
+  // @@protoc_insertion_point(field_get:sd.AlunosResponse.status)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::ResponseStatus*>(
+      &::sd::_ResponseStatus_default_instance_);
 }
-inline ::ResponseStatus* AlunosResponse::release_status() {
-  // @@protoc_insertion_point(field_release:AlunosResponse.status)
+inline ::sd::ResponseStatus* AlunosResponse::release_status() {
+  // @@protoc_insertion_point(field_release:sd.AlunosResponse.status)
   
-  ::ResponseStatus* temp = status_;
+  ::sd::ResponseStatus* temp = status_;
   status_ = nullptr;
   return temp;
 }
-inline ::ResponseStatus* AlunosResponse::mutable_status() {
+inline ::sd::ResponseStatus* AlunosResponse::mutable_status() {
   
   if (status_ == nullptr) {
-    auto* p = CreateMaybeMessage<::ResponseStatus>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::ResponseStatus>(GetArenaNoVirtual());
     status_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:AlunosResponse.status)
+  // @@protoc_insertion_point(field_mutable:sd.AlunosResponse.status)
   return status_;
 }
-inline void AlunosResponse::set_allocated_status(::ResponseStatus* status) {
+inline void AlunosResponse::set_allocated_status(::sd::ResponseStatus* status) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete status_;
@@ -3084,36 +3087,36 @@ inline void AlunosResponse::set_allocated_status(::ResponseStatus* status) {
     
   }
   status_ = status;
-  // @@protoc_insertion_point(field_set_allocated:AlunosResponse.status)
+  // @@protoc_insertion_point(field_set_allocated:sd.AlunosResponse.status)
 }
 
-// repeated .Aluno alunos = 2;
+// repeated .sd.Aluno alunos = 2;
 inline int AlunosResponse::alunos_size() const {
   return alunos_.size();
 }
 inline void AlunosResponse::clear_alunos() {
   alunos_.Clear();
 }
-inline ::Aluno* AlunosResponse::mutable_alunos(int index) {
-  // @@protoc_insertion_point(field_mutable:AlunosResponse.alunos)
+inline ::sd::Aluno* AlunosResponse::mutable_alunos(int index) {
+  // @@protoc_insertion_point(field_mutable:sd.AlunosResponse.alunos)
   return alunos_.Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField< ::Aluno >*
+inline ::google::protobuf::RepeatedPtrField< ::sd::Aluno >*
 AlunosResponse::mutable_alunos() {
-  // @@protoc_insertion_point(field_mutable_list:AlunosResponse.alunos)
+  // @@protoc_insertion_point(field_mutable_list:sd.AlunosResponse.alunos)
   return &alunos_;
 }
-inline const ::Aluno& AlunosResponse::alunos(int index) const {
-  // @@protoc_insertion_point(field_get:AlunosResponse.alunos)
+inline const ::sd::Aluno& AlunosResponse::alunos(int index) const {
+  // @@protoc_insertion_point(field_get:sd.AlunosResponse.alunos)
   return alunos_.Get(index);
 }
-inline ::Aluno* AlunosResponse::add_alunos() {
-  // @@protoc_insertion_point(field_add:AlunosResponse.alunos)
+inline ::sd::Aluno* AlunosResponse::add_alunos() {
+  // @@protoc_insertion_point(field_add:sd.AlunosResponse.alunos)
   return alunos_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::Aluno >&
+inline const ::google::protobuf::RepeatedPtrField< ::sd::Aluno >&
 AlunosResponse::alunos() const {
-  // @@protoc_insertion_point(field_list:AlunosResponse.alunos)
+  // @@protoc_insertion_point(field_list:sd.AlunosResponse.alunos)
   return alunos_;
 }
 
@@ -3121,7 +3124,7 @@ AlunosResponse::alunos() const {
 
 // DisciplinaRequest
 
-// .Curso curso = 1;
+// .sd.Curso curso = 1;
 inline bool DisciplinaRequest::has_curso() const {
   return this != internal_default_instance() && curso_ != nullptr;
 }
@@ -3131,29 +3134,29 @@ inline void DisciplinaRequest::clear_curso() {
   }
   curso_ = nullptr;
 }
-inline const ::Curso& DisciplinaRequest::curso() const {
-  const ::Curso* p = curso_;
-  // @@protoc_insertion_point(field_get:DisciplinaRequest.curso)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Curso*>(
-      &::_Curso_default_instance_);
+inline const ::sd::Curso& DisciplinaRequest::curso() const {
+  const ::sd::Curso* p = curso_;
+  // @@protoc_insertion_point(field_get:sd.DisciplinaRequest.curso)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Curso*>(
+      &::sd::_Curso_default_instance_);
 }
-inline ::Curso* DisciplinaRequest::release_curso() {
-  // @@protoc_insertion_point(field_release:DisciplinaRequest.curso)
+inline ::sd::Curso* DisciplinaRequest::release_curso() {
+  // @@protoc_insertion_point(field_release:sd.DisciplinaRequest.curso)
   
-  ::Curso* temp = curso_;
+  ::sd::Curso* temp = curso_;
   curso_ = nullptr;
   return temp;
 }
-inline ::Curso* DisciplinaRequest::mutable_curso() {
+inline ::sd::Curso* DisciplinaRequest::mutable_curso() {
   
   if (curso_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Curso>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Curso>(GetArenaNoVirtual());
     curso_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:DisciplinaRequest.curso)
+  // @@protoc_insertion_point(field_mutable:sd.DisciplinaRequest.curso)
   return curso_;
 }
-inline void DisciplinaRequest::set_allocated_curso(::Curso* curso) {
+inline void DisciplinaRequest::set_allocated_curso(::sd::Curso* curso) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete curso_;
@@ -3169,14 +3172,14 @@ inline void DisciplinaRequest::set_allocated_curso(::Curso* curso) {
     
   }
   curso_ = curso;
-  // @@protoc_insertion_point(field_set_allocated:DisciplinaRequest.curso)
+  // @@protoc_insertion_point(field_set_allocated:sd.DisciplinaRequest.curso)
 }
 
 // -------------------------------------------------------------------
 
 // DisciplinaResponse
 
-// .Curso curso = 1;
+// .sd.Curso curso = 1;
 inline bool DisciplinaResponse::has_curso() const {
   return this != internal_default_instance() && curso_ != nullptr;
 }
@@ -3186,29 +3189,29 @@ inline void DisciplinaResponse::clear_curso() {
   }
   curso_ = nullptr;
 }
-inline const ::Curso& DisciplinaResponse::curso() const {
-  const ::Curso* p = curso_;
-  // @@protoc_insertion_point(field_get:DisciplinaResponse.curso)
-  return p != nullptr ? *p : *reinterpret_cast<const ::Curso*>(
-      &::_Curso_default_instance_);
+inline const ::sd::Curso& DisciplinaResponse::curso() const {
+  const ::sd::Curso* p = curso_;
+  // @@protoc_insertion_point(field_get:sd.DisciplinaResponse.curso)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Curso*>(
+      &::sd::_Curso_default_instance_);
 }
-inline ::Curso* DisciplinaResponse::release_curso() {
-  // @@protoc_insertion_point(field_release:DisciplinaResponse.curso)
+inline ::sd::Curso* DisciplinaResponse::release_curso() {
+  // @@protoc_insertion_point(field_release:sd.DisciplinaResponse.curso)
   
-  ::Curso* temp = curso_;
+  ::sd::Curso* temp = curso_;
   curso_ = nullptr;
   return temp;
 }
-inline ::Curso* DisciplinaResponse::mutable_curso() {
+inline ::sd::Curso* DisciplinaResponse::mutable_curso() {
   
   if (curso_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Curso>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::Curso>(GetArenaNoVirtual());
     curso_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:DisciplinaResponse.curso)
+  // @@protoc_insertion_point(field_mutable:sd.DisciplinaResponse.curso)
   return curso_;
 }
-inline void DisciplinaResponse::set_allocated_curso(::Curso* curso) {
+inline void DisciplinaResponse::set_allocated_curso(::sd::Curso* curso) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete curso_;
@@ -3224,40 +3227,40 @@ inline void DisciplinaResponse::set_allocated_curso(::Curso* curso) {
     
   }
   curso_ = curso;
-  // @@protoc_insertion_point(field_set_allocated:DisciplinaResponse.curso)
+  // @@protoc_insertion_point(field_set_allocated:sd.DisciplinaResponse.curso)
 }
 
-// repeated .Disciplina disciplinas = 2;
+// repeated .sd.Disciplina disciplinas = 2;
 inline int DisciplinaResponse::disciplinas_size() const {
   return disciplinas_.size();
 }
 inline void DisciplinaResponse::clear_disciplinas() {
   disciplinas_.Clear();
 }
-inline ::Disciplina* DisciplinaResponse::mutable_disciplinas(int index) {
-  // @@protoc_insertion_point(field_mutable:DisciplinaResponse.disciplinas)
+inline ::sd::Disciplina* DisciplinaResponse::mutable_disciplinas(int index) {
+  // @@protoc_insertion_point(field_mutable:sd.DisciplinaResponse.disciplinas)
   return disciplinas_.Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField< ::Disciplina >*
+inline ::google::protobuf::RepeatedPtrField< ::sd::Disciplina >*
 DisciplinaResponse::mutable_disciplinas() {
-  // @@protoc_insertion_point(field_mutable_list:DisciplinaResponse.disciplinas)
+  // @@protoc_insertion_point(field_mutable_list:sd.DisciplinaResponse.disciplinas)
   return &disciplinas_;
 }
-inline const ::Disciplina& DisciplinaResponse::disciplinas(int index) const {
-  // @@protoc_insertion_point(field_get:DisciplinaResponse.disciplinas)
+inline const ::sd::Disciplina& DisciplinaResponse::disciplinas(int index) const {
+  // @@protoc_insertion_point(field_get:sd.DisciplinaResponse.disciplinas)
   return disciplinas_.Get(index);
 }
-inline ::Disciplina* DisciplinaResponse::add_disciplinas() {
-  // @@protoc_insertion_point(field_add:DisciplinaResponse.disciplinas)
+inline ::sd::Disciplina* DisciplinaResponse::add_disciplinas() {
+  // @@protoc_insertion_point(field_add:sd.DisciplinaResponse.disciplinas)
   return disciplinas_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::Disciplina >&
+inline const ::google::protobuf::RepeatedPtrField< ::sd::Disciplina >&
 DisciplinaResponse::disciplinas() const {
-  // @@protoc_insertion_point(field_list:DisciplinaResponse.disciplinas)
+  // @@protoc_insertion_point(field_list:sd.DisciplinaResponse.disciplinas)
   return disciplinas_;
 }
 
-// .ResponseStatus status = 3;
+// .sd.ResponseStatus status = 3;
 inline bool DisciplinaResponse::has_status() const {
   return this != internal_default_instance() && status_ != nullptr;
 }
@@ -3267,29 +3270,29 @@ inline void DisciplinaResponse::clear_status() {
   }
   status_ = nullptr;
 }
-inline const ::ResponseStatus& DisciplinaResponse::status() const {
-  const ::ResponseStatus* p = status_;
-  // @@protoc_insertion_point(field_get:DisciplinaResponse.status)
-  return p != nullptr ? *p : *reinterpret_cast<const ::ResponseStatus*>(
-      &::_ResponseStatus_default_instance_);
+inline const ::sd::ResponseStatus& DisciplinaResponse::status() const {
+  const ::sd::ResponseStatus* p = status_;
+  // @@protoc_insertion_point(field_get:sd.DisciplinaResponse.status)
+  return p != nullptr ? *p : *reinterpret_cast<const ::sd::ResponseStatus*>(
+      &::sd::_ResponseStatus_default_instance_);
 }
-inline ::ResponseStatus* DisciplinaResponse::release_status() {
-  // @@protoc_insertion_point(field_release:DisciplinaResponse.status)
+inline ::sd::ResponseStatus* DisciplinaResponse::release_status() {
+  // @@protoc_insertion_point(field_release:sd.DisciplinaResponse.status)
   
-  ::ResponseStatus* temp = status_;
+  ::sd::ResponseStatus* temp = status_;
   status_ = nullptr;
   return temp;
 }
-inline ::ResponseStatus* DisciplinaResponse::mutable_status() {
+inline ::sd::ResponseStatus* DisciplinaResponse::mutable_status() {
   
   if (status_ == nullptr) {
-    auto* p = CreateMaybeMessage<::ResponseStatus>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::sd::ResponseStatus>(GetArenaNoVirtual());
     status_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:DisciplinaResponse.status)
+  // @@protoc_insertion_point(field_mutable:sd.DisciplinaResponse.status)
   return status_;
 }
-inline void DisciplinaResponse::set_allocated_status(::ResponseStatus* status) {
+inline void DisciplinaResponse::set_allocated_status(::sd::ResponseStatus* status) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete status_;
@@ -3305,7 +3308,7 @@ inline void DisciplinaResponse::set_allocated_status(::ResponseStatus* status) {
     
   }
   status_ = status;
-  // @@protoc_insertion_point(field_set_allocated:DisciplinaResponse.status)
+  // @@protoc_insertion_point(field_set_allocated:sd.DisciplinaResponse.status)
 }
 
 #ifdef __GNUC__
@@ -3338,14 +3341,15 @@ inline void DisciplinaResponse::set_allocated_status(::ResponseStatus* status) {
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace sd
 
 namespace google {
 namespace protobuf {
 
-template <> struct is_proto_enum< ::NotaRequest_OperationType> : ::std::true_type {};
+template <> struct is_proto_enum< ::sd::NotaRequest_OperationType> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::NotaRequest_OperationType>() {
-  return ::NotaRequest_OperationType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::sd::NotaRequest_OperationType>() {
+  return ::sd::NotaRequest_OperationType_descriptor();
 }
 
 }  // namespace protobuf

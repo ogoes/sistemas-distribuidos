@@ -73,8 +73,8 @@ bool Database::open (const char * db_name) {
 Database::Database () {}
 Database::~Database () {}
 
-int main () {
-  Database::open ("./teste.db");
+// int main () {
+//   Database::open ("./teste.db");
 
-  return 0;
-}
+//   return 0;
+// }

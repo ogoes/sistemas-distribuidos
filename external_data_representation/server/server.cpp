@@ -10,6 +10,9 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 #include <sys/types.h>
+#include <unistd.h>
+
+#include "./protocol_buffer/handler.h"
 
 #define SockAddress struct sockaddr
 #define SockIn struct sockaddr_in
@@ -38,12 +41,12 @@ RequestHeader * unwrapRequest (char * request) {
 
   int byteBegin = 0;
 
-  Connection connection     = ( int ) request[byteBegin++];
+  int connection            = ( int ) request[byteBegin++];
   int requestRepresentation = ( int ) request[byteBegin++];
 
   RequestHeader * req = ( RequestHeader * ) malloc (sizeof (RequestHeader));
   req->requestData    = ( char * ) calloc (sizeof (request) + 1, sizeof (char));
-  req->connection     = connection;
+  req->connection     = ( Connection ) connection;
   req->requestRepresentation = requestRepresentation;
 
   memcpy (req->requestData, request + byteBegin, sizeof (request + byteBegin));
@@ -92,17 +95,14 @@ void clientHandler (SockAttr client) {
       break;
     case JSON:
       // chama lib de json
-      responseFunction = json::middleware;
+      // responseFunction = json::middleware;
       break;
     case XML:
       // chama lib de xml
-      responseFunction = xml::middleware;
+      // responseFunction = xml::middleware;
       break;
     default: break;
     }
-
-    char responseData[buffer_size];
-    bzero (responseData, buffer_size);
 
     char * responseData =
         (*responseFunction) (req->connection, req->requestData);
@@ -152,7 +152,7 @@ int main (int argc, char * argv[]) {
   server.in.sin_addr.s_addr = htonl (INADDR_ANY);
   server.in.sin_port        = htons (PORT);
 
-  if ((bind (server.sockFd, ( SockAttr * ) &(server.in), server.inLen))) {
+  if ((bind (server.sockFd, ( SockAddress * ) &(server.in), server.inLen))) {
     close (server.sockFd);
     std::cerr << "Erro ao executar o bind" << std::endl;
     exit (1);
@@ -165,10 +165,11 @@ int main (int argc, char * argv[]) {
 
   client.inLen = sizeof (client.in);
   while (true) {
-    client.sockFd =
-        accept (server.sockFd, ( SockAttr * ) &(client.in), &client.inLen);
+    client.sockFd = accept (server.sockFd,
+                            ( SockAddress * ) &(client.in),
+                            ( unsigned int * ) &client.inLen);
     if (client.sockFd < 0)
-      std::cout << "Erro ao aceitar nova conexão" >> std::endl;
+      std::cout << "Erro ao aceitar nova conexão" << std::endl;
 
     std::thread (clientHandler, client).detach ();
   }

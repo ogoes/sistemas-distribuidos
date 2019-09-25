@@ -6,7 +6,7 @@ namespace pro_buffer {
 char * middleware (int, char *);
 
 char * crudRequest (char *);
-char * notasRequest (char *);
+char * matriculasRequest (char *);
 char * alunosRequest (char *);
 char * disciplinasRequest (char *);
 
