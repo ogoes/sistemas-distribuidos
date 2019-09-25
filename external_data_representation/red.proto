@@ -1,0 +1,95 @@
+syntax = "proto3";
+
+
+message Curso {
+	int32 codigo = 1;
+	string nome = 2;
+}
+
+
+message Disciplina {
+	string codigo = 1;
+	string nome = 2;
+	string professor = 3;
+	Curso curso = 4;
+}
+
+message Aluno {
+	int32 RA = 1;
+	string nome = 2;
+	int32 periodo = 3;
+	Curso curso = 4; 
+}
+
+message Matricula {
+	Aluno aluno = 1;
+	Disciplina disciplina = 2;
+	int32 ano = 3;
+	int32 semestre = 4;
+	float nota = 5;
+	int32 faltas = 6;
+}
+
+
+message ResponseStatus {
+	int32 statusCode = 1;
+	string message = 2;
+}
+
+
+// Cadastro, consulta, remoção e atualização de notas para alunos.
+// TYPE 1
+message NotaRequest {
+
+	enum OperationType {
+		CREATE = 0;
+    RETRIEVE = 1;
+    UPDATE = 2;
+    DELETE = 3;
+	}
+
+	OperationType type = 1;
+	Matricula matricula = 2;
+}
+message NotaResponse {
+	Matricula matricula = 1;
+	ResponseStatus status = 2;
+}
+
+
+// Consulta de notas e faltas de uma disciplina em um ano/semestre.
+// TYPE 2
+message MatriculaRequest {
+	Disciplina disciplina = 1;
+	int32 ano = 2;
+	int32 semestre = 3;
+}
+message MatriculaResponse {
+	Disciplina disciplina = 1;
+	repeated Matricula matriculas = 2;
+	ResponseStatus status = 3;
+}
+
+
+// Consulta de alunos de uma disciplina em um ano/semestre.
+// TYPE 3
+message AlunosRequest {
+	Disciplina disciplina = 1;
+	int32 ano = 2;
+	int32 semestre = 3;
+}
+message AlunosResponse {
+	ResponseStatus status = 1;
+	repeated Aluno alunos = 2;
+}
+
+// listagem de disciplina de um curso.
+// TYPE 4
+message DisciplinaRequest {
+	Curso curso = 1;
+}
+message DisciplinaResponse {
+	Curso curso = 1;
+	repeated Disciplina disciplinas = 2;
+	ResponseStatus status = 3;
+}
