@@ -453,7 +453,7 @@ const char descriptor_table_protodef_red_2eproto[] =
   "tricula\030\002 \001(\0132\r.sd.Matricula\"A\n\rOperatio"
   "nType\022\n\n\006CREATE\020\000\022\014\n\010RETRIEVE\020\001\022\n\n\006UPDAT"
   "E\020\002\022\n\n\006DELETE\020\003\"T\n\014NotaResponse\022 \n\tmatri"
-  "cula\030\001 \001(\0132\r.sd.Matricula\022\"\n\006status\030\002 \001("
+  "cula\030\001 \003(\0132\r.sd.Matricula\022\"\n\006status\030\002 \001("
   "\0132\022.sd.ResponseStatus\"U\n\020MatriculaReques"
   "t\022\"\n\ndisciplina\030\001 \001(\0132\016.sd.Disciplina\022\013\n"
   "\003ano\030\002 \001(\005\022\020\n\010semestre\030\003 \001(\005\"~\n\021Matricul"
@@ -3028,21 +3028,14 @@ void NotaRequest::InternalSwap(NotaRequest* other) {
 // ===================================================================
 
 void NotaResponse::InitAsDefaultInstance() {
-  ::sd::_NotaResponse_default_instance_._instance.get_mutable()->matricula_ = const_cast< ::sd::Matricula*>(
-      ::sd::Matricula::internal_default_instance());
   ::sd::_NotaResponse_default_instance_._instance.get_mutable()->status_ = const_cast< ::sd::ResponseStatus*>(
       ::sd::ResponseStatus::internal_default_instance());
 }
 class NotaResponse::HasBitSetters {
  public:
-  static const ::sd::Matricula& matricula(const NotaResponse* msg);
   static const ::sd::ResponseStatus& status(const NotaResponse* msg);
 };
 
-const ::sd::Matricula&
-NotaResponse::HasBitSetters::matricula(const NotaResponse* msg) {
-  return *msg->matricula_;
-}
 const ::sd::ResponseStatus&
 NotaResponse::HasBitSetters::status(const NotaResponse* msg) {
   return *msg->status_;
@@ -3059,13 +3052,9 @@ NotaResponse::NotaResponse()
 }
 NotaResponse::NotaResponse(const NotaResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(nullptr) {
+      _internal_metadata_(nullptr),
+      matricula_(from.matricula_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_matricula()) {
-    matricula_ = new ::sd::Matricula(*from.matricula_);
-  } else {
-    matricula_ = nullptr;
-  }
   if (from.has_status()) {
     status_ = new ::sd::ResponseStatus(*from.status_);
   } else {
@@ -3077,9 +3066,7 @@ NotaResponse::NotaResponse(const NotaResponse& from)
 void NotaResponse::SharedCtor() {
   ::google::protobuf::internal::InitSCC(
       &scc_info_NotaResponse_red_2eproto.base);
-  ::memset(&matricula_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&status_) -
-      reinterpret_cast<char*>(&matricula_)) + sizeof(status_));
+  status_ = nullptr;
 }
 
 NotaResponse::~NotaResponse() {
@@ -3088,7 +3075,6 @@ NotaResponse::~NotaResponse() {
 }
 
 void NotaResponse::SharedDtor() {
-  if (this != internal_default_instance()) delete matricula_;
   if (this != internal_default_instance()) delete status_;
 }
 
@@ -3107,10 +3093,7 @@ void NotaResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && matricula_ != nullptr) {
-    delete matricula_;
-  }
-  matricula_ = nullptr;
+  matricula_.Clear();
   if (GetArenaNoVirtual() == nullptr && status_ != nullptr) {
     delete status_;
   }
@@ -3131,17 +3114,20 @@ const char* NotaResponse::_InternalParse(const char* begin, const char* end, voi
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .sd.Matricula matricula = 1;
+      // repeated .sd.Matricula matricula = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::sd::Matricula::_InternalParse;
-        object = msg->mutable_matricula();
-        if (size > end - ptr) goto len_delim_till_end;
-        ptr += size;
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
-            {parser_till_end, object}, ptr - size, ptr));
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::sd::Matricula::_InternalParse;
+          object = msg->add_matricula();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
         break;
       }
       // .sd.ResponseStatus status = 2;
@@ -3187,11 +3173,11 @@ bool NotaResponse::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .sd.Matricula matricula = 1;
+      // repeated .sd.Matricula matricula = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_matricula()));
+                input, add_matricula()));
         } else {
           goto handle_unusual;
         }
@@ -3236,10 +3222,13 @@ void NotaResponse::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .sd.Matricula matricula = 1;
-  if (this->has_matricula()) {
+  // repeated .sd.Matricula matricula = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->matricula_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::matricula(this), output);
+      1,
+      this->matricula(static_cast<int>(i)),
+      output);
   }
 
   // .sd.ResponseStatus status = 2;
@@ -3261,11 +3250,12 @@ void NotaResponse::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .sd.Matricula matricula = 1;
-  if (this->has_matricula()) {
+  // repeated .sd.Matricula matricula = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->matricula_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, HasBitSetters::matricula(this), target);
+        1, this->matricula(static_cast<int>(i)), target);
   }
 
   // .sd.ResponseStatus status = 2;
@@ -3296,11 +3286,15 @@ size_t NotaResponse::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .sd.Matricula matricula = 1;
-  if (this->has_matricula()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *matricula_);
+  // repeated .sd.Matricula matricula = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->matricula_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->matricula(static_cast<int>(i)));
+    }
   }
 
   // .sd.ResponseStatus status = 2;
@@ -3337,9 +3331,7 @@ void NotaResponse::MergeFrom(const NotaResponse& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_matricula()) {
-    mutable_matricula()->::sd::Matricula::MergeFrom(from.matricula());
-  }
+  matricula_.MergeFrom(from.matricula_);
   if (from.has_status()) {
     mutable_status()->::sd::ResponseStatus::MergeFrom(from.status());
   }
@@ -3370,7 +3362,7 @@ void NotaResponse::Swap(NotaResponse* other) {
 void NotaResponse::InternalSwap(NotaResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(matricula_, other->matricula_);
+  CastToBase(&matricula_)->InternalSwap(CastToBase(&other->matricula_));
   swap(status_, other->status_);
 }
 

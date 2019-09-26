@@ -6,6 +6,8 @@ class Database {
 
 public:
   static bool open (const char * /*filename*/);
+  static bool exec (const char * sql);
+  static std::vector< std::vector< std::string > > query (const char * sql);
 
 private:
   Database ();

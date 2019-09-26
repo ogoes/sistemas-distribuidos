@@ -29,8 +29,8 @@ public:
                      "(RA,codigo_disciplina,ano,semestre,nota,faltas) "
                      "VALUES (");
 
-    sql += std::to_string (this->RA) + std::string (",");
-    sql += this->codigo_disciplina + std::string (",");
+    sql += std::to_string (this->RA) + std::string (",\'");
+    sql += this->codigo_disciplina + std::string ("\',");
     sql += std::to_string (this->ano) + std::string (",");
     sql += std::to_string (this->semestre) + std::string (",");
     sql += std::to_string (this->nota) + std::string (",");
@@ -52,8 +52,8 @@ public:
 
     sql += std::string (" WHERE ");
     sql += std::string ("RA = ") + std::to_string (this->RA);
-    sql += std::string (" AND codigo_disciplina = ") + this->codigo_disciplina +
-           std::string (";");
+    sql += std::string (" AND codigo_disciplina = \'") +
+           this->codigo_disciplina + std::string ("\';");
 
     return sql.c_str ();
   }
@@ -62,8 +62,8 @@ public:
                      "WHERE RA = ");
 
     sql +=
-        std::to_string (this->RA) + std::string (" AND codigo_disciplina = ");
-    sql += this->codigo_disciplina + std::string (";");
+        std::to_string (this->RA) + std::string (" AND codigo_disciplina = \'");
+    sql += this->codigo_disciplina + std::string ("\';");
     return sql.c_str ();
   }
 

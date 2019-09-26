@@ -2,10 +2,9 @@
 #include <string>
 
 class Disciplina {
-
-public:
-  static std::string tableCreationSql () {
-    return std::string (
+ public:
+  static std::string tableCreationSql() {
+    return std::string(
         "PRAGMA foreign_keys = ON;"
         "CREATE TABLE IF NOT EXISTS [Disciplina] ("
         "[codigo] NVARCHAR(15) PRIMARY KEY,"
@@ -16,60 +15,62 @@ public:
         "CASCADE ON UPDATE CASCADE"
         ");");
   }
-  static std::string retrieveSql (std::string where) {
-    std::string sql ("SELECT * FROM Disciplina "
-                     "WHERE ");
+  static std::string retrieveSql(std::string where) {
+    std::string sql(
+        "SELECT * FROM Disciplina "
+        "WHERE ");
 
-    sql += where + std::string (";");
+    sql += where + std::string(";");
 
-    return sql.c_str ();
+    return sql.c_str();
   }
-  std::string creationSql () {
-    std::string sql ("INSERT INTO Disciplina "
-                     "(codigo,nome,professor,codigo_curso) "
-                     "VALUES (");
+  std::string creationSql() {
+    std::string sql(
+        "INSERT INTO Disciplina "
+        "(codigo,nome,professor,codigo_curso) "
+        "VALUES (\'");
 
-    sql += this->codigo + std::string (",");
-    sql += this->nome + std::string (",");
-    sql += this->professor + std::string (",");
-    sql += std::to_string (this->codigo_curso) + std::string (");");
+    sql += this->codigo + std::string("\',\'");
+    sql += this->nome + std::string("\',\'");
+    sql += this->professor + std::string("\',");
+    sql += std::to_string(this->codigo_curso) + std::string(");");
 
-    return sql.c_str ();
+    return sql.c_str();
   }
-  std::string updateSql () {
-    std::string sql ("UPDATE Disciplina "
-                     "SET ");
+  std::string updateSql() {
+    std::string sql(
+        "UPDATE Disciplina "
+        "SET ");
 
-    sql += std::string ("nome = ") + this->nome + std::string (", ");
-    sql += std::string ("professor = ") + this->professor + std::string (", ");
+    sql += std::string("nome = \'") + this->nome + std::string("\', ");
     sql +=
-        std::string ("codigo_curso = ") + std::to_string (this->codigo_curso);
+        std::string("professor = \'") + this->professor + std::string("\', ");
+    sql += std::string("codigo_curso = ") + std::to_string(this->codigo_curso);
 
-    sql += std::string (" WHERE ");
-    sql += std::string ("codigo = ") + this->codigo + std::string (";");
+    sql += std::string(" WHERE ");
+    sql += std::string("codigo = \'") + this->codigo + std::string("\';");
 
-    return sql.c_str ();
+    return sql.c_str();
   }
-  std::string deleteSql () {
-    std::string sql ("DELETE FROM Disciplina "
-                     "WHERE codigo = ");
+  std::string deleteSql() {
+    std::string sql(
+        "DELETE FROM Disciplina "
+        "WHERE codigo = ");
 
-    sql += this->codigo + std::string (";");
-    return sql.c_str ();
+    sql += this->codigo + std::string(";");
+    return sql.c_str();
   }
 
-  Disciplina (std::string codigo,
-              std::string nome,
-              std::string professor,
-              int codigo_curso) {
-    this->codigo       = codigo;
-    this->nome         = nome;
-    this->professor    = professor;
+  Disciplina(std::string codigo, std::string nome, std::string professor,
+             int codigo_curso) {
+    this->codigo = codigo;
+    this->nome = nome;
+    this->professor = professor;
     this->codigo_curso = codigo_curso;
   }
-  ~Disciplina () {}
+  ~Disciplina() {}
 
-private:
+ private:
   std::string codigo;
   std::string nome;
   std::string professor;

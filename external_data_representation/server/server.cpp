@@ -1,5 +1,7 @@
+#include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <exception>
 #include <iostream>
 #include <string>
 #include <thread>
@@ -27,151 +29,183 @@ typedef struct {
 } SockAttr;
 
 typedef struct {
-  Connection connection;     // CRUD = 1, NOTAS, ALUNOS, DISCIPLINAS, CLOSE
-  int requestRepresentation; // PROTOCOL_BUFFER(1), JSON(2), XML(3)
-  char * requestData;
+  int connection;             // CRUD = 1, NOTAS, ALUNOS, DISCIPLINAS, CLOSE
+  int requestRepresentation;  // PROTOCOL_BUFFER(1), JSON(2), XML(3)
+  unsigned int size;
+  char *requestData;
 } RequestHeader;
 
 typedef struct {
-  int responseSize;
-  char * responseData;
+  unsigned int responseSize;
+  char *responseData;
 } ResponseHeader;
 
-RequestHeader * unwrapRequest (char * request) {
-
+RequestHeader *unwrapRequest(char *requestData) {
+  unsigned char *request = (unsigned char *)requestData;
   int byteBegin = 0;
 
-  int connection            = ( int ) request[byteBegin++];
-  int requestRepresentation = ( int ) request[byteBegin++];
+  int connection = (int)request[byteBegin++];
+  int requestRepresentation = (int)request[byteBegin++];
 
-  RequestHeader * req = ( RequestHeader * ) malloc (sizeof (RequestHeader));
-  req->requestData    = ( char * ) calloc (sizeof (request) + 1, sizeof (char));
-  req->connection     = ( Connection ) connection;
+  int HEXsize3 = (int)request[byteBegin++];
+  int HEXsize2 = (int)request[byteBegin++];
+  int HEXsize1 = (int)request[byteBegin++];
+  int HEXsize0 = (int)request[byteBegin++];
+
+  int size = (HEXsize3 << 24) | (HEXsize2 << 16) | (HEXsize1 << 8) | HEXsize0;
+
+  RequestHeader *req = (RequestHeader *)malloc(sizeof(RequestHeader));
+
+  if (size > 0) {
+    req->requestData = (char *)calloc(size, sizeof(char));
+  } else {
+    req->requestData = nullptr;
+  }
+  req->connection = (Connection)connection;
+  req->size = size;
   req->requestRepresentation = requestRepresentation;
 
-  memcpy (req->requestData, request + byteBegin, sizeof (request + byteBegin));
+  memcpy(req->requestData, request + byteBegin, size);
 
   return req;
 }
 
-ResponseHeader * unwrapResponse (char * responseData) {
-
-  unsigned char * response = ( unsigned char * ) responseData;
+ResponseHeader *unwrapResponse(const char *responseData) {
+  unsigned char *response = (unsigned char *)responseData;
 
   int byteBegin = 0;
 
-  int HEXsize3 = ( int ) response[byteBegin++];
-  int HEXsize2 = ( int ) response[byteBegin++];
-  int HEXsize1 = ( int ) response[byteBegin++];
-  int HEXsize0 = ( int ) response[byteBegin++];
+  int HEXsize3 = (int)response[byteBegin++];
+  int HEXsize2 = (int)response[byteBegin++];
+  int HEXsize1 = (int)response[byteBegin++];
+  int HEXsize0 = (int)response[byteBegin++];
 
-  int size = (HEXsize3 << 24) | (HEXsize2 << 16) | (HEXsize1 << 8) | HEXsize0;
+  unsigned int size =
+      (HEXsize3 << 24) | (HEXsize2 << 16) | (HEXsize1 << 8) | (HEXsize0 << 0);
 
-  ResponseHeader * res = ( ResponseHeader * ) malloc (sizeof (ResponseHeader));
-  res->responseSize    = size;
-  res->responseData    = ( char * ) calloc (res->responseSize, sizeof (char));
+  ResponseHeader *res = (ResponseHeader *)malloc(sizeof(ResponseHeader));
+  res->responseSize = size;
+  res->responseData = (char *)calloc(res->responseSize, sizeof(char));
 
-  memcpy (res->responseData, response + byteBegin, res->responseSize);
+  memcpy(res->responseData, response + byteBegin, res->responseSize);
 
+  // free((char *)responseData);
   return res;
 }
 
-void clientHandler (SockAttr client) {
-  int buffer_size = 1024;
+void clientHandler(SockAttr client) {
+  int buffer_size = 1024 * 64;  // 64KB
   char buffer[buffer_size + 1];
-  bzero (buffer, buffer_size);
+  bzero(buffer, buffer_size);
 
-  read (client.sockFd, buffer, buffer_size);
-  RequestHeader * req = unwrapRequest (buffer);
+  read(client.sockFd, buffer, buffer_size);
 
-  char * (*responseFunction) (int, char *);
+  RequestHeader *req = unwrapRequest(buffer);
 
-  while (req->connection != CLOSE) { // 0 -> close connection
+  const char *(*responseFunction)(int, char *);
+
+  char *responseData;
+  while (req->connection != CLOSE) {  // 0 -> close connection
 
     switch (req->requestRepresentation) {
-    case PROTOCOL_BUFFER:
-      // chama lib de protocol buffer
-      responseFunction = pro_buffer::middleware;
-      break;
-    case JSON:
-      // chama lib de json
-      // responseFunction = json::middleware;
-      break;
-    case XML:
-      // chama lib de xml
-      // responseFunction = xml::middleware;
-      break;
-    default: break;
+      case PROTOCOL_BUFFER:
+        // chama lib de protocol buffer
+        responseFunction = PBHandler::middleware;
+        break;
+      case JSON:
+        // chama lib de json
+        // responseFunction = json::middleware;
+        break;
+      case XML:
+        // chama lib de xml
+        // responseFunction = xml::middleware;
+        break;
+      default:
+        break;
     }
 
-    char * responseData =
-        (*responseFunction) (req->connection, req->requestData);
+    const char *responseData =
+        responseFunction(req->connection, req->requestData);
 
-    ResponseHeader * res = unwrapResponse (responseData);
+    ResponseHeader *res = unwrapResponse(responseData);
 
-    write (client.sockFd, res->responseData, res->responseSize);
+    write(client.sockFd, res->responseData, res->responseSize);
 
-    free (res->responseData);
-    free (res);
+    free(res->responseData);
+    free(res);
 
-    free (req->requestData);
-    free (req);
+    free(req->requestData);
+    free(req);
 
-    bzero (buffer, buffer_size);
-    read (client.sockFd, buffer, buffer_size);
-    req = unwrapRequest (buffer);
+    bzero(buffer, buffer_size);
+    read(client.sockFd, buffer, buffer_size);
+    req = unwrapRequest(buffer);
   }
 
-  free (req->requestData);
-  free (req);
-  close (client.sockFd);
+  std::cout << "closed" << std::endl;
+  if (req->requestData) free(req->requestData);
+  if (req) free(req);
+  close(client.sockFd);
 }
 
-int main (int argc, char * argv[]) {
-
+int main(int argc, char *argv[]) {
   if (argc != 2) {
     std::cerr << "Modo de usar: ./server PORT" << std::endl;
-    exit (1);
+    exit(1);
   }
 
-  int PORT = std::atoi (argv[1]);
+  Database::open("server.db");
+
+  Curso *C = new Curso(1, "BCC");
+  Database::exec(C->creationSql().c_str());
+  std::string (*function)(std::string) = Curso::retrieveSql;
+
+  Disciplina *D =
+      new Disciplina("TESTE", "Testando com o cu na mao", "eu mermo", 1);
+  Database::exec(D->creationSql().c_str());
+
+  Aluno *A = new Aluno(1921924, "Otavio", 6, 1);
+  Database::exec(A->creationSql().c_str());
+
+  int PORT = atoi(argv[1]);
 
   SockAttr server;
-  server.inLen = sizeof (server.in);
+  server.inLen = sizeof(server.in);
 
   SockAttr client;
 
-  server.sockFd = socket (AF_INET, SOCK_STREAM, 0);
+  server.sockFd = socket(AF_INET, SOCK_STREAM, 0);
   if (server.sockFd == -1) {
     std::cerr << "Erro ao criar o socket do servidor" << std::endl;
-    exit (1);
+    exit(1);
   }
-  bzero (&(server.in), server.inLen);
+  bzero(&(server.in), server.inLen);
 
-  server.in.sin_family      = AF_INET;
-  server.in.sin_addr.s_addr = htonl (INADDR_ANY);
-  server.in.sin_port        = htons (PORT);
+  server.in.sin_family = AF_INET;
+  server.in.sin_addr.s_addr = htonl(INADDR_ANY);
+  server.in.sin_port = htons(PORT);
 
-  if ((bind (server.sockFd, ( SockAddress * ) &(server.in), server.inLen))) {
-    close (server.sockFd);
+  if ((bind(server.sockFd, (SockAddress *)&(server.in), server.inLen))) {
+    close(server.sockFd);
     std::cerr << "Erro ao executar o bind" << std::endl;
-    exit (1);
+    exit(1);
   }
 
-  if ((listen (server.sockFd, 10))) {
+  if ((listen(server.sockFd, 10))) {
     std::cerr << "Erro no listen" << std::endl;
-    exit (1);
+    exit(1);
   }
 
-  client.inLen = sizeof (client.in);
+  std::cout << "Server running at " << PORT << std::endl;
+
+  client.inLen = sizeof(client.in);
   while (true) {
-    client.sockFd = accept (server.sockFd,
-                            ( SockAddress * ) &(client.in),
-                            ( unsigned int * ) &client.inLen);
+    client.sockFd = accept(server.sockFd, (SockAddress *)&(client.in),
+                           (unsigned int *)&client.inLen);
     if (client.sockFd < 0)
       std::cout << "Erro ao aceitar nova conexão" << std::endl;
 
-    std::thread (clientHandler, client).detach ();
+    std::thread(clientHandler, client).detach();
   }
 
   return 0;

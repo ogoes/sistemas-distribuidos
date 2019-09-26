@@ -1092,14 +1092,17 @@ class NotaResponse final :
 
   // accessors -------------------------------------------------------
 
-  // .sd.Matricula matricula = 1;
-  bool has_matricula() const;
+  // repeated .sd.Matricula matricula = 1;
+  int matricula_size() const;
   void clear_matricula();
   static const int kMatriculaFieldNumber = 1;
-  const ::sd::Matricula& matricula() const;
-  ::sd::Matricula* release_matricula();
-  ::sd::Matricula* mutable_matricula();
-  void set_allocated_matricula(::sd::Matricula* matricula);
+  ::sd::Matricula* mutable_matricula(int index);
+  ::google::protobuf::RepeatedPtrField< ::sd::Matricula >*
+      mutable_matricula();
+  const ::sd::Matricula& matricula(int index) const;
+  ::sd::Matricula* add_matricula();
+  const ::google::protobuf::RepeatedPtrField< ::sd::Matricula >&
+      matricula() const;
 
   // .sd.ResponseStatus status = 2;
   bool has_status() const;
@@ -1115,7 +1118,7 @@ class NotaResponse final :
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::sd::Matricula* matricula_;
+  ::google::protobuf::RepeatedPtrField< ::sd::Matricula > matricula_;
   ::sd::ResponseStatus* status_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_red_2eproto;
@@ -2631,55 +2634,34 @@ inline void NotaRequest::set_allocated_matricula(::sd::Matricula* matricula) {
 
 // NotaResponse
 
-// .sd.Matricula matricula = 1;
-inline bool NotaResponse::has_matricula() const {
-  return this != internal_default_instance() && matricula_ != nullptr;
+// repeated .sd.Matricula matricula = 1;
+inline int NotaResponse::matricula_size() const {
+  return matricula_.size();
 }
 inline void NotaResponse::clear_matricula() {
-  if (GetArenaNoVirtual() == nullptr && matricula_ != nullptr) {
-    delete matricula_;
-  }
-  matricula_ = nullptr;
+  matricula_.Clear();
 }
-inline const ::sd::Matricula& NotaResponse::matricula() const {
-  const ::sd::Matricula* p = matricula_;
-  // @@protoc_insertion_point(field_get:sd.NotaResponse.matricula)
-  return p != nullptr ? *p : *reinterpret_cast<const ::sd::Matricula*>(
-      &::sd::_Matricula_default_instance_);
-}
-inline ::sd::Matricula* NotaResponse::release_matricula() {
-  // @@protoc_insertion_point(field_release:sd.NotaResponse.matricula)
-  
-  ::sd::Matricula* temp = matricula_;
-  matricula_ = nullptr;
-  return temp;
-}
-inline ::sd::Matricula* NotaResponse::mutable_matricula() {
-  
-  if (matricula_ == nullptr) {
-    auto* p = CreateMaybeMessage<::sd::Matricula>(GetArenaNoVirtual());
-    matricula_ = p;
-  }
+inline ::sd::Matricula* NotaResponse::mutable_matricula(int index) {
   // @@protoc_insertion_point(field_mutable:sd.NotaResponse.matricula)
-  return matricula_;
+  return matricula_.Mutable(index);
 }
-inline void NotaResponse::set_allocated_matricula(::sd::Matricula* matricula) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete matricula_;
-  }
-  if (matricula) {
-    ::google::protobuf::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      matricula = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, matricula, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  matricula_ = matricula;
-  // @@protoc_insertion_point(field_set_allocated:sd.NotaResponse.matricula)
+inline ::google::protobuf::RepeatedPtrField< ::sd::Matricula >*
+NotaResponse::mutable_matricula() {
+  // @@protoc_insertion_point(field_mutable_list:sd.NotaResponse.matricula)
+  return &matricula_;
+}
+inline const ::sd::Matricula& NotaResponse::matricula(int index) const {
+  // @@protoc_insertion_point(field_get:sd.NotaResponse.matricula)
+  return matricula_.Get(index);
+}
+inline ::sd::Matricula* NotaResponse::add_matricula() {
+  // @@protoc_insertion_point(field_add:sd.NotaResponse.matricula)
+  return matricula_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::sd::Matricula >&
+NotaResponse::matricula() const {
+  // @@protoc_insertion_point(field_list:sd.NotaResponse.matricula)
+  return matricula_;
 }
 
 // .sd.ResponseStatus status = 2;

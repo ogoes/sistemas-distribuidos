@@ -1,13 +1,24 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include "../database.h"
+#include "../entities/aluno.h"
+#include "../entities/curso.h"
+#include "../entities/disciplina.h"
+#include "../entities/matricula.h"
 
 #include "red.pb.h"
 
-namespace pro_buffer {
+class PBHandler {
+ public:
+  static const char *middleware(int, char *);
 
-char * middleware (int, char *);
+ private:
+  static const char *crudRequest(char *);
+  static const char *matriculasRequest(char *);
+  static const char *alunosRequest(char *);
+  static const char *disciplinasRequest(char *);
 
-char * crudRequest (char *);
-char * matriculasRequest (char *);
-char * alunosRequest (char *);
-char * disciplinasRequest (char *);
-
-} // namespace pro_buffer
+  static sd::NotaResponse CreateMatricula(const sd::Matricula &);
+};
